@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="The CSS Ninja">
+	<title>wp8.1.to.wp8.1.1.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide5386cf016494ce993c02f33cf252312">Microsoft</label> <input checked type="checkbox" id="ide5386cf016494ce993c02f33cf252312" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9e59a7e715a349529a581b95957a07c7">Phone</label> <input checked type="checkbox" id="id9e59a7e715a349529a581b95957a07c7" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf3f6b5eaafc44344949eb0a4a239223f">Controls</label> <input checked type="checkbox" id="idf3f6b5eaafc44344949eb0a4a239223f" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="id525065fcacac40918dd7b52bf5461b7c">PhoneApplicationPage</label> <input checked type="checkbox" id="id525065fcacac40918dd7b52bf5461b7c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VisibleBounds { get; } : Thickness</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>VisibleBoundsChanged event : EventHandler</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id378e71d12d93485ebbfde99ea58641f1">Windows</label> <input checked type="checkbox" id="id378e71d12d93485ebbfde99ea58641f1" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd5b55856d5f24a5daec4babef17974c1">Phone</label> <input checked type="checkbox" id="idd5b55856d5f24a5daec4babef17974c1" /><ol>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id9016149589794ac185a0d527d6d6e4d2">Notification</label> <input checked type="checkbox" id="id9016149589794ac185a0d527d6d6e4d2" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id96b6dc35b00a43589f7a9f0615cef1e4">Management</label> <input checked type="checkbox" id="id96b6dc35b00a43589f7a9f0615cef1e4" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="ida904009ccf534cffbf262e81fdbdcd53">AccessoryManager</label> <input checked type="checkbox" id="ida904009ccf534cffbf262e81fdbdcd53" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AcceptPhoneCall(UInt32 phoneCallId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AcceptPhoneCall(UInt32 phoneCallId, PhoneCallAudioEndpoint endPoint) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AcceptPhoneCallWithVideo(UInt32 phoneCallId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AcceptPhoneCallWithVideo(UInt32 phoneCallId, PhoneCallAudioEndpoint endPoint) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BatterySaverState static { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DisableAllAccessoryNotificationTypes() static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DisableNotificationsForApplication(String appId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DismissAlarm(Guid alarmId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DismissReminder(Guid reminderId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DoNotDisturbEnabled static { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DrivingModeEnabled static { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>EnableAccessoryNotificationTypes(Int32 accessoryNotificationTypes) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>EnableNotificationsForApplication(String appId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>EndPhoneCall(UInt32 phoneCallId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetAppIcon(String appId) static : IRandomAccessStreamReference</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetApps() static : IReadOnlyDictionary&lt;String,AppNotificationInfo&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetEnabledAccessoryNotificationTypes() static : Int32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetMediaMetadata() static : MediaMetadata</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetNextTriggerDetails() static : IAccessoryNotificationTriggerDetails</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetPhoneLineDetails(Guid phoneLine) static : PhoneLineDetails</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetUserConsent() static : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>HoldPhoneCall(UInt32 phoneCallId, Boolean holdCall) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>IsNotificationEnabledForApplication(String appId) static : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>MakePhoneCall(Guid phoneLine, String phoneNumber) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>MakePhoneCall(Guid phoneLine, String phoneNumber, PhoneCallAudioEndpoint endPoint) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>MakePhoneCallWithVideo(Guid phoneLine, String phoneNumber) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>MakePhoneCallWithVideo(Guid phoneLine, String phoneNumber, PhoneCallAudioEndpoint endPoint) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MediaPlaybackCapabilities static { get; } : PlaybackCapability</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MediaPlaybackStatus static { get; } : PlaybackStatus</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>PerformMediaPlaybackCommand(PlaybackCommand command) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneCallAudioEndpoint static { get; set; } : PhoneCallAudioEndpoint</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneLineDetails static { get; } : IReadOnlyList&lt;PhoneLineDetails&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneMute static { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ProcessTriggerDetails(IAccessoryNotificationTriggerDetails pDetails) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RegisterAccessoryApp() static : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RejectPhoneCall(UInt32 phoneCallId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RejectPhoneCall(UInt32 phoneCallId, UInt32 textResponseID) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SnoozeAlarm(Guid alarmId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SnoozeAlarm(Guid alarmId, TimeSpan timeSpan) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SnoozeReminder(Guid reminderId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SnoozeReminder(Guid reminderId, TimeSpan timeSpan) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SwapPhoneCalls(UInt32 phoneCallIdToHold, UInt32 phoneCallIdOnHold) static : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="idb9920327f0724721886e9222297c43d7">AccessoryNotificationType</label> <input checked type="checkbox" id="idb9920327f0724721886e9222297c43d7" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Phone : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Email : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Reminder : 4,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Alarm : 8,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Toast : 16,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppUninstalled : 32,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Dnd : 64,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DrivingMode : 128,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BatterySaver : 256,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Media : 512,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CortanaTile : 1024,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idb6aa30ae5da64341969b30d4fc287bdd">AlarmNotificationTriggerDetails</label> <input checked type="checkbox" id="idb6aa30ae5da64341969b30d4fc287bdd" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AlarmId { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReminderState { get; } : ReminderState</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Timestamp { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Title { get; } : String</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idae133da786c14c15930871966f5a24eb">AppNotificationInfo</label> <input checked type="checkbox" id="idae133da786c14c15930871966f5a24eb" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Name { get; } : String</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idf155bd129a534ae8a45e0cf0ecc3b0dc">CortanaTileNotificationTriggerDetails</label> <input checked type="checkbox" id="idf155bd129a534ae8a45e0cf0ecc3b0dc" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Content { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EmphasizedText { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LargeContent1 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LargeContent2 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NonWrappedSmallContent1 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NonWrappedSmallContent2 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NonWrappedSmallContent3 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NonWrappedSmallContent4 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Source { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TileId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id5c3ebcd3576b47a79985e5d5b02fd0a4">EmailNotificationTriggerDetails</label> <input checked type="checkbox" id="id5c3ebcd3576b47a79985e5d5b02fd0a4" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccountName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EmailMessage { get; } : EmailMessage</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ParentFolderName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SenderAddress { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SenderName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Timestamp { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id1afe1428c8ab4a22bf7cce7163e5fa72">IAccessoryNotificationTriggerDetails</label> <input checked type="checkbox" id="id1afe1428c8ab4a22bf7cce7163e5fa72" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id4dd6bc3cf6664a9fbdb417604db8251e">MediaControlsTriggerDetails</label> <input checked type="checkbox" id="id4dd6bc3cf6664a9fbdb417604db8251e" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MediaMetadata { get; } : MediaMetadata</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaybackStatus { get; } : PlaybackStatus</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id3c6040f5851f4f4db47657b549c160c5">MediaMetadata</label> <input checked type="checkbox" id="id3c6040f5851f4f4db47657b549c160c5" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Album { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Artist { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Duration { get; } : TimeSpan</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Subtitle { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Thumbnail { get; } : IRandomAccessStreamReference</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Title { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Track { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="iddf252a1a5b8d47dc8eedac05d52716c9">PhoneCallAudioEndpoint</label> <input checked type="checkbox" id="iddf252a1a5b8d47dc8eedac05d52716c9" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Default : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Speaker : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Handsfree : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id3438ab5af8e04e4fb32300ae280074d5">PhoneCallDetails</label> <input checked type="checkbox" id="id3438ab5af8e04e4fb32300ae280074d5" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CallDirection { get; } : PhoneCallDirection</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CallId { get; } : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CallMediaType { get; } : PhoneMediaType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CallTransport { get; } : PhoneCallTransport</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ConferenceCallId { get; } : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ContactName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EndTime { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneLine { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneNumber { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PresetTextResponses { get; } : IReadOnlyList&lt;TextResponse&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartTime { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>State { get; } : PhoneCallState</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id61323e3bb22944d2898ee932108b5e62">PhoneCallDirection</label> <input checked type="checkbox" id="id61323e3bb22944d2898ee932108b5e62" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Incoming : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Outgoing : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id1ac9b0636cd7451dbb7f928f1ea5e4cc">PhoneCallState</label> <input checked type="checkbox" id="id1ac9b0636cd7451dbb7f928f1ea5e4cc" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unknown : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Ringing : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Talking : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Held : 3,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Ended : 4,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id36feb36143274a15b19055d3e95ea3ba">PhoneCallTransport</label> <input checked type="checkbox" id="id36feb36143274a15b19055d3e95ea3ba" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Cellular : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Voip : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id0b19264612734c10be971895800ecfdc">PhoneLineDetails</label> <input checked type="checkbox" id="id0b19264612734c10be971895800ecfdc" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DefaultOutgoingLine { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LineId { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LineNumber { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RegistrationState { get; } : PhoneLineRegistrationState</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VoicemailCount { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id27283a9051be4d3cbeb61af0444b5723">PhoneLineRegistrationState</label> <input checked type="checkbox" id="id27283a9051be4d3cbeb61af0444b5723" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Disconnected : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Home : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Roaming : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="idf7eb147227ec415698ec93f6df785c69">PhoneMediaType</label> <input checked type="checkbox" id="idf7eb147227ec415698ec93f6df785c69" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AudioOnly : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AudioVideo : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id4669fd4853e74dcea05cd3aa183fbe39">PhoneNotificationTriggerDetails</label> <input checked type="checkbox" id="id4669fd4853e74dcea05cd3aa183fbe39" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CallDetails { get; } : PhoneCallDetails</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneLineChangedId { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhoneNotificationType { get; } : PhoneNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id4e7fec4aa1ad4ffaa8b9c3530b5161d3">PhoneNotificationType</label> <input checked type="checkbox" id="id4e7fec4aa1ad4ffaa8b9c3530b5161d3" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NewCall : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CallChanged : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>LineChanged : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneCallAudioEndpointChanged : 3,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneMuteChanged : 4,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="idda04936bc43f4c5082c7f54527853736">PlaybackCapability</label> <input checked type="checkbox" id="idda04936bc43f4c5082c7f54527853736" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Play : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Pause : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Stop : 4,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Record : 8,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FastForward : 16,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Rewind : 32,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Next : 64,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Previous : 128,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ChannelUp : 256,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ChannelDown : 512,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="idc32c212cd33846aabb50812453fea487">PlaybackCommand</label> <input checked type="checkbox" id="idc32c212cd33846aabb50812453fea487" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Play : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Pause : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Stop : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Record : 3,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FastForward : 4,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Rewind : 5,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Next : 6,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Previous : 7,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ChannelUp : 8,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ChannelDown : 9,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id0a01982de1424c508887c8e0562a75da">PlaybackStatus</label> <input checked type="checkbox" id="id0a01982de1424c508887c8e0562a75da" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>TrackChanged : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Stopped : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Playing : 3,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Paused : 4,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idb0735fd1460342279628948e81a31ed9">ReminderNotificationTriggerDetails</label> <input checked type="checkbox" id="idb0735fd1460342279628948e81a31ed9" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Appointment { get; } : Appointment</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Description { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Details { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReminderId { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReminderState { get; } : ReminderState</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Timestamp { get; } : DateTimeOffset</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Title { get; } : String</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id11029398243c43169d1d020a7f73c985">ReminderState</label> <input checked type="checkbox" id="id11029398243c43169d1d020a7f73c985" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Active : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Snoozed : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Dismissed : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id5b7eed72bf08403689d71a29ecf49306">TextResponse</label> <input checked type="checkbox" id="id5b7eed72bf08403689d71a29ecf49306" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Content { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id0c27fd14e3d7431582147917be62c5b6">ToastNotificationTriggerDetails</label> <input checked type="checkbox" id="id0c27fd14e3d7431582147917be62c5b6" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AccessoryNotificationType { get; } : AccessoryNotificationType</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppDisplayName { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppId { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartedProcessing { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SuppressPopup { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Text1 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Text2 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Text3 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Text4 { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimeCreated { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
