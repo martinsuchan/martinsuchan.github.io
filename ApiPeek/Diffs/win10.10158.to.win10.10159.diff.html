@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.10158.to.win10.10159.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide73cb2439390400d8f3fc62129a300a0">Windows</label> <input checked type="checkbox" id="ide73cb2439390400d8f3fc62129a300a0" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id06ad670e1269451dba3b8ca763bcf714">Management</label> <input checked type="checkbox" id="id06ad670e1269451dba3b8ca763bcf714" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idfc3d82a2be38437b9f368204f681979b">Deployment</label> <input checked type="checkbox" id="idfc3d82a2be38437b9f368204f681979b" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id44a7bf10d25f408b8a545f7d941556c3">Preview</label> <input checked type="checkbox" id="id44a7bf10d25f408b8a545f7d941556c3" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ClassicAppManager</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>DeploymentPreviewContract</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>InstalledClassicAppInfo</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
