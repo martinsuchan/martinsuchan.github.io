@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>wp10.10166.to.wp10.10512.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida3d751db47db46b9982a53ca6b03e296">Windows</label> <input checked type="checkbox" id="ida3d751db47db46b9982a53ca6b03e296" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb97b482a9a774964b7b9665298587582">ApplicationModel</label> <input checked type="checkbox" id="idb97b482a9a774964b7b9665298587582" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb872b5ac18404385a7efbd4dc329e2bf">Email</label> <input checked type="checkbox" id="idb872b5ac18404385a7efbd4dc329e2bf" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>EmailCertificateValidationStatus</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>EmailMessageSmimeKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>EmailRecipientResolutionResult</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>EmailRecipientResolutionStatus</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb9a809bc8c564677a16aa6335f0268ea">Management</label> <input checked type="checkbox" id="idb9a809bc8c564677a16aa6335f0268ea" /><ol>
+            <li><img class="type" src="removed.png"/><img src="namespace.gif"/><label for="id48df5f6962fa430e81287441ac5829dc">Orchestration</label> <input checked type="checkbox" id="id48df5f6962fa430e81287441ac5829dc" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CurrentAppOrchestration</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>SingleAppModeContext</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6d118fbd4b1046f1b8ddb8f4a87cdc4d">Media</label> <input checked type="checkbox" id="id6d118fbd4b1046f1b8ddb8f4a87cdc4d" /><ol>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id52b00c3d04b34ebc9fced815534ef1f6">MixedRealityCapture</label> <input checked type="checkbox" id="id52b00c3d04b34ebc9fced815534ef1f6" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AudioMixerMode</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MixedRealityCaptureAudioEffect</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MixedRealityCaptureAudioEffectDefinition</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MixedRealityCaptureVideoEffect</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MixedRealityCaptureVideoEffectDefinition</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id48bb330d492d4132abf8fe0005229849">UI</label> <input checked type="checkbox" id="id48bb330d492d4132abf8fe0005229849" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd00d8c201d2a41c39d5045de8411163a">Xaml</label> <input checked type="checkbox" id="idd00d8c201d2a41c39d5045de8411163a" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd6ad148c16ee4e92be3e111ed8c1d0a2">Controls</label> <input checked type="checkbox" id="idd6ad148c16ee4e92be3e111ed8c1d0a2" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FocusDisengagedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FocusEngagedEventArgs</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
