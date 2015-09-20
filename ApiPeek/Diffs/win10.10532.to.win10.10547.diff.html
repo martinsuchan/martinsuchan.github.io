@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.10532.to.win10.10547.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id56bc121b21d444bd94af26dcc481b6a4">Windows</label> <input checked type="checkbox" id="id56bc121b21d444bd94af26dcc481b6a4" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc91df8e849e44f7fad225f1eff964aa3">ApplicationModel</label> <input checked type="checkbox" id="idc91df8e849e44f7fad225f1eff964aa3" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id695554c0e58f435bad3db160437d4a84">Background</label> <input checked type="checkbox" id="id695554c0e58f435bad3db160437d4a84" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SensorDataThresholdTrigger</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2edc8fd96df34806a6578ab6faaa8473">Calls</label> <input checked type="checkbox" id="id2edc8fd96df34806a6578ab6faaa8473" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CallAnswerEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CallRejectEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CallStateChangeEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>CallsVoipContract</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MuteChangeEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>VoipCallCoordinator</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>VoipPhoneCall</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VoipPhoneCallMedia</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VoipPhoneCallRejectReason</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VoipPhoneCallResourceReservationStatus</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VoipPhoneCallState</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id205810b8d8f649d8a2cd61a304d616e2">Devices</label> <input checked type="checkbox" id="id205810b8d8f649d8a2cd61a304d616e2" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4061c8e26a52448d964d73ee933b1bf9">Gpio</label> <input checked type="checkbox" id="id4061c8e26a52448d964d73ee933b1bf9" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idb54ec2462d324360a400cf2e82e02940">Provider</label> <input checked type="checkbox" id="idb54ec2462d324360a400cf2e82e02940" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GpioPinProviderValueChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IGpioControllerProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IGpioPinProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IGpioProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderGpioPinDriveMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderGpioPinEdge</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderGpioPinValue</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderGpioSharingMode</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb6ebcb1e5c514864be55c539a49d96cb">I2c</label> <input checked type="checkbox" id="idb6ebcb1e5c514864be55c539a49d96cb" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id54e67bb595ed44a3883128f00857271c">Provider</label> <input checked type="checkbox" id="id54e67bb595ed44a3883128f00857271c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>II2cControllerProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>II2cDeviceProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>II2cProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderI2cBusSpeed</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProviderI2cConnectionSettings</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderI2cSharingMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>ProviderI2cTransferResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderI2cTransferStatus</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>I2cController</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8526b121ee7c4413b9fcf9e9c4d4a9ed">Sensors</label> <input checked type="checkbox" id="id8526b121ee7c4413b9fcf9e9c4d4a9ed" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISensorDataThreshold</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PedometerDataThreshold</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProximitySensorDataThreshold</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SensorDataThresholdTriggerDetails</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SensorType</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7e1809e4f5b74bd3b63b260d1ded3350">Spi</label> <input checked type="checkbox" id="id7e1809e4f5b74bd3b63b260d1ded3350" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idebbc6771b44542a783d29bc538d1512c">Provider</label> <input checked type="checkbox" id="idebbc6771b44542a783d29bc538d1512c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISpiControllerProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISpiDeviceProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISpiProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProviderSpiConnectionSettings</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderSpiMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ProviderSpiSharingMode</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SpiController</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc8b0bf45078b45eeaed2bc1cf07e9e17">WiFiDirect</label> <input checked type="checkbox" id="idc8b0bf45078b45eeaed2bc1cf07e9e17" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>WiFiDirectConfigurationMethod</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>WiFiDirectPairingProcedure</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ILowLevelDevicesAggregateProvider</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>LowLevelDevicesAggregateProvider</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>LowLevelDevicesController</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1d2c53f4138849e189893e83878145d6">Media</label> <input checked type="checkbox" id="id1d2c53f4138849e189893e83878145d6" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc22c759bc76d4eb2acd9e239c728fb34">Core</label> <input checked type="checkbox" id="idc22c759bc76d4eb2acd9e239c728fb34" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="delegate.gif"/><p>MediaSourceOpeningHandler</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaSourceOpeningRequest</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaSourceOpeningRequestDeferral</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MediaSourceState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaSourceStateChangedEventArgs</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5df44126466b4b73bf61df99e0de7f96">Streaming</label> <input checked type="checkbox" id="id5df44126466b4b73bf61df99e0de7f96" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida581573803464ac992cb8778d7e14bd4">Adaptive</label> <input checked type="checkbox" id="ida581573803464ac992cb8778d7e14bd4" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AdaptiveMediaSourceAdvancedSettings</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id55942f62823c4a119e7ea367f5231ad5">Security</label> <input checked type="checkbox" id="id55942f62823c4a119e7ea367f5231ad5" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7f88cbbe88cb442e966f8fbe786deec1">EnterpriseData</label> <input checked type="checkbox" id="id7f88cbbe88cb442e966f8fbe786deec1" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>EnforcementLevel</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id22f52f1fa16a40a5856f4a16ee31972e">Services</label> <input checked type="checkbox" id="id22f52f1fa16a40a5856f4a16ee31972e" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idee78cf884ee6478abc32aa6659d16e40">Maps</label> <input checked type="checkbox" id="idee78cf884ee6478abc32aa6659d16e40" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida59d3d68349b436e8547a6709df24a6a">Guidance</label> <input checked type="checkbox" id="ida59d3d68349b436e8547a6709df24a6a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GuidanceAudioNotificationKind</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GuidanceAudioNotificationRequestedEventArgs</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8a62a5aab84a4c688c275dac9226cb4c">Storage</label> <input checked type="checkbox" id="id8a62a5aab84a4c688c275dac9226cb4c" /><ol>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>KnownFolderId</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6ce1e3af73ce4300abd9af7f2bf09e3a">System</label> <input checked type="checkbox" id="id6ce1e3af73ce4300abd9af7f2bf09e3a" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1f92faf389d44d06a3eb1ae2d03b35c8">UserProfile</label> <input checked type="checkbox" id="id1f92faf389d44d06a3eb1ae2d03b35c8" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserProfileAdditionalClocks</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserProfileClockInfo</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProcessLauncher</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProcessLauncherOptions</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ProcessLauncherResult</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id30d26f0350354ddeb68bd5ba5fedacc9">UI</label> <input checked type="checkbox" id="id30d26f0350354ddeb68bd5ba5fedacc9" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7fd5193498a34f8f81261c8fba690145">Composition</label> <input checked type="checkbox" id="id7fd5193498a34f8f81261c8fba690145" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CompositionAlphaMode</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionDrawingSurface</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb3349028a00d41c69e2a911415d970be">Core</label> <input checked type="checkbox" id="idb3349028a00d41c69e2a911415d970be" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ICorePointerRedirector</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6a9fbe7851f0493297989c5ccd65c334">Input</label> <input checked type="checkbox" id="id6a9fbe7851f0493297989c5ccd65c334" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>KeyboardDeliveryInterceptor</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3b2f3a378d6246a9a81937a002b55230">StartScreen</label> <input checked type="checkbox" id="id3b2f3a378d6246a9a81937a002b55230" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>JumpList</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>JumpListItem</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>JumpListItemKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>JumpListSystemGroupKind</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5c5bfd4fcd3247a4bceee3d9275808e5">Xaml</label> <input checked type="checkbox" id="id5c5bfd4fcd3247a4bceee3d9275808e5" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id22bd8d158c07422d8a38874973ac98f5">Automation</label> <input checked type="checkbox" id="id22bd8d158c07422d8a38874973ac98f5" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd4297439f9f347fd8ad738c3326ff136">Peers</label> <input checked type="checkbox" id="idd4297439f9f347fd8ad738c3326ff136" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AutomationLandmarkType</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1a8bf6cff1ed4bd8b8a18a7d3e09ad32">Controls</label> <input checked type="checkbox" id="id1a8bf6cff1ed4bd8b8a18a7d3e09ad32" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id27f7332dde654b209bc4c87e2edc7cbe">Maps</label> <input checked type="checkbox" id="id27f7332dde654b209bc4c87e2edc7cbe" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MapCameraChangeReason</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapControlBusinessLandmarkClickEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapControlBusinessLandmarkRightTappedEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapControlDataHelper</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapControlTransitFeatureClickEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapControlTransitFeatureRightTappedEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapRightTappedEventArgs</p>
+                        </li>
+                    </ol></li>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4cc23db1f8974185b173c6cf8d95f8e3">Primitives</label> <input checked type="checkbox" id="id4cc23db1f8974185b173c6cf8d95f8e3" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MenuFlyoutPresenterTemplateSettings</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>FocusDisengagedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>FocusEngagedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>RichEditClipboardFormat</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idfc6754cc4bc34a348c6f256224ace170">Web</label> <input checked type="checkbox" id="idfc6754cc4bc34a348c6f256224ace170" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id00546c15ec07426ea1335b3c0e278ff8">Http</label> <input checked type="checkbox" id="id00546c15ec07426ea1335b3c0e278ff8" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4d558d9198bf4bbbb3a36b777614a36d">Filters</label> <input checked type="checkbox" id="id4d558d9198bf4bbbb3a36b777614a36d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>HttpCookieUsageBehavior</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
