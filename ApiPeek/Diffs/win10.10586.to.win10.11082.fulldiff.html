@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.10586.to.win10.11082.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id61bca0f0970a4f15b7b447757c07c3e2">Windows</label> <input checked type="checkbox" id="id61bca0f0970a4f15b7b447757c07c3e2" /><ol>
+        <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idfca8675dcf8646ae9d8ec2d32224ec53">Perception</label> <input checked type="checkbox" id="idfca8675dcf8646ae9d8ec2d32224ec53" /><ol>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id9414d5b86f2443639d12d778be026d46">People</label> <input checked type="checkbox" id="id9414d5b86f2443639d12d778be026d46" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id0dab35b0e9b14183a4e8ab4ed74209ae">HeadPose</label> <input checked type="checkbox" id="id0dab35b0e9b14183a4e8ab4ed74209ae" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ForwardDirection { get; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Position { get; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UpDirection { get; } : Vector3</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id7ca370581e3e43acbe91ba5f2fe779c0">Spatial</label> <input checked type="checkbox" id="id7ca370581e3e43acbe91ba5f2fe779c0" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id6b79b3f7cf374a878e031b369ce9177d">Surfaces</label> <input checked type="checkbox" id="id6b79b3f7cf374a878e031b369ce9177d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id5d84e2db90ce4ecaabcae38c821ad127">SpatialSurfaceInfo</label> <input checked type="checkbox" id="id5d84e2db90ce4ecaabcae38c821ad127" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; } : Guid</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryComputeLatestMeshAsync(Double maxTrianglesPerCubicMeter) : IAsyncOperation&lt;SpatialSurfaceMesh&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryComputeLatestMeshAsync(Double maxTrianglesPerCubicMeter, SpatialSurfaceMeshOptions options) : IAsyncOperation&lt;SpatialSurfaceMesh&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryGetBounds(SpatialCoordinateSystem coordinateSystem) : Nullable&lt;SpatialBoundingOrientedBox&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UpdateTime { get; } : DateTimeOffset</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idbbd19f08da914499a7aa7ff21195edd2">SpatialSurfaceMesh</label> <input checked type="checkbox" id="idbbd19f08da914499a7aa7ff21195edd2" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CoordinateSystem { get; } : SpatialCoordinateSystem</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SurfaceInfo { get; } : SpatialSurfaceInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TriangleIndices { get; } : SpatialSurfaceMeshBuffer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VertexNormals { get; } : SpatialSurfaceMeshBuffer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VertexPositions { get; } : SpatialSurfaceMeshBuffer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VertexPositionScale { get; } : Vector3</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id511e79f4e0b24c0994b1775fcb3c1835">SpatialSurfaceMeshBuffer</label> <input checked type="checkbox" id="id511e79f4e0b24c0994b1775fcb3c1835" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Data { get; } : IBuffer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ElementCount { get; } : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Format { get; } : DirectXPixelFormat</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Stride { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id3cd9317d5750494ebeb0cf73df33c8fd">SpatialSurfaceMeshOptions</label> <input checked type="checkbox" id="id3cd9317d5750494ebeb0cf73df33c8fd" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IncludeVertexNormals { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportedTriangleIndexFormats static { get; } : IReadOnlyList&lt;DirectXPixelFormat&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportedVertexNormalFormats static { get; } : IReadOnlyList&lt;DirectXPixelFormat&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportedVertexPositionFormats static { get; } : IReadOnlyList&lt;DirectXPixelFormat&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TriangleIndexFormat { get; set; } : DirectXPixelFormat</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VertexNormalFormat { get; set; } : DirectXPixelFormat</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VertexPositionFormat { get; set; } : DirectXPixelFormat</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id15137a9ebc584647a77301843c29639c">SpatialSurfaceObserver</label> <input checked type="checkbox" id="id15137a9ebc584647a77301843c29639c" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetObservedSurfaces() : IReadOnlyDictionary&lt;Guid,SpatialSurfaceInfo&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>ObservedSurfacesChanged event : TypedEventHandler&lt;SpatialSurfaceObserver,Object&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RequestAccessAsync() static : IAsyncOperation&lt;SpatialPerceptionAccessStatus&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetBoundingVolume(SpatialBoundingVolume bounds) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetBoundingVolumes(IEnumerable&lt;SpatialBoundingVolume&gt; bounds) : Void</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id83a15525efa541db9ece6c072e8d914d">SpatialAnchor</label> <input checked type="checkbox" id="id83a15525efa541db9ece6c072e8d914d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CoordinateSystem { get; } : SpatialCoordinateSystem</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RawCoordinateSystem { get; } : SpatialCoordinateSystem</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>RawCoordinateSystemAdjusted event : TypedEventHandler&lt;SpatialAnchor,SpatialAnchorRawCoordinateSystemAdjustedEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryCreateRelativeTo(SpatialCoordinateSystem coordinateSystem) static : SpatialAnchor</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryCreateRelativeTo(SpatialCoordinateSystem coordinateSystem, Vector3 position) static : SpatialAnchor</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryCreateRelativeTo(SpatialCoordinateSystem coordinateSystem, Vector3 position, Quaternion orientation) static : SpatialAnchor</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idbe01521a81244a1288fc6acc0ac1745b">SpatialAnchorManager</label> <input checked type="checkbox" id="idbe01521a81244a1288fc6acc0ac1745b" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RequestStoreAsync() static : IAsyncOperation&lt;SpatialAnchorStore&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id4b9557d740414313ae0b4014b78997d6">SpatialAnchorRawCoordinateSystemAdjustedEventArgs</label> <input checked type="checkbox" id="id4b9557d740414313ae0b4014b78997d6" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>OldRawCoordinateSystemToNewRawCoordinateSystemTransform { get; } : Matrix4x4</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id5dc30b77feb94441bdfef87c88837222">SpatialAnchorStore</label> <input checked type="checkbox" id="id5dc30b77feb94441bdfef87c88837222" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Clear() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetAllSavedAnchors() : IReadOnlyDictionary&lt;String,SpatialAnchor&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Remove(String id) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TrySave(String id, SpatialAnchor anchor) : Boolean</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id42de4b41a3884b2581653864171d4c5e">SpatialAnchorTransferManager</label> <input checked type="checkbox" id="id42de4b41a3884b2581653864171d4c5e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RequestAccessAsync() static : IAsyncOperation&lt;SpatialPerceptionAccessStatus&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryExportAnchorsAsync(IEnumerable&lt;KeyValuePair&lt;String,SpatialAnchor&gt;&gt; anchors, IOutputStream stream) static : IAsyncOperation&lt;Boolean&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryImportAnchorsAsync(IInputStream stream) static : IAsyncOperation&lt;IReadOnlyDictionary&lt;String,SpatialAnchor&gt;&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="id2d92dbf3888742cfad2855409b63a04c">SpatialBoundingBox</label> <input checked type="checkbox" id="id2d92dbf3888742cfad2855409b63a04c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Center : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Extents : Vector3</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="id13c660bcbe18467b8a38f9ca85534c76">SpatialBoundingFrustum</label> <input checked type="checkbox" id="id13c660bcbe18467b8a38f9ca85534c76" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Bottom : Plane</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Far : Plane</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Left : Plane</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Near : Plane</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Right : Plane</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Top : Plane</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="id03e657d5a3d54db89e52870e88e38bed">SpatialBoundingOrientedBox</label> <input checked type="checkbox" id="id03e657d5a3d54db89e52870e88e38bed" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Center : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Extents : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Orientation : Quaternion</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="id90dbbddd2adf49e2beb15599977deaf5">SpatialBoundingSphere</label> <input checked type="checkbox" id="id90dbbddd2adf49e2beb15599977deaf5" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Center : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Radius : Single</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id9126cfd7e66746a38abbde9150f9ba0e">SpatialBoundingVolume</label> <input checked type="checkbox" id="id9126cfd7e66746a38abbde9150f9ba0e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FromBox(SpatialCoordinateSystem coordinateSystem, SpatialBoundingBox box) static : SpatialBoundingVolume</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FromFrustum(SpatialCoordinateSystem coordinateSystem, SpatialBoundingFrustum frustum) static : SpatialBoundingVolume</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FromOrientedBox(SpatialCoordinateSystem coordinateSystem, SpatialBoundingOrientedBox box) static : SpatialBoundingVolume</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FromSphere(SpatialCoordinateSystem coordinateSystem, SpatialBoundingSphere sphere) static : SpatialBoundingVolume</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id31eab2cd91c547ab885261ea59c7b203">SpatialCoordinateSystem</label> <input checked type="checkbox" id="id31eab2cd91c547ab885261ea59c7b203" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryGetTransformTo(SpatialCoordinateSystem target) : Nullable&lt;Matrix4x4&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id1abdeb0b6d7a43cea6e6d13894978f32">SpatialLocatability</label> <input checked type="checkbox" id="id1abdeb0b6d7a43cea6e6d13894978f32" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unavailable : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>OrientationOnly : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PositionalTrackingActivating : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PositionalTrackingActive : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PositionalTrackingInhibited : 4,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id09d9ba6ce7fc48ceae06410a9d81483f">SpatialLocation</label> <input checked type="checkbox" id="id09d9ba6ce7fc48ceae06410a9d81483f" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AbsoluteAngularAcceleration { get; } : Quaternion</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AbsoluteAngularVelocity { get; } : Quaternion</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AbsoluteLinearAcceleration { get; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AbsoluteLinearVelocity { get; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Orientation { get; } : Quaternion</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Position { get; } : Vector3</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idb5bde1f512fb4cbbbe9218e0b16073ac">SpatialLocator</label> <input checked type="checkbox" id="idb5bde1f512fb4cbbbe9218e0b16073ac" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAttachedFrameOfReferenceAtCurrentHeading() : SpatialLocatorAttachedFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAttachedFrameOfReferenceAtCurrentHeading(Vector3 relativePosition) : SpatialLocatorAttachedFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAttachedFrameOfReferenceAtCurrentHeading(Vector3 relativePosition, Quaternion relativeOrientation) : SpatialLocatorAttachedFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAttachedFrameOfReferenceAtCurrentHeading(Vector3 relativePosition, Quaternion relativeOrientation, Double relativeHeadingInRadians) : SpatialLocatorAttachedFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateStationaryFrameOfReferenceAtCurrentLocation() : SpatialStationaryFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateStationaryFrameOfReferenceAtCurrentLocation(Vector3 relativePosition) : SpatialStationaryFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateStationaryFrameOfReferenceAtCurrentLocation(Vector3 relativePosition, Quaternion relativeOrientation) : SpatialStationaryFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateStationaryFrameOfReferenceAtCurrentLocation(Vector3 relativePosition, Quaternion relativeOrientation, Double relativeHeadingInRadians) : SpatialStationaryFrameOfReference</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDefault() static : SpatialLocator</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Locatability { get; } : SpatialLocatability</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>LocatabilityChanged event : TypedEventHandler&lt;SpatialLocator,Object&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PositionalTrackingDeactivating event : TypedEventHandler&lt;SpatialLocator,SpatialLocatorPositionalTrackingDeactivatingEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryLocateAtTimestamp(PerceptionTimestamp timestamp, SpatialCoordinateSystem coordinateSystem) : SpatialLocation</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id3770b1701631444a99bbf0848ffaf01d">SpatialLocatorAttachedFrameOfReference</label> <input checked type="checkbox" id="id3770b1701631444a99bbf0848ffaf01d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AdjustHeading(Double headingOffsetInRadians) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetStationaryCoordinateSystemAtTimestamp(PerceptionTimestamp timestamp) : SpatialCoordinateSystem</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativeOrientation { get; set; } : Quaternion</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativePosition { get; set; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryGetRelativeHeadingAtTimestamp(PerceptionTimestamp timestamp) : Nullable&lt;Double&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idcc7f01f2d45846129ac37bbbfab9c9f5">SpatialLocatorPositionalTrackingDeactivatingEventArgs</label> <input checked type="checkbox" id="idcc7f01f2d45846129ac37bbbfab9c9f5" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Canceled { get; set; } : Boolean</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="idc15c3168d6fe4c5cafa443a549aeb2d6">SpatialPerceptionAccessStatus</label> <input checked type="checkbox" id="idc15c3168d6fe4c5cafa443a549aeb2d6" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unspecified : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Allowed : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DeniedByUser : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DeniedBySystem : 3,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id21eca930144f4e2ca7b9fec81dd945d9">SpatialStationaryFrameOfReference</label> <input checked type="checkbox" id="id21eca930144f4e2ca7b9fec81dd945d9" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CoordinateSystem { get; } : SpatialCoordinateSystem</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idc0e1eab0d99b49669ccaefa37f69db0f">PerceptionTimestamp</label> <input checked type="checkbox" id="idc0e1eab0d99b49669ccaefa37f69db0f" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PredictionAmount { get; } : TimeSpan</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TargetTime { get; } : DateTimeOffset</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idc646009faf9b46ce862ae030b2ca20fd">PerceptionTimestampHelper</label> <input checked type="checkbox" id="idc646009faf9b46ce862ae030b2ca20fd" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FromHistoricalTargetTime(DateTimeOffset targetTime) static : PerceptionTimestamp</p>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
