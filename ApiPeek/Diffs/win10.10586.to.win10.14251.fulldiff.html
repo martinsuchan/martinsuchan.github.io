@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.10586.to.win10.14251.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id72f66fdb286541ba8724d49a4eae5b51">Windows</label> <input checked type="checkbox" id="id72f66fdb286541ba8724d49a4eae5b51" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id39aedf87d4704b218df6a24b4ffcbf67">ApplicationModel</label> <input checked type="checkbox" id="id39aedf87d4704b218df6a24b4ffcbf67" /><ol>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idc3ed2ab2816540b18169c45510dc1976">AppExtension</label> <input checked type="checkbox" id="idc3ed2ab2816540b18169c45510dc1976" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id375af2702dbc46118cbd579472c9fd71">AppExtension</label> <input checked type="checkbox" id="id375af2702dbc46118cbd579472c9fd71" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppInfo { get; } : AppInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Description { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisplayName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetExtensionPropertiesAsync() : IAsyncOperation&lt;IPropertySet&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetPublicFolderAsync() : IAsyncOperation&lt;StorageFolder&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id04da9e602b4b4f938e36d6296b341981">AppExtensionCatalog</label> <input checked type="checkbox" id="id04da9e602b4b4f938e36d6296b341981" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>FindAllAsync() : IAsyncOperation&lt;IReadOnlyList&lt;AppExtension&gt;&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Open(String appExtensionName) static : AppExtensionCatalog</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PackageInstalled event : TypedEventHandler&lt;AppExtensionCatalog,AppExtensionPackageInstalledEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PackageStatusChanged event : TypedEventHandler&lt;AppExtensionCatalog,AppExtensionPackageStatusChangedEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PackageUninstalling event : TypedEventHandler&lt;AppExtensionCatalog,AppExtensionPackageUninstallingEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PackageUpdated event : TypedEventHandler&lt;AppExtensionCatalog,AppExtensionPackageUpdatedEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PackageUpdating event : TypedEventHandler&lt;AppExtensionCatalog,AppExtensionPackageUpdatingEventArgs&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RequestRemovePackageAsync(String packageFullName) : IAsyncOperation&lt;Boolean&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id3d9ed1fd9b21455196d45c4609395c3a">AppExtensionPackageInstalledEventArgs</label> <input checked type="checkbox" id="id3d9ed1fd9b21455196d45c4609395c3a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppExtensionName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Extensions { get; } : IReadOnlyList&lt;AppExtension&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id309d9cc529c34e5386b5368e5be8fd19">AppExtensionPackageStatusChangedEventArgs</label> <input checked type="checkbox" id="id309d9cc529c34e5386b5368e5be8fd19" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppExtensionName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="ide0869ec526a54baeb9b0f5cde2e4b89c">AppExtensionPackageUninstallingEventArgs</label> <input checked type="checkbox" id="ide0869ec526a54baeb9b0f5cde2e4b89c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppExtensionName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="ide5e02c82b00048648550828a6d00c894">AppExtensionPackageUpdatedEventArgs</label> <input checked type="checkbox" id="ide5e02c82b00048648550828a6d00c894" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppExtensionName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Extensions { get; } : IReadOnlyList&lt;AppExtension&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id58d4f24b567445c6b217c5b9ca8d0ea2">AppExtensionPackageUpdatingEventArgs</label> <input checked type="checkbox" id="id58d4f24b567445c6b217c5b9ca8d0ea2" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AppExtensionName { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Package { get; } : Package</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="id0a1b8b6fa3c84cc7a70ecc94e62a4e75">Package</label> <input checked type="checkbox" id="id0a1b8b6fa3c84cc7a70ecc94e62a4e75" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SignatureKind { get; } : PackageSignatureKind</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id8e08f400c1d64e5e913f192a141a46fe">PackageSignatureKind</label> <input checked type="checkbox" id="id8e08f400c1d64e5e913f192a141a46fe" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Developer : 1,</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Enterprise : 2,</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Store : 3,</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>System : 4,</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id283ca41e778f4f10a088d513813378e0">Gaming</label> <input checked type="checkbox" id="id283ca41e778f4f10a088d513813378e0" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ided3b9755928e4be6ac48e77313b6a1bd">Input</label> <input checked type="checkbox" id="ided3b9755928e4be6ac48e77313b6a1bd" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idf866f81d1c974564b50211a66d3008d1">Custom</label> <input checked type="checkbox" id="idf866f81d1c974564b50211a66d3008d1" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id6819938498054fb3b17c060f4f1c19df">GameControllerFactoryManager</label> <input checked type="checkbox" id="id6819938498054fb3b17c060f4f1c19df" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RegisterCustomFactoryForGipInterface(ICustomGameControllerFactory factory, Guid interfaceId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RegisterCustomFactoryForHardwareId(ICustomGameControllerFactory factory, UInt16 hardwareVendorId, UInt16 hardwareProductId) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RegisterCustomFactoryForXusbType(ICustomGameControllerFactory factory, XusbDeviceType xusbType, XusbDeviceSubtype xusbSubtype) static : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="idb1f026975c01482e999adba92adf46cf">GameControllerVersionInfo</label> <input checked type="checkbox" id="idb1f026975c01482e999adba92adf46cf" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Build : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Major : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Minor : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>Revision : UInt16</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/<label for="id4e1ba54f0c47497c89fc60bd9e5735fd">GipFirmwareUpdateProgress</label> <input checked type="checkbox" id="id4e1ba54f0c47497c89fc60bd9e5735fd" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>CurrentComponentId : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="field.gif"/><p>PercentCompleted : Double</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id394719eb9d194f158b3ce3041f29a5ab">GipFirmwareUpdateResult</label> <input checked type="checkbox" id="id394719eb9d194f158b3ce3041f29a5ab" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExtendedErrorCode { get; } : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FinalComponentId { get; } : UInt32</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Status { get; } : GipFirmwareUpdateStatus</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id465112fed64a486f9905f905ec95b111">GipFirmwareUpdateStatus</label> <input checked type="checkbox" id="id465112fed64a486f9905f905ec95b111" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Completed : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UpToDate : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Failed : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="ide60f1eb460c74b63b3ba7b93adb6dfbf">GipGameControllerProvider</label> <input checked type="checkbox" id="ide60f1eb460c74b63b3ba7b93adb6dfbf" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FirmwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareProductId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVendorId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsConnected { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SendMessage(GipMessageClass messageClass, Byte messageId, Byte[] messageBuffer) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SendReceiveMessage(GipMessageClass messageClass, Byte messageId, Byte[] requestMessageBuffer, Byte[] responseMessageBuffer) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateFirmwareAsync(IInputStream firmwareImage) : IAsyncOperationWithProgress&lt;GipFirmwareUpdateResult,GipFirmwareUpdateProgress&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id55ceaf06846e40639022e145c1c51285">GipMessageClass</label> <input checked type="checkbox" id="id55ceaf06846e40639022e145c1c51285" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Command : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>LowLatency : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StandardLatency : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id8827157d3aa44087afeb8452f86aeb91">ICustomGameControllerFactory</label> <input checked type="checkbox" id="id8827157d3aa44087afeb8452f86aeb91" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateGameController(IGameControllerProvider provider) : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnGameControllerAdded(IGameController value) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnGameControllerRemoved(IGameController value) : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id5db571b4c3284a5b8b3a7fe74b1484b5">IGameControllerInputSink</label> <input checked type="checkbox" id="id5db571b4c3284a5b8b3a7fe74b1484b5" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnInputResumed(UInt64 timestamp) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnInputSuspended(UInt64 timestamp) : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id92c303af5be74acc843688e213523c9c">IGameControllerProvider</label> <input checked type="checkbox" id="id92c303af5be74acc843688e213523c9c" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FirmwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareProductId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVendorId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsConnected { get; } : Boolean</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id7116a588778c4cbab746aaaeb09d0315">IGipGameControllerInputSink</label> <input checked type="checkbox" id="id7116a588778c4cbab746aaaeb09d0315" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnKeyReceived(UInt64 timestamp, Byte keyCode, Boolean isPressed) : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnMessageReceived(UInt64 timestamp, GipMessageClass messageClass, Byte messageId, Byte sequenceId, Byte[] messageBuffer) : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/<label for="id41e551d63e2e46f2a6f3802342421c50">IXusbGameControllerInputSink</label> <input checked type="checkbox" id="id41e551d63e2e46f2a6f3802342421c50" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OnInputReceived(UInt64 timestamp, Byte reportId, Byte[] inputBuffer) : Void</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="ide35be9c3aed44d4b9682cecc149a0e6c">XusbDeviceSubtype</label> <input checked type="checkbox" id="ide35be9c3aed44d4b9682cecc149a0e6c" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unknown : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Gamepad : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ArcadePad : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ArcadeStick : 3,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FlightStick : 4,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Wheel : 5,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Guitar : 6,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GuitarAlternate : 7,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GuitarBass : 8,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DrumKit : 9,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DancePad : 10,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id06307fe45e104136a9977e809b0123e7">XusbDeviceType</label> <input checked type="checkbox" id="id06307fe45e104136a9977e809b0123e7" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unknown : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Gamepad : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idee200e958dee4685ac3e972db6724f6f">XusbGameControllerProvider</label> <input checked type="checkbox" id="idee200e958dee4685ac3e972db6724f6f" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FirmwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareProductId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVendorId { get; } : UInt16</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HardwareVersionInfo { get; } : GameControllerVersionInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsConnected { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetVibration(Double lowFrequencyMotorSpeed, Double highFrequencyMotorSpeed) : Void</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id32935f674f7b4d6ba8e8985c81276034">Media</label> <input checked type="checkbox" id="id32935f674f7b4d6ba8e8985c81276034" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8472dae494db4d788c7270bfc1791205">Capture</label> <input checked type="checkbox" id="id8472dae494db4d788c7270bfc1791205" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="idc759c0ddd5654e3ab75ba14db30ca860">MediaCapture</label> <input checked type="checkbox" id="idc759c0ddd5654e3ab75ba14db30ca860" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RemoveEffectAsync(IMediaExtension effect) : IAsyncAction</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
