@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.11102.to.win10.14257.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida530ad17ef794fdf8570ea7cec52fca6">Windows</label> <input checked type="checkbox" id="ida530ad17ef794fdf8570ea7cec52fca6" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id472ba2adc54844bdbe900a41e5975803">UI</label> <input checked type="checkbox" id="id472ba2adc54844bdbe900a41e5975803" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id35894b7cd918496ebbbad73166062a22">Composition</label> <input checked type="checkbox" id="id35894b7cd918496ebbbad73166062a22" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="idbbf3949b020d457e9cd0f73d2c5454e1">AnimationClass</label> <input checked type="checkbox" id="idbbf3949b020d457e9cd0f73d2c5454e1" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AddAnimation(VisualEvents eventId, KeyFrameAnimation value, String propertyName) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AddAnimationGroup(VisualEvents eventId, AnimationGroup value) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Parent { get; set; } : AnimationClass</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Remove(VisualEvents eventId) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RemoveAll() : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id495f11a50d3345dba082c81b562f4eed">AnimationGroup</label> <input checked type="checkbox" id="id495f11a50d3345dba082c81b562f4eed" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Count { get; } : Int32</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Insert(KeyFrameAnimation value, String propertyName) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Remove(KeyFrameAnimation value) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RemoveAll() : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="enum.gif"/<label for="id9d055e274a0c4a5383e516dfdca370f8">CompositionCompositeMode</label> <input checked type="checkbox" id="id9d055e274a0c4a5383e516dfdca370f8" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MinBlend : 3,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id866592907fd24e40830fd0c69d763bc0">CompositionGradientWrapMode</label> <input checked type="checkbox" id="id866592907fd24e40830fd0c69d763bc0" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Extend : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Flip : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Tile : 2,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id2bf1eb6b10d34d8aadda8857bf527b84">CompositionLinearGradientBrush</label> <input checked type="checkbox" id="id2bf1eb6b10d34d8aadda8857bf527b84" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EndPoint { get; set; } : Vector2</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetStops() : IDictionary&lt;Single,Color&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetStops(IDictionary&lt;Single,Color&gt; value) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartPoint { get; set; } : Vector2</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Transform { get; set; } : Matrix3x2</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>WrapMode { get; set; } : CompositionGradientWrapMode</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id9d4bac3e7c224e6fbdcf68dc322bb076">CompositionMaskBrush</label> <input checked type="checkbox" id="id9d4bac3e7c224e6fbdcf68dc322bb076" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Mask { get; set; } : CompositionBrush</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Source { get; set; } : CompositionBrush</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="id28e2826dc301469dbbdb459ef95cfd1f">CompositionSurfaceBrush</label> <input checked type="checkbox" id="id28e2826dc301469dbbdb459ef95cfd1f" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Transform { get; set; } : Matrix3x2</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="id3769bea53a0540949101e34425fcb16a">Compositor</label> <input checked type="checkbox" id="id3769bea53a0540949101e34425fcb16a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAnimationClass() : AnimationClass</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAnimationGroup() : AnimationGroup</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateConditionalExpressionAnimation() : ConditionalExpressionAnimation</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateConditionalExpressionAnimation(ConditionalExpressionAnimationSelection selection) : ConditionalExpressionAnimation</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateMaskBrush() : CompositionMaskBrush</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateScrollTracker() : ScrollTracker</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="ided3189682e724df7ac30cf9f9e271a59">ConditionalExpressionAnimation</label> <input checked type="checkbox" id="ided3189682e724df7ac30cf9f9e271a59" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AddCondition(String conditionString, String expressionString) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DefaultExpression { get; set; } : String</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="id28a1542396474485ae7aced037da39d4">ConditionalExpressionAnimationSelection</label> <input checked type="checkbox" id="id28a1542396474485ae7aced037da39d4" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FirstMatch : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SumMatches : 2,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/<label for="id2e584e4060c3418393f9e7a07ff30083">ScrollTracker</label> <input checked type="checkbox" id="id2e584e4060c3418393f9e7a07ff30083" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ContainerSize { get; set; } : Vector2</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ContentSize { get; set; } : Vector2</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Offset { get; set; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ScrollByAmount(Vector3 amount) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ScrollPosition { get; } : Vector3</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ScrollToPosition(Vector3 position) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ScrollWithAnimation(Vector3KeyFrameAnimation animation) : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="idcd6a91e542064e4eb6f3a8dec8db091d">Visual</label> <input checked type="checkbox" id="idcd6a91e542064e4eb6f3a8dec8db091d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AnimationClass { get; set; } : AnimationClass</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativeHeight { get; set; } : Single</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativeOffsetX { get; set; } : Single</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativeOffsetY { get; set; } : Single</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RelativeWidth { get; set; } : Single</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SnapToPixels { get; set; } : Boolean</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/<label for="ida90ddd4eebce4374bf7b03c21c3bb662">VisualEvents</label> <input checked type="checkbox" id="ida90ddd4eebce4374bf7b03c21c3bb662" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Alpha : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Destroy : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Hide : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Move : 4,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Reshow : 5,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Resize : 6,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Rotate : 7,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Scale : 8,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Show : 9,</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida1ae09e22d814cc7ac1a3dda34bbbbbb">Xaml</label> <input checked type="checkbox" id="ida1ae09e22d814cc7ac1a3dda34bbbbbb" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6b240d4dc770486fb653f63add0e445c">Media</label> <input checked type="checkbox" id="id6b240d4dc770486fb653f63add0e445c" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd7cd42866f114057a30b8b216ebec2c3">Animation</label> <input checked type="checkbox" id="idd7cd42866f114057a30b8b216ebec2c3" /><ol>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/<label for="idfcf0f0d9919a45739ff231d26aa83046">RepositionThemeTransition</label> <input checked type="checkbox" id="idfcf0f0d9919a45739ff231d26aa83046" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsStaggeringEnabled { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsStaggeringEnabledProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
