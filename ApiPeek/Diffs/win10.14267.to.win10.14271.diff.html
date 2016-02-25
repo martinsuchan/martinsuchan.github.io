@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.14267.to.win10.14271.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2f3c03af3e734732836474b0b9af3696">Windows</label> <input checked type="checkbox" id="id2f3c03af3e734732836474b0b9af3696" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5b68a934eeae4ffd8be7afd9635a1c5f">ApplicationModel</label> <input checked type="checkbox" id="id5b68a934eeae4ffd8be7afd9635a1c5f" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6cba469137c7406f9091e745082fbe09">UserDataAccounts</label> <input checked type="checkbox" id="id6cba469137c7406f9091e745082fbe09" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>UserDataAccountStoreChangedDeferral</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7d42cc0eb17e412b9a1a0b15d9c7b3a2">Devices</label> <input checked type="checkbox" id="id7d42cc0eb17e412b9a1a0b15d9c7b3a2" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcd5f8a905870476f95abdc635becf200">Printers</label> <input checked type="checkbox" id="idcd5f8a905870476f95abdc635becf200" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id29a0d28f9c9c472aa7eee434e5d3437b">Extensions</label> <input checked type="checkbox" id="id29a0d28f9c9c472aa7eee434e5d3437b" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>Print3DWorkflowPrinterChangedEventArgs</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id62e0841f8c874dd6aabda1633024c50d">Graphics</label> <input checked type="checkbox" id="id62e0841f8c874dd6aabda1633024c50d" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id04723d4c98fd438ab048d9d2e318eec0">Printing</label> <input checked type="checkbox" id="id04723d4c98fd438ab048d9d2e318eec0" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc86bb8719a484b83ba1e6bb0cfa85464">OptionDetails</label> <input checked type="checkbox" id="idc86bb8719a484b83ba1e6bb0cfa85464" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintBorderingOptionDetails</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintBordering</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id53944f1135a04d31bd45f9bf0707ea35">Printing3D</label> <input checked type="checkbox" id="id53944f1135a04d31bd45f9bf0707ea35" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>Printing3DFaceReductionOptions</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8c943b0e1acc470cab4b60adc61244e0">Media</label> <input checked type="checkbox" id="id8c943b0e1acc470cab4b60adc61244e0" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idaf0f2ce0b08c43d98b727e0155d50dde">Playback</label> <input checked type="checkbox" id="idaf0f2ce0b08c43d98b727e0155d50dde" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AutoRepeatModeCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FastForwardCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FrameStepDirection</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IMediaBreakEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MediaBreakInsertionMethod</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>MediaBreakScheduleMode</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaPlaybackCommandManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaPlayerPlaybackStatistics</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NextCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>NormalizedRect</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PauseCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PlaybackCommandEnabledBehavior</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PlaybackPositionCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PlaybackRateCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PlayCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PreviousCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RewindCommandReceivedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ShuffleCommandReceivedEventArgs</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id73ee5388871249069782a6326d9f9354">Security</label> <input checked type="checkbox" id="id73ee5388871249069782a6326d9f9354" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc6e0133b921a4049b0972d84ff879f48">Authentication</label> <input checked type="checkbox" id="idc6e0133b921a4049b0972d84ff879f48" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8ef94bf9c0934386aaa7b54e4dab0889">Web</label> <input checked type="checkbox" id="id8ef94bf9c0934386aaa7b54e4dab0889" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3a1ab1a349d5433698fcc823848b05f1">Core</label> <input checked type="checkbox" id="id3a1ab1a349d5433698fcc823848b05f1" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IWebAccountBaseEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WebAccountDeletedEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WebAccountUpdatedEventArgs</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WebAccountWatcher</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2d5d2d26330c43cab0997e17e3550446">UI</label> <input checked type="checkbox" id="id2d5d2d26330c43cab0997e17e3550446" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcab1507d7c9a4f2b90b042229226d26a">Composition</label> <input checked type="checkbox" id="idcab1507d7c9a4f2b90b042229226d26a" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionDestinationBrush</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionPropertyChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IAnimationClassEntry</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IScrollTrackerOwner</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>VisualEvents</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb652f62c03f945e69526d43a8f2a8d22">Input</label> <input checked type="checkbox" id="idb652f62c03f945e69526d43a8f2a8d22" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf22fb4943c2747f6ac0fd52d64a0adea">Inking</label> <input checked type="checkbox" id="idf22fb4943c2747f6ac0fd52d64a0adea" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf507dcbc95e64922b3b142235e637661">Core</label> <input checked type="checkbox" id="idf507dcbc95e64922b3b142235e637661" /><ol>
+                        <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CoreInkStrokeWetInputSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>InkStrokeWet</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>InkStrokeWetInputEventArgs</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
