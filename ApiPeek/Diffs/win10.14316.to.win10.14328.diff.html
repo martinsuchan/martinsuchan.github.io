@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.14316.to.win10.14328.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd30038adbc83472db244af195fc3083f">Windows</label> <input checked type="checkbox" id="idd30038adbc83472db244af195fc3083f" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id46abcb12120a491088b031e88b449edc">ApplicationModel</label> <input checked type="checkbox" id="id46abcb12120a491088b031e88b449edc" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id424ad24fdb5340e0b14de17e3ad99924">Store</label> <input checked type="checkbox" id="id424ad24fdb5340e0b14de17e3ad99924" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="iddcd9041955f040f5a2266bccffe60bff">LicenseManagement</label> <input checked type="checkbox" id="iddcd9041955f040f5a2266bccffe60bff" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>LicenseSatisfactionInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>LicenseSatisfactionResult</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4af26fff2b0144c3aec3f0f8da4de018">Preview</label> <input checked type="checkbox" id="id4af26fff2b0144c3aec3f0f8da4de018" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StoreLogOptions</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4e03610217394b9ca0cfdd930a36568f">Services</label> <input checked type="checkbox" id="id4e03610217394b9ca0cfdd930a36568f" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd7dda86408e14413984f787ef647c86f">Store</label> <input checked type="checkbox" id="idd7dda86408e14413984f787ef647c86f" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StoreDurationUnit</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StoreSubscriptionInfo</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id11c7d491cfbd4178a5c64e63be6b0fa1">System</label> <input checked type="checkbox" id="id11c7d491cfbd4178a5c64e63be6b0fa1" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id461062031ade42f99c71eb2f1587f0f0">Profile</label> <input checked type="checkbox" id="id461062031ade42f99c71eb2f1587f0f0" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DeviceIdentification</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>DeviceIdentificationSource</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DeviceIdentificationToken</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SystemIdentification</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SystemIdentificationInfo</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SystemIdentificationSource</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDeviceAssociation</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDeviceAssociationChangedEventArgs</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id134359cd994d4440b44185d9c6d6a464">UI</label> <input checked type="checkbox" id="id134359cd994d4440b44185d9c6d6a464" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2da125a3aac640388de15277ead64937">Xaml</label> <input checked type="checkbox" id="id2da125a3aac640388de15277ead64937" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id94b3ab53d8214d0d939f8d0a9b6e3350">Controls</label> <input checked type="checkbox" id="id94b3ab53d8214d0d939f8d0a9b6e3350" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorCollection</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>ExternalActorMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IInkToolbarOverrides</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IInkToolbarPenButtonOverrides</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
