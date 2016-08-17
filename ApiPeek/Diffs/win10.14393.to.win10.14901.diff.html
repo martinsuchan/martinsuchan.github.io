@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.14393.to.win10.14901.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id57590b3382c64f80a83640d72bda3cd3">Windows</label> <input checked type="checkbox" id="id57590b3382c64f80a83640d72bda3cd3" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8618ab77588841afb2eb7575c56d7a10">ApplicationModel</label> <input checked type="checkbox" id="id8618ab77588841afb2eb7575c56d7a10" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id49faf28aa5d74cf1acf5b826482cb844">Background</label> <input checked type="checkbox" id="id49faf28aa5d74cf1acf5b826482cb844" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastTrigger</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderTrigger</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id3101abfa0de646d0913072f6ab5b3141">UserDataTasks</label> <input checked type="checkbox" id="id3101abfa0de646d0913072f6ab5b3141" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id27a02b8f5a36475ebbeeac107d19d0e2">DataProvider</label> <input checked type="checkbox" id="id27a02b8f5a36475ebbeeac107d19d0e2" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskDataProviderConnection</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskDataProviderTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCompleteTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCompleteTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCreateOrUpdateTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCreateOrUpdateTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListDeleteTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListDeleteTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSkipOccurrenceRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSkipOccurrenceRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManagerSyncRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManagerSyncRequestEventArgs</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTask</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskBatch</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskDaysOfWeek</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskDetailsKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskList</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListLimitedWriteOperations</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListOtherAppReadAccess</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListOtherAppWriteAccess</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListSyncStatus</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskManagerForUser</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskPriority</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskReader</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskRecurrence</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskRecurrenceUnit</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskSensitivity</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskStore</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskStoreAccessType</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskWeekOfMonth</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id213d7a9cbd484ae1ac6cf933a71be494">Devices</label> <input checked type="checkbox" id="id213d7a9cbd484ae1ac6cf933a71be494" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id10db7c6dfad149f996c8dd9d3aab8386">Bluetooth</label> <input checked type="checkbox" id="id10db7c6dfad149f996c8dd9d3aab8386" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id236ee60aea0f43579f647163866397c4">Background</label> <input checked type="checkbox" id="id236ee60aea0f43579f647163866397c4" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BluetoothEventTriggeringMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderRequestActivityInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderRequestActivityType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderRequestAttributeType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderTriggerReason</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9deb4ad2de1948cf979bbc058d730af5">GenericAttributeProfile</label> <input checked type="checkbox" id="id9deb4ad2de1948cf979bbc058d730af5" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattClientNotificationResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattDescriptorsResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattDeviceServicesResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattCharacteristicsResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattIncludedServicesResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalDescriptor</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalDescriptorParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalCharacteristic</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalCharacteristicParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattProtocolError</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattPublishedService</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadResponse</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderAdvertisingParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSession</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattSessionStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSessionStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattSharingMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSubscribedClient</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattUuid</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteResponse</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteResult</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6201cd96e3ac4b0f9b181a58f096d985">Rfcomm</label> <input checked type="checkbox" id="id6201cd96e3ac4b0f9b181a58f096d985" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RfcommServiceProviderResult</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BluetoothAdapter</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BluetoothDeviceId</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BluetoothTransportOptions</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd3c83be55bf7483594af084c6a3802c7">Media</label> <input checked type="checkbox" id="idd3c83be55bf7483594af084c6a3802c7" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id93c974030c804b86b6ca82c47e2d8d3c">Capture</label> <input checked type="checkbox" id="id93c974030c804b86b6ca82c47e2d8d3c" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastBackgroundService</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastCameraOverlayLocation</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastCameraOverlaySize</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastCancelReason</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>AppBroadcastContract</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastGlobalSettings</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastHeartbeatRequestedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastPlugInState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastProviderSettings</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastSignInResult</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastSignInState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastSignInStateChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStateChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStreamAudioFrame</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStreamAudioHeader</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStreamReader</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStreamVideoFrame</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastStreamVideoHeader</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppBroadcastTriggerDetails</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastVideoEncodingBitrateMode</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppBroadcastVideoEncodingResolutionMode</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9856e3c37ab44c3683ef4401ccf6961a">Core</label> <input checked type="checkbox" id="id9856e3c37ab44c3683ef4401ccf6961a" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ChapterCue</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ImageCue</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9105039db53040e58d680fecd8ade1c6">SpeechSynthesis</label> <input checked type="checkbox" id="id9105039db53040e58d680fecd8ade1c6" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SpeechSynthesisOptions</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaMarkerSpeechSentenceBoundary</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaMarkerSpeechWordBoundary</p>
+            </li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
