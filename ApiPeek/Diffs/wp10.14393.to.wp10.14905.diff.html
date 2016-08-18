@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>wp10.14393.to.wp10.14905.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id43805ca87fb3435588229dcfa6101241">Windows</label> <input checked type="checkbox" id="id43805ca87fb3435588229dcfa6101241" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id40e20f3f62ee4fc98e93e87eeb48611a">ApplicationModel</label> <input checked type="checkbox" id="id40e20f3f62ee4fc98e93e87eeb48611a" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idae104827520748dd8024481733efe428">Background</label> <input checked type="checkbox" id="idae104827520748dd8024481733efe428" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderTrigger</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf1580c0778744914b7397a9748d76365">Contacts</label> <input checked type="checkbox" id="idf1580c0778744914b7397a9748d76365" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ContactGroup</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ContactGroupKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ContactGroupOtherAppReadAccess</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idca9eb1faf3e241df8d7fead2b27e1158">UserDataTasks</label> <input checked type="checkbox" id="idca9eb1faf3e241df8d7fead2b27e1158" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id6083b79ddf9b4f11bb61db3d1c8c5da2">DataProvider</label> <input checked type="checkbox" id="id6083b79ddf9b4f11bb61db3d1c8c5da2" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskDataProviderConnection</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskDataProviderTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCompleteTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCompleteTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCreateOrUpdateTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListCreateOrUpdateTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListDeleteTaskRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListDeleteTaskRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSkipOccurrenceRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSkipOccurrenceRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManagerSyncRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManagerSyncRequestEventArgs</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTask</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskBatch</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskDaysOfWeek</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskDetailsKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskList</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListLimitedWriteOperations</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListOtherAppReadAccess</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListOtherAppWriteAccess</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskListSyncManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskListSyncStatus</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskManagerForUser</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskPriority</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskReader</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskRecurrence</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskRecurrenceUnit</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskSensitivity</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskStore</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskStoreAccessType</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskWeekOfMonth</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc99ab7633b4a47ab9c28f8c8bed84f70">Devices</label> <input checked type="checkbox" id="idc99ab7633b4a47ab9c28f8c8bed84f70" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide710c9e796d84338927e61fa258ea7a3">Bluetooth</label> <input checked type="checkbox" id="ide710c9e796d84338927e61fa258ea7a3" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id67ed5bd9f8f443a79e072b640aa6e7be">Background</label> <input checked type="checkbox" id="id67ed5bd9f8f443a79e072b640aa6e7be" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BluetoothEventTriggeringMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderRequestActivityInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderRequestActivityType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderRequestAttributeType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderTriggerReason</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1df41990bdb3490b9c039acf3e7a1708">GenericAttributeProfile</label> <input checked type="checkbox" id="id1df41990bdb3490b9c039acf3e7a1708" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattClientNotificationResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattDescriptorsResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattDeviceServicesResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattCharacteristicsResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattIncludedServicesResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalDescriptor</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalDescriptorParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalCharacteristic</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattLocalCharacteristicParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattProtocolError</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattPublishedService</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattReadResponse</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderAdvertisingParameters</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderResult</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceProviderStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattServiceProviderStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattServiceType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSession</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattSessionStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSessionStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GattSharingMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattSubscribedClient</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattUuid</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteResponse</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>GattWriteResult</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id38b26bfdbb6342699140a5d6bc2e4145">Rfcomm</label> <input checked type="checkbox" id="id38b26bfdbb6342699140a5d6bc2e4145" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RfcommServiceProviderResult</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BluetoothAdapter</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BluetoothDeviceId</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BluetoothTransportOptions</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id508b78a15dc54b24b20b9a49e69a35ed">Media</label> <input checked type="checkbox" id="id508b78a15dc54b24b20b9a49e69a35ed" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0805e55072c544dcb4c734f4f2d85054">Core</label> <input checked type="checkbox" id="id0805e55072c544dcb4c734f4f2d85054" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ChapterCue</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ImageCue</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id983f6cd8d5bc46e7a77052e7fd7a5c00">Playback</label> <input checked type="checkbox" id="id983f6cd8d5bc46e7a77052e7fd7a5c00" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MediaPlaybackItemChangedReason</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id11096c58107f4a49a5e607f9ce62b5c1">SpeechSynthesis</label> <input checked type="checkbox" id="id11096c58107f4a49a5e607f9ce62b5c1" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SpeechSynthesisOptions</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaMarkerSpeechSentenceBoundary</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaMarkerSpeechWordBoundary</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id977a6c840efd4be3ad3ef1c5c8d651ff">UI</label> <input checked type="checkbox" id="id977a6c840efd4be3ad3ef1c5c8d651ff" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0f68200274184f02a87272141ba12b58">Composition</label> <input checked type="checkbox" id="id0f68200274184f02a87272141ba12b58" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionVisualSurface</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida0bd77895e044f64b59e38ceb9324b08">Xaml</label> <input checked type="checkbox" id="ida0bd77895e044f64b59e38ceb9324b08" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6734254e30de4cf09eacc7655620f4de">Controls</label> <input checked type="checkbox" id="id6734254e30de4cf09eacc7655620f4de" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id28ef9924b7e04fa0b3ac7eccfb2fd1fb">Maps</label> <input checked type="checkbox" id="id28ef9924b7e04fa0b3ac7eccfb2fd1fb" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapElementRightClickEventArgs</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
