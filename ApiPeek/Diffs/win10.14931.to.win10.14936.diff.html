@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.14931.to.win10.14936.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id91c84bb5c8c941c79ab19c5a5fbde39e">Windows</label> <input checked type="checkbox" id="id91c84bb5c8c941c79ab19c5a5fbde39e" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id40c7cf8b7de149f0b2b830477628e528">ApplicationModel</label> <input checked type="checkbox" id="id40c7cf8b7de149f0b2b830477628e528" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9fba6fd220ae4eb9982d78f38d0dd7ef">Preview</label> <input checked type="checkbox" id="id9fba6fd220ae4eb9982d78f38d0dd7ef" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id6770ee947b51477f863f4b5f6490fcc8">InkWorkspace</label> <input checked type="checkbox" id="id6770ee947b51477f863f4b5f6490fcc8" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>InkWorkspaceHostedAppManager</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>PreviewInkWorkspaceContract</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide9f2808e6c0d458a8d829490a4059133">Graphics</label> <input checked type="checkbox" id="ide9f2808e6c0d458a8d829490a4059133" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idbe6c9cad2c934779a01ba35f30ba0e1c">Printing</label> <input checked type="checkbox" id="idbe6c9cad2c934779a01ba35f30ba0e1c" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id31665ff7f9e6447498604cf8ff5f9254">PrintTicket</label> <input checked type="checkbox" id="id31665ff7f9e6447498604cf8ff5f9254" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintSchemaTicket</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaCapabilites</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaDisplayableElement</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaElement</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaFeature</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaOption</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaParameterDefinition</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaParameterInitializer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTicketSchemaValue</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IXmlNode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>tagSchemaParameterDataType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>tagSchemaSelectionType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>tagValueType</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id925d9225d2914ffca819855ce46a7534">Workflow</label> <input checked type="checkbox" id="id925d9225d2914ffca819855ce46a7534" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrinterPropertyBag</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskBackgroundActivatedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskConfig</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskProcessingController</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskSetupController</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskSetupEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskSubmissionController</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskSubmittedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskTarget</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskUIActivatedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IPrintTaskXpsDataAvailableEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISourceContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ISpoolStreamContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IStreamTarget</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IXpsOmContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IXpsOmReceiver</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrinterQueue</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskBackgroundActivatedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskSessionManager</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskSessionState</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTaskSessionStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskSetupEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskSubmittedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTaskTarget</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTaskType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskUIActivatedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTaskXpsDataAvailableEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WorkflowTaskContext</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WorkflowTriggerDetails</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide8b4efd33dfa49619e7e3950c3e61110">Media</label> <input checked type="checkbox" id="ide8b4efd33dfa49619e7e3950c3e61110" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id92eac44e08164cb78758cb5b0d51a68c">Streaming</label> <input checked type="checkbox" id="id92eac44e08164cb78758cb5b0d51a68c" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id631fcf9ce9c3478990ecef69531e9bae">Adaptive</label> <input checked type="checkbox" id="id631fcf9ce9c3478990ecef69531e9bae" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AdaptiveMediaSourceCorrelatedTimes</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AdaptiveMediaSourceDiagnosticAvailableEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AdaptiveMediaSourceDiagnostics</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AdaptiveMediaSourceDiagnosticType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AdaptiveMediaSourceDownloadBitrateChangedReason</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf112988f9a9c454fbba92f4bd160271e">Security</label> <input checked type="checkbox" id="idf112988f9a9c454fbba92f4bd160271e" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idef805965efa04bc59b26009bc45777e7">Cryptography</label> <input checked type="checkbox" id="idef805965efa04bc59b26009bc45777e7" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="iddc0627cb669c40b7b7c022f49d9dd718">Certificates</label> <input checked type="checkbox" id="iddc0627cb669c40b7b7c022f49d9dd718" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CertificateExtension</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6df538fb5f044e069b503a7dc1b7995f">UI</label> <input checked type="checkbox" id="id6df538fb5f044e069b503a7dc1b7995f" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id6bf138afa30b4b7abfce2d81f2eb13c4">Xaml</label> <input checked type="checkbox" id="id6bf138afa30b4b7abfce2d81f2eb13c4" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id293f580c30d74b3fbdffcff46780dd9a">Controls</label> <input checked type="checkbox" id="id293f580c30d74b3fbdffcff46780dd9a" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id637fa649078b492ebba39450302af850">Maps</label> <input checked type="checkbox" id="id637fa649078b492ebba39450302af850" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapBillboard</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>MapProjection</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MapStyleSheet</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
