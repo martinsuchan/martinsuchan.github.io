@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>wp10.14946.to.wp10.14965.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf00137cc71a044c998c4f3b6286f5b04">Windows</label> <input checked type="checkbox" id="idf00137cc71a044c998c4f3b6286f5b04" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida6ca14fe52ad45bbabf63d225296e879">ApplicationModel</label> <input checked type="checkbox" id="ida6ca14fe52ad45bbabf63d225296e879" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id854075f1b20844bca872846ddc2c4afe">DataTransfer</label> <input checked type="checkbox" id="id854075f1b20844bca872846ddc2c4afe" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ShareUIOptions</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7043a4ee84044d0086070b329bb055c7">Store</label> <input checked type="checkbox" id="id7043a4ee84044d0086070b329bb055c7" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id13b16ad8049d439f87d2d19442a06f5f">LicenseManagement</label> <input checked type="checkbox" id="id13b16ad8049d439f87d2d19442a06f5f" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>LicenseRefreshOption</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id43ed1602098f4b948b53d8956147c091">UserDataTasks</label> <input checked type="checkbox" id="id43ed1602098f4b948b53d8956147c091" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskQueryKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserDataTaskQueryOptions</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserDataTaskQuerySortProperty</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id94651d3d13f04555ad337c00967eb4e8">Gaming</label> <input checked type="checkbox" id="id94651d3d13f04555ad337c00967eb4e8" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2a59c32f9f854e48abcbff94043e3f7a">Input</label> <input checked type="checkbox" id="id2a59c32f9f854e48abcbff94043e3f7a" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9697e927b7bb4629bb66f509d3538405">Custom</label> <input checked type="checkbox" id="id9697e927b7bb4629bb66f509d3538405" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>HidGameControllerProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IHidGameControllerInputSink</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FlightStick</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FlightStickButtons</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>FlightStickReading</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GameControllerSwitchKind</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>GameControllerSwitchPosition</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RawGameController</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide7b1d5971e8c488aa57a5d49254a8c85">System</label> <input checked type="checkbox" id="ide7b1d5971e8c488aa57a5d49254a8c85" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide99b444c7fb24358922ddee085472610">Preview</label> <input checked type="checkbox" id="ide99b444c7fb24358922ddee085472610" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id43524ccc067245859fef12d1db5c617e">RemoteSessions</label> <input checked type="checkbox" id="id43524ccc067245859fef12d1db5c617e" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>BinaryChannelTranportMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BinaryChannelTransportMode</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idca9eb2748cac440ea73555778c0831ac">RemoteSystems</label> <input checked type="checkbox" id="idca9eb2748cac440ea73555778c0831ac" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id14d500f55520425b8ee36a847bb329ec">Preview</label> <input checked type="checkbox" id="id14d500f55520425b8ee36a847bb329ec" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RemoteSystemResourceQuery</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li class="file"><img class="type" src="added.png"/><img src="delegate.gif"/><p>DispatcherQueueHandler</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="delegate.gif"/><p>DispatcherQueueHandlerAsync</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueue</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueueOptions</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DispatcherQueuePriority</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueueTimer</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7fe799e10ed348869ffe25548e759348">UI</label> <input checked type="checkbox" id="id7fe799e10ed348869ffe25548e759348" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf08f69d63cba4a09950698cd02d7a07e">Input</label> <input checked type="checkbox" id="idf08f69d63cba4a09950698cd02d7a07e" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5467bc69c2fe46f793a03294a32ba9e1">Inking</label> <input checked type="checkbox" id="id5467bc69c2fe46f793a03294a32ba9e1" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IInkPresenterProtractorFactory</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida622d93cda7b4f47844ce870be7c003d">Spatial</label> <input checked type="checkbox" id="ida622d93cda7b4f47844ce870be7c003d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SpatialInteractionKind</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SpatialPointingPose</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5752a294f4404be5bbfd5488038e231e">Xaml</label> <input checked type="checkbox" id="id5752a294f4404be5bbfd5488038e231e" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3c2bb30819114023ba59a303ddc82873">Markup</label> <input checked type="checkbox" id="id3c2bb30819114023ba59a303ddc82873" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>XamlMarkupHelper</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
