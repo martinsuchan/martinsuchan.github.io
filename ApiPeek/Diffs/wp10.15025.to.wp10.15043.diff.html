@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>wp10.15025.to.wp10.15043.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8f2ebe1f70cc42c6bdd7cdfd14fc9641">Windows</label> <input checked type="checkbox" id="id8f2ebe1f70cc42c6bdd7cdfd14fc9641" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd14d420d2435472e82028d823af03509">ApplicationModel</label> <input checked type="checkbox" id="idd14d420d2435472e82028d823af03509" /><ol>
+            <li><img class="type" src="removed.png"/><img src="namespace.gif"/><label for="idd1388df876014bea8882ce084593f242">UserActivities</label> <input checked type="checkbox" id="idd1388df876014bea8882ce084593f242" /><ol>
+                <li><img class="type" src="removed.png"/><img src="namespace.gif"/><label for="idab9fac6f24494b1aa23fe177e45524b6">Core</label> <input checked type="checkbox" id="idab9fac6f24494b1aa23fe177e45524b6" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CoreUserActivityManager</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>UserActivity</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>UserActivityChannel</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>UserActivitySession</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>UserActivityState</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>UserActivityVisualElements</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5bb971e88de84bca82a261eadadd9aba">System</label> <input checked type="checkbox" id="id5bb971e88de84bca82a261eadadd9aba" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf9e480880da7486bb6962bdd51598827">UserProfile</label> <input checked type="checkbox" id="idf9e480880da7486bb6962bdd51598827" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DiagnosticsSettings</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>FeedbackAndDiagnosticsSettings</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id69e601d0557d42c0a7a596beeae9ebc3">UI</label> <input checked type="checkbox" id="id69e601d0557d42c0a7a596beeae9ebc3" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id364d9c5e5c6f4f36862717d332e0bb93">Core</label> <input checked type="checkbox" id="id364d9c5e5c6f4f36862717d332e0bb93" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="ide5edf94467464146baee74be6d0ef29c">Preview</label> <input checked type="checkbox" id="ide5edf94467464146baee74be6d0ef29c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SystemNavigationCloseRequestedPreviewEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SystemNavigationManagerPreview</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idaadbeb8ef3c64af38a28d49b4400fcf2">Notifications</label> <input checked type="checkbox" id="idaadbeb8ef3c64af38a28d49b4400fcf2" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ToastNotificationPriority</p>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
