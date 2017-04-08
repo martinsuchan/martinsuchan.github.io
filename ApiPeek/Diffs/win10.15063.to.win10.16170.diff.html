@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.15063.to.win10.16170.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id091a0694b09e4f9dace1d9b5e67ddede">Windows</label> <input checked type="checkbox" id="id091a0694b09e4f9dace1d9b5e67ddede" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id96ba884ecb554339ba8d35038765a2ae">ApplicationModel</label> <input checked type="checkbox" id="id96ba884ecb554339ba8d35038765a2ae" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id08da75ec3223421f96beba169704eb23">Calls</label> <input checked type="checkbox" id="id08da75ec3223421f96beba169704eb23" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id1c9167837b614feabfd4ec9380c59c66">Provider</label> <input checked type="checkbox" id="id1c9167837b614feabfd4ec9380c59c66" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallOrigin</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallOriginManager</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>CallsPhoneContract</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CellularDtmfMode</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneAudioRoutingEndpoint</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallBlocking</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneCallMedia</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallStore</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallVideoCapabilities</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneCallVideoCapabilitiesManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneDialOptions</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneLine</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneLineCellularDetails</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneLineConfiguration</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneLineNetworkOperatorDisplayTextLocation</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneLineTransport</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneLineWatcher</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneLineWatcherEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneLineWatcherStatus</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneNetworkState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneSimState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PhoneVoicemail</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PhoneVoicemailType</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3460baed1da3419ca0ef9c83e4e58bf3">Graphics</label> <input checked type="checkbox" id="id3460baed1da3419ca0ef9c83e4e58bf3" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5fe80e7601f9465b9c4256f85dd82339">Printing</label> <input checked type="checkbox" id="id5fe80e7601f9465b9c4256f85dd82339" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id5dc93b12e84a4e73b13b80f0cafede3e">PrintTicket</label> <input checked type="checkbox" id="id5dc93b12e84a4e73b13b80f0cafede3e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketCapabilities</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketFeature</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTicketFeatureSelectionType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketOption</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTicketParameterDataType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketParameterDefinition</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketParameterInitializer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintTicketValue</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintTicketValueType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WorkflowPrintTicket</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WorkflowPrintTicketValidationResult</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="ide9d6c5d837e947bfb5281d0b561bf6bf">Workflow</label> <input checked type="checkbox" id="ide9d6c5d837e947bfb5281d0b561bf6bf" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowBackgroundSession</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowBackgroundSetupRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowConfiguration</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowForegroundSession</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowForegroundSetupRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowObjectModelSourceFileContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowObjectModelTargetPackage</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintWorkflowSessionStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowSourceContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowSpoolStreamContent</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowStreamTarget</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowSubmittedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowSubmittedOperation</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PrintWorkflowSubmittedStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowTarget</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowUIActivatedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PrintWorkflowXpsDataAvailableEventArgs</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcd5a723e221947af977b32c784cce3fd">Printing3D</label> <input checked type="checkbox" id="idcd5a723e221947af977b32c784cce3fd" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Printing3DPackageCompression</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida4fd38bd83db4b3f97fb84f121378261">System</label> <input checked type="checkbox" id="ida4fd38bd83db4b3f97fb84f121378261" /><ol>
+            <li class="file"><img class="type" src="added.png"/><img src="delegate.gif"/><p>DispatcherQueueHandler</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AccountInfo</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppDiagnosticInfoWatcher</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppDiagnosticInfoWatcherEventArgs</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>AppDiagnosticInfoWatcherStatus</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BackgroundTaskReport</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DiagnosticConfiguration</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DiagnosticPermission</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueue</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueueController</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DispatcherQueuePriority</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DispatcherQueueTimer</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>EnergyQuotaState</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ExecutionState</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MemoryReport</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ResourceGroupInfo</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ResourceGroupInfoChangeTypes</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ResourceGroupInfoWatcher</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ResourceGroupInfoWatcherEventArgs</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ResourceGroupInfoWatcherStatus</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ResourceGroupInfoWatcherUpdatedEventArgs</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StateReport</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SuspendExemptionState</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd5183af7d3954267aca3d2e01be48f79">UI</label> <input checked type="checkbox" id="idd5183af7d3954267aca3d2e01be48f79" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd7bd05775ba5433992fcedf5b143fffc">Composition</label> <input checked type="checkbox" id="idd7bd05775ba5433992fcedf5b143fffc" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionAnchor</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionIsland</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CompositionIslandEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CompositionIslandVisibilityHints</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FramedIslandSite</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>HwndIslandSite</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ICompositionIslandSite</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IVisual3</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PopupIslandSite</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>VisualIslandSite</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>VisualIslandSiteEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>VisualTreeIsland</p>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
