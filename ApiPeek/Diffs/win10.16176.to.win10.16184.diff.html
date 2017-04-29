@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.16176.to.win10.16184.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida01053e545ac4d72bac9f85a664ef7fc">Windows</label> <input checked type="checkbox" id="ida01053e545ac4d72bac9f85a664ef7fc" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide3778aa1bd97412fbdfa46995f33aa2a">ApplicationModel</label> <input checked type="checkbox" id="ide3778aa1bd97412fbdfa46995f33aa2a" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide9899f8bd3f34efa912e176baeb4625c">Activation</label> <input checked type="checkbox" id="ide9899f8bd3f34efa912e176baeb4625c" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ConsoleActivatedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IConsoleActivatedEventArgs</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="id2abb0192a93748f9b725163525f630c1">Cards</label> <input checked type="checkbox" id="id2abb0192a93748f9b725163525f630c1" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CardBuilder</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ICardBuilderStatics</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>ICardElement</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc8fc47b9a8374841a8ac91bc8cf2a715">Core</label> <input checked type="checkbox" id="idc8fc47b9a8374841a8ac91bc8cf2a715" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>RestartResult</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idc5fdede343c34b9abfe67a3f669d15b6">UserActivities</label> <input checked type="checkbox" id="idc5fdede343c34b9abfe67a3f669d15b6" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idf4a8de92be014388b46d12ed253175d0">Core</label> <input checked type="checkbox" id="idf4a8de92be014388b46d12ed253175d0" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CoreUserActivityManager</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserActivity</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserActivityChannel</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserActivitySession</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UserActivityState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>UserActivityVisualElements</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id55f56fc9c4c24481b9e6488297021b82">Media</label> <input checked type="checkbox" id="id55f56fc9c4c24481b9e6488297021b82" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="iddbebfa1588244ec28198fcea76adc150">Playback</label> <input checked type="checkbox" id="iddbebfa1588244ec28198fcea76adc150" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MediaPlaybackSessionBufferingStartedEventArgs</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idea792a1c7d8e4778ae34fae335953f4c">Storage</label> <input checked type="checkbox" id="idea792a1c7d8e4778ae34fae335953f4c" /><ol>
+            <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idd7ae3c3f014c4dd7a32d12f16965c210">CloudStorage</label> <input checked type="checkbox" id="idd7ae3c3f014c4dd7a32d12f16965c210" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CloudDataChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CloudDataManager</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CloudDataSerializationFormat</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CloudDataSnapshot</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CloudDataStore</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CloudDataTypeSchema</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id93e7fb9bfcad4365a147303fb6c479c0">System</label> <input checked type="checkbox" id="id93e7fb9bfcad4365a147303fb6c479c0" /><ol>
+            <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>AccountInfo</p>
+            </li>
+            <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DiagnosticConfiguration</p>
+            </li>
+            <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>ResourceGroupInfoChangeTypes</p>
+            </li>
+            <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ResourceGroupInfoWatcherExecutionStateChangedEventArgs</p>
+            </li>
+            <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ResourceGroupInfoWatcherUpdatedEventArgs</p>
+            </li>
+            <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>SuspendExemptionState</p>
+            </li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4ab982f4d698497fb60c2ea0395f092d">UI</label> <input checked type="checkbox" id="id4ab982f4d698497fb60c2ea0395f092d" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id53f86a7c65724084a085243799fbc8ad">Composition</label> <input checked type="checkbox" id="id53f86a7c65724084a085243799fbc8ad" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CompositionDropShadowSourcePolicy</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id34007583371840d4830ea3a64a80159a">ViewManagement</label> <input checked type="checkbox" id="id34007583371840d4830ea3a64a80159a" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CoreInputView</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CoreInputViewFrameworkOccludingInputViewsChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CoreInputViewOccludingInputViewsChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="struct.gif"/><p>CoreOccludingInputView</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>CoreOccludingInputViews</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CoreOccludingInputViewType</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idff63f65a8c9b4e3198ae76ef3827a197">WebUI</label> <input checked type="checkbox" id="idff63f65a8c9b4e3198ae76ef3827a197" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>WebUIConsoleActivatedEventArgs</p>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
