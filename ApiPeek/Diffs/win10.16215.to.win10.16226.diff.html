@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.16215.to.win10.16226.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id415a5b9b0abf4c41a496c7f694632eca">Windows</label> <input checked type="checkbox" id="id415a5b9b0abf4c41a496c7f694632eca" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc343253469574036aa5c22a97c28e529">Foundation</label> <input checked type="checkbox" id="idc343253469574036aa5c22a97c28e529" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4b35a2dde3c34ba7adac6bcf729696ac">Diagnostics</label> <input checked type="checkbox" id="id4b35a2dde3c34ba7adac6bcf729696ac" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DiagnosticsInvoker</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2f8b556a400f46c382f92206245a77b8">Networking</label> <input checked type="checkbox" id="id2f8b556a400f46c382f92206245a77b8" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id87aa62e14b294344b7da606ba4f675b5">NetworkOperators</label> <input checked type="checkbox" id="id87aa62e14b294344b7da606ba4f675b5" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>MobileBroadbandAntenna</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>MobileBroadbandAntennaSar</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>MobileBroadbandSignalLevel</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NetworkRegistrationStatus</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NetworkSystemKind</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1a8ee8c458fb4c67810904efb8f0d895">Storage</label> <input checked type="checkbox" id="id1a8ee8c458fb4c67810904efb8f0d895" /><ol>
+            <li><img class="type" src="removed.png"/><img src="namespace.gif"/><label for="id92510a95444b4a4ea4cd60dae7976f10">CloudStorage</label> <input checked type="checkbox" id="id92510a95444b4a4ea4cd60dae7976f10" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataManager</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>CloudDataSerializationFormat</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataSnapshot</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataStore</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataTypeSchema</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id35d95eb05f2f4c55902861e6d0db641b">FileProperties</label> <input checked type="checkbox" id="id35d95eb05f2f4c55902861e6d0db641b" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>StorageItemCustomProperties</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>StorageItemCustomProperty</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id42d74d5fb46a4b2985dccf6efb9ec321">Provider</label> <input checked type="checkbox" id="id42d74d5fb46a4b2985dccf6efb9ec321" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CustomStateDefinition</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>HydrationPolicyModifier</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>InSyncPolicy</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IStorageProviderCustomPropertyHandler</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IStorageProviderItemPropertySource</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NavPaneLocation</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StorageProviderItemProperties</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StorageProviderItemProperty</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StorageProviderItemPropertyDefinition</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StorageProviderSyncRootInfo</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StorageProviderSyncRootManager</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>SyncRootInformation</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>SyncRootManager</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id860e8a59f7cd4f469ab6f9a176eb727e">Streams</label> <input checked type="checkbox" id="id860e8a59f7cd4f469ab6f9a176eb727e" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileOpenDisposition</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide5d3a195c9a6449fa3ebd194d62de5e6">System</label> <input checked type="checkbox" id="ide5d3a195c9a6449fa3ebd194d62de5e6" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide81598ce34cd4ff2b7aed3810fb2d477">Diagnostics</label> <input checked type="checkbox" id="ide81598ce34cd4ff2b7aed3810fb2d477" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DiagnosticActionResult</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DiagnosticActionState</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>DiagnosticInvoker</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id49a35a113df94e42a3b11d1b92349f45">Profile</label> <input checked type="checkbox" id="id49a35a113df94e42a3b11d1b92349f45" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4ddf09892d554ae28efdd0f8d9fe37ae">SystemManufacturers</label> <input checked type="checkbox" id="id4ddf09892d554ae28efdd0f8d9fe37ae" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>OemSupportInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SystemSupportInfo</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id9fc971bce8104dff851b6eee2b27edb0">UI</label> <input checked type="checkbox" id="id9fc971bce8104dff851b6eee2b27edb0" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idfe5801873c5a44cea0283733210ebb6c">Composition</label> <input checked type="checkbox" id="idfe5801873c5a44cea0283733210ebb6c" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>InitialValueExpressionCollection</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>InitialValueExpressions</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8116b36a63d4475cadfc96791c3e6119">Xaml</label> <input checked type="checkbox" id="id8116b36a63d4475cadfc96791c3e6119" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7f514ea4cb274ccf8c137f211c503f00">Automation</label> <input checked type="checkbox" id="id7f514ea4cb274ccf8c137f211c503f00" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3fe9b006f8bf4d35a1f98529ff242d42">Peers</label> <input checked type="checkbox" id="id3fe9b006f8bf4d35a1f98529ff242d42" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ColorPickerSliderAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ColorSpectrumAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PersonPictureAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RatingControlAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>TreeViewItemAutomationPeer</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>TreeViewListAutomationPeer</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3eb8801cd6db442a874cf925f28e4347">Controls</label> <input checked type="checkbox" id="id3eb8801cd6db442a874cf925f28e4347" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7c8c6cb7d85d40e08243471ab1bbbc98">Primitives</label> <input checked type="checkbox" id="id7c8c6cb7d85d40e08243471ab1bbbc98" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ColorPickerSlider</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>ColorSpectrum</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BitmapIconSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>ColorChannel</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ColorPickerHsvChannel</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorPickerSlider</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorPickerSliderAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorSpectrum</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorSpectrumAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DisplayModeChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>FontIconSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="struct.gif"/><p>HsvColor</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IAdapterAnimationHandler</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>IconSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IRefreshInfoProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IRefreshInfoProviderAdapter</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewDisplayModeChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>NavigationViewItemAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemBase</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>NavigationViewItemData</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemHeader</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemInvokedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemSeparator</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NavigationViewItemType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewSelectionChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>PathIconSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PersonPictureAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RatingControlAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RatingItemFontInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RatingItemImageInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RatingItemInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshContainer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshInteractionRatioChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshVisualizer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerLocation</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerOrientation</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RevealListViewItemPresenter</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ScrollViewerIRefreshInfoProviderAdapter</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SwipeBehaviorOnInvoked</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SwipeControl</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SwipeItem</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SwipeItemInvokedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SwipeItems</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>SwipeMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>SymbolIconSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>TreeViewItemAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>TreeViewListAutomationPeer</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0a036d274ffa4218945b3d4301361f8c">Media</label> <input checked type="checkbox" id="id0a036d274ffa4218945b3d4301361f8c" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RevealBrushHelper</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RevealBrushHelperState</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>RevealBrushState</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>XamlAmbientLight</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+

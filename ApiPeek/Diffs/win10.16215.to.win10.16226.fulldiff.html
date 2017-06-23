@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.16215.to.win10.16226.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4f301f7bab8b4a84a92a370cc9fc0979">Windows</label> <input checked type="checkbox" id="id4f301f7bab8b4a84a92a370cc9fc0979" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8e822fe9c82f4cde948d76d74cb2bf82">Foundation</label> <input checked type="checkbox" id="id8e822fe9c82f4cde948d76d74cb2bf82" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id348c7b66ea914296a81e7a4f21fcac88">Diagnostics</label> <input checked type="checkbox" id="id348c7b66ea914296a81e7a4f21fcac88" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DiagnosticsInvoker</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf022fccb05c743ff82fc87c9ed96ed90">Media</label> <input checked type="checkbox" id="idf022fccb05c743ff82fc87c9ed96ed90" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd2a454392d83409686c33f8f66fdcad6">Core</label> <input checked type="checkbox" id="idd2a454392d83409686c33f8f66fdcad6" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="iddb2c3fea12214ab2bcc8270cc213ab59">MediaSource</label> <input checked type="checkbox" id="iddb2c3fea12214ab2bcc8270cc213ab59" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateFromMediaFrameSource(MediaFrameSource frameSource) static : MediaSource</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida9d2ce5c2ee94029a40abd24c7aa3e38">Networking</label> <input checked type="checkbox" id="ida9d2ce5c2ee94029a40abd24c7aa3e38" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide356e982a7a8471fb14813144179f736">NetworkOperators</label> <input checked type="checkbox" id="ide356e982a7a8471fb14813144179f736" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>MobileBroadbandAntenna</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idbacd1e2431bb492eb4c065455497469a">MobileBroadbandAntennaSar</label> <input checked type="checkbox" id="idbacd1e2431bb492eb4c065455497469a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AntennaIndex { get; } : Int32</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SarBackoffIndex { get; } : Int32</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id4e0c617649a64e6291f55cdc8fcd9c8b">MobileBroadbandCellCdma</label> <input checked type="checkbox" id="id4e0c617649a64e6291f55cdc8fcd9c8b" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BaseStationId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>BaseStationId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BaseStationLastBroadcastGpsTime { get; } : Nullable&lt;TimeSpan&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>BaseStationPn { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BaseStationPNCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>GpsSeconds { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NetworkId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NetworkId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PilotSignalStrength { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PilotSignalStrengthInDB { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalLevel { get; } : Nullable&lt;MobileBroadbandSignalLevel&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SystemId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SystemId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id0489b74c63a24b65be117ab4154ceec7">MobileBroadbandCellGsm</label> <input checked type="checkbox" id="id0489b74c63a24b65be117ab4154ceec7" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BaseStationId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>BaseStationId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileCountryCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileNetworkCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ProviderId { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ReceivedSignalStrength { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReceivedSignalStrengthInDBm { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalLevel { get; } : Nullable&lt;MobileBroadbandSignalLevel&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>TimingAdvance { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimingAdvanceInBitPeriods { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id943eb2c175824f2d8ad7de0613a1d070">MobileBroadbandCellLte</label> <input checked type="checkbox" id="id943eb2c175824f2d8ad7de0613a1d070" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileCountryCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileNetworkCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PhysicalCellId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PhysicalCellId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ProviderId { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ReferenceSignalReceivedPower { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReferenceSignalReceivedPowerInDBm { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ReferenceSignalReceivedQuality { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReferenceSignalReceivedQualityInDBm { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalLevel { get; } : Nullable&lt;MobileBroadbandSignalLevel&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>TimingAdvance { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimingAdvanceInBitPeriods { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TrackingAreaCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>TrackingAreaCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id89b294afb20f4221aca533ae1ee69e3e">MobileBroadbandCellsInfo</label> <input checked type="checkbox" id="id89b294afb20f4221aca533ae1ee69e3e" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NeighboringCellListCdma { get; } : IReadOnlyList&lt;MobileBroadbandCellCdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NeighboringCellListGsm { get; } : IReadOnlyList&lt;MobileBroadbandCellGsm&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NeighboringCellListLte { get; } : IReadOnlyList&lt;MobileBroadbandCellLte&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NeighboringCellListTdscdma { get; } : IReadOnlyList&lt;MobileBroadbandCellTdscdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>NeighboringCellListUmts { get; } : IReadOnlyList&lt;MobileBroadbandCellUmts&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NeighboringCellsCdma { get; } : IReadOnlyList&lt;MobileBroadbandCellCdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NeighboringCellsGsm { get; } : IReadOnlyList&lt;MobileBroadbandCellGsm&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NeighboringCellsLte { get; } : IReadOnlyList&lt;MobileBroadbandCellLte&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NeighboringCellsTdscdma { get; } : IReadOnlyList&lt;MobileBroadbandCellTdscdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>NeighboringCellsUmts { get; } : IReadOnlyList&lt;MobileBroadbandCellUmts&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ServingCellListCdma { get; } : IReadOnlyList&lt;MobileBroadbandCellCdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ServingCellListGsm { get; } : IReadOnlyList&lt;MobileBroadbandCellGsm&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ServingCellListLte { get; } : IReadOnlyList&lt;MobileBroadbandCellLte&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ServingCellListTdscdma { get; } : IReadOnlyList&lt;MobileBroadbandCellTdscdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ServingCellListUmts { get; } : IReadOnlyList&lt;MobileBroadbandCellUmts&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ServingCellsCdma { get; } : IReadOnlyList&lt;MobileBroadbandCellCdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ServingCellsGsm { get; } : IReadOnlyList&lt;MobileBroadbandCellGsm&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ServingCellsLte { get; } : IReadOnlyList&lt;MobileBroadbandCellLte&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ServingCellsTdscdma { get; } : IReadOnlyList&lt;MobileBroadbandCellTdscdma&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ServingCellsUmts { get; } : IReadOnlyList&lt;MobileBroadbandCellUmts&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idd55893a5fcdd452790b5688f0e201d1d">MobileBroadbandCellTdscdma</label> <input checked type="checkbox" id="idd55893a5fcdd452790b5688f0e201d1d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CellParameterId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>CellParameterId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileCountryCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileNetworkCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PathLoss { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PathLossInDB { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ProviderId { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ReceivedSignalCodePower { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReceivedSignalCodePowerInDBm { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalLevel { get; } : Nullable&lt;MobileBroadbandSignalLevel&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>TimingAdvance { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TimingAdvanceInBitPeriods { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id9843ee7d30f54c5181e218fa0bcc0329">MobileBroadbandCellUmts</label> <input checked type="checkbox" id="id9843ee7d30f54c5181e218fa0bcc0329" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>CellId { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FrequencyInfoDL { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FrequencyInfoNT { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FrequencyInfoUL { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ChannelNumber { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>LocationAreaCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileCountryCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>MobileNetworkCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PathLoss { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PathLossInDB { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PrimaryScramblingCode { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PrimaryScramblingCode { get; } : Nullable&lt;UInt32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ProviderId { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ReceivedSignalCodePower { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ReceivedSignalCodePowerInDBm { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalLevel { get; } : Nullable&lt;MobileBroadbandSignalLevel&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>SignalToNoiseRatio { get; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SignalToNoiseRatioInDB { get; } : Nullable&lt;Double&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id1f13d64c9bd54816a9a5192aabbebb51">MobileBroadbandModemConfiguration</label> <input checked type="checkbox" id="id1f13d64c9bd54816a9a5192aabbebb51" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>GetSarManagerAsync() : IAsyncOperation&lt;MobileBroadbandSarManager&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SarManager { get; } : MobileBroadbandSarManager</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id9d13e100a5f94d36a8fa136c0c2e9a4c">MobileBroadbandSarManager</label> <input checked type="checkbox" id="id9d13e100a5f94d36a8fa136c0c2e9a4c" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>AntennaConfiguration { get; } : IReadOnlyList&lt;MobileBroadbandAntenna&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Antennas { get; } : IReadOnlyList&lt;MobileBroadbandAntennaSar&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>ConfigureHysteresisTimerAsync(TimeSpan hysteresis) : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>ConfigureSarAsync(Boolean backoffEnabled, IEnumerable&lt;MobileBroadbandAntenna&gt; antennas) : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DisableBackoffAsync() : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>EnableBackoffAsync() : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetIsTransmittingAsync() : IAsyncOperation&lt;Boolean&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>HysteresisTimer { get; } : TimeSpan</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HysteresisTimerPeriod { get; } : TimeSpan</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>QueryTransmissionStateAsync() : IAsyncOperation&lt;Boolean&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetConfigurationAsync(IEnumerable&lt;MobileBroadbandAntennaSar&gt; antennas) : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetTransmissionStateChangedHysteresisAsync(TimeSpan timerPeriod) : IAsyncAction</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>StartTransmissionStateMonitoring() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>StopTransmissionStateMonitoring() : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>MobileBroadbandSignalLevel</p>
+                </li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id386b719d5a5a42969035959b06dbd617">MobileBroadbandTransmissionStateChangedEventArgs</label> <input checked type="checkbox" id="id386b719d5a5a42969035959b06dbd617" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>HysteresisTimer { get; } : TimeSpan</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>IsTransmissionStateActive { get; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsTransmitting { get; } : Boolean</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NetworkRegistrationStatus</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NetworkSystemKind</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id295d52e4d1cf4a45b0867c8cea04dd15">Security</label> <input checked type="checkbox" id="id295d52e4d1cf4a45b0867c8cea04dd15" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id534df56bfa0b4d328629bcbbda94c777">Authentication</label> <input checked type="checkbox" id="id534df56bfa0b4d328629bcbbda94c777" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id64e7819f36044e10be28876d3a4a6da2">Web</label> <input checked type="checkbox" id="id64e7819f36044e10be28876d3a4a6da2" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc12802451f1145968516a89cc01d6257">Provider</label> <input checked type="checkbox" id="idc12802451f1145968516a89cc01d6257" /><ol>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id1a483cc18f044547be8e8f86d5fa20a0">WebAccountManager</label> <input checked type="checkbox" id="id1a483cc18f044547be8e8f86d5fa20a0" /><ol>
+                            <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>InvalidateAppCacheAsync() static : IAsyncAction</p>
+                            </li>
+                            <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>InvalidateAppCacheAsync(WebAccount webAccount) static : IAsyncAction</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>InvalidateAppCacheForAccountAsync(WebAccount webAccount) static : IAsyncAction</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>InvalidateAppCacheForAllAccountsAsync() static : IAsyncAction</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id97e99a24289b4fdfba1eec6c03a532e4">Storage</label> <input checked type="checkbox" id="id97e99a24289b4fdfba1eec6c03a532e4" /><ol>
+            <li><img class="type" src="removed.png"/><img src="namespace.gif"/><label for="ideff121e3d89944219eb490eea6602f12">CloudStorage</label> <input checked type="checkbox" id="ideff121e3d89944219eb490eea6602f12" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataChangedEventArgs</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataManager</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>CloudDataSerializationFormat</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataSnapshot</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataStore</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CloudDataTypeSchema</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd2d3b4427bba42b7b01278794104d673">FileProperties</label> <input checked type="checkbox" id="idd2d3b4427bba42b7b01278794104d673" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>StorageItemCustomProperties</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>StorageItemCustomProperty</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1b538764e14d43c69cb2c5ddbfdb6e41">Provider</label> <input checked type="checkbox" id="id1b538764e14d43c69cb2c5ddbfdb6e41" /><ol>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>CustomStateDefinition</p>
+                </li>
+                <li class="file"><img class="type" src="changed.png"/><img src="enum.gif"/><label for="id74ca70f2f7174b86a839210e8d34767e">HydrationPolicy</label> <input checked type="checkbox" id="id74ca70f2f7174b86a839210e8d34767e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NoPartial : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NoPartial : 4,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id7db1643e8ac14978a2a248d388a47c26">HydrationPolicyModifier</label> <input checked type="checkbox" id="id7db1643e8ac14978a2a248d388a47c26" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ValidationRequired : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StreamingAllowed : 2,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id3a0e4096a8ac428399352f227690035b">InSyncPolicy</label> <input checked type="checkbox" id="id3a0e4096a8ac428399352f227690035b" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Default : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileCreationTime : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileReadOnlyAttribute : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileHiddenAttribute : 4,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileSystemAttribute : 8,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DirectoryCreationTime : 16,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DirectoryReadOnlyAttribute : 32,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DirectoryHiddenAttribute : 64,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>DirectorySystemAttribute : 128,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PreserveInsyncForSyncEngine : 2147483648,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IStorageProviderCustomPropertyHandler</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><label for="idcbc1f9cffa3f45f6845289e935a42476">IStorageProviderItemPropertySource</label> <input checked type="checkbox" id="idcbc1f9cffa3f45f6845289e935a42476" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetItemProperties(String itemPath) : IEnumerable&lt;StorageProviderItemProperty&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NavPaneLocation</p>
+                </li>
+                <li class="file"><img class="type" src="changed.png"/><img src="enum.gif"/><label for="id77ff1b3098c44b75b3c32dd56068f323">PopulationPolicy</label> <input checked type="checkbox" id="id77ff1b3098c44b75b3c32dd56068f323" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>OnDemand : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Full : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NoPartial : 4,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id125ab9a798214c3291a559ca245f9f2e">StorageProviderItemProperties</label> <input checked type="checkbox" id="id125ab9a798214c3291a559ca245f9f2e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetAsync(IStorageItem item, IEnumerable&lt;StorageProviderItemProperty&gt; itemProperties) static : IAsyncAction</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id0744d28342b446b6948f06ada48a104a">StorageProviderItemProperty</label> <input checked type="checkbox" id="id0744d28342b446b6948f06ada48a104a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IconResource { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; set; } : Int32</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Value { get; set; } : String</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ida22a4f4c1dfc467ca69fd9fc0e8b529f">StorageProviderItemPropertyDefinition</label> <input checked type="checkbox" id="ida22a4f4c1dfc467ca69fd9fc0e8b529f" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisplayNameResource { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; set; } : Int32</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idfc7a5efe6d724216ad2a14ab7d5e20b1">StorageProviderSyncRootInfo</label> <input checked type="checkbox" id="idfc7a5efe6d724216ad2a14ab7d5e20b1" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AllowPinning { get; set; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Context { get; set; } : IBuffer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisplayNameResource { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HydrationPolicy { get; set; } : HydrationPolicy</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HydrationPolicyModifier { get; set; } : HydrationPolicyModifier</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IconResource { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>InSyncPolicy { get; set; } : InSyncPolicy</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Path { get; set; } : IStorageFolder</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PopulationPolicy { get; set; } : PopulationPolicy</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ProtectionMode { get; set; } : ProtectionMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RecycleBinUri { get; set; } : Uri</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ShowSiblingsAsGroup { get; set; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StorageProviderItemPropertyDefinitions { get; } : IList&lt;StorageProviderItemPropertyDefinition&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Version { get; set; } : String</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id37237def2be142779f73372f7983ce60">StorageProviderSyncRootManager</label> <input checked type="checkbox" id="id37237def2be142779f73372f7983ce60" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetCurrentSyncRoots() static : IReadOnlyList&lt;StorageProviderSyncRootInfo&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetSyncRootInformationForFolder(IStorageFolder folder) static : StorageProviderSyncRootInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetSyncRootInformationForId(String id) static : StorageProviderSyncRootInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Register(StorageProviderSyncRootInfo syncRootInformation) static : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Unregister(String id) static : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>SyncRootInformation</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>SyncRootManager</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf06deb19a6b643e8a0d7cb2ebd429f1a">Streams</label> <input checked type="checkbox" id="idf06deb19a6b643e8a0d7cb2ebd429f1a" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="idb2545a8766e24477aaabceb8e89d99eb">FileOpenDisposition</label> <input checked type="checkbox" id="idb2545a8766e24477aaabceb8e89d99eb" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>OpenExisting : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>OpenAlways : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CreateNew : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>CreateAlways : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>TruncateExisting : 4,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id2c42cbf7147e4d9780438d0a75965fc0">FileRandomAccessStream</label> <input checked type="checkbox" id="id2c42cbf7147e4d9780438d0a75965fc0" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenAsync(String filePath, FileAccessMode accessMode) static : IAsyncOperation&lt;IRandomAccessStream&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenAsync(String filePath, FileAccessMode accessMode, StorageOpenOptions sharingOptions, FileOpenDisposition openDisposition) static : IAsyncOperation&lt;IRandomAccessStream&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenForUserAsync(User user, String filePath, FileAccessMode accessMode) static : IAsyncOperation&lt;IRandomAccessStream&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenForUserAsync(User user, String filePath, FileAccessMode accessMode, StorageOpenOptions sharingOptions, FileOpenDisposition openDisposition) static : IAsyncOperation&lt;IRandomAccessStream&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenTransactedWriteAsync(String filePath) static : IAsyncOperation&lt;StorageStreamTransaction&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenTransactedWriteAsync(String filePath, StorageOpenOptions openOptions, FileOpenDisposition openDisposition) static : IAsyncOperation&lt;StorageStreamTransaction&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenTransactedWriteForUserAsync(User user, String filePath) static : IAsyncOperation&lt;StorageStreamTransaction&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>OpenTransactedWriteForUserAsync(User user, String filePath, StorageOpenOptions openOptions, FileOpenDisposition openDisposition) static : IAsyncOperation&lt;StorageStreamTransaction&gt;</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf2fdb9aa0bb741bf90e33a4653a48498">System</label> <input checked type="checkbox" id="idf2fdb9aa0bb741bf90e33a4653a48498" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5e1eb5fc8201423183cd296d50baa5ab">Diagnostics</label> <input checked type="checkbox" id="id5e1eb5fc8201423183cd296d50baa5ab" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idcf834a0c33484b63b3f820928a5c4dd9">DiagnosticActionResult</label> <input checked type="checkbox" id="idcf834a0c33484b63b3f820928a5c4dd9" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExtendedError { get; } : Exception</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Results { get; } : ValueSet</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="idcbcaad9e878e49a8ae2c9c34993866ec">DiagnosticActionState</label> <input checked type="checkbox" id="idcbcaad9e878e49a8ae2c9c34993866ec" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Initializing : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Downloading : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VerifyingTrust : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Detecting : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Resolving : 4,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VerifyingResolution : 5,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idf06868fed6d74ca48872f8be68142759">DiagnosticInvoker</label> <input checked type="checkbox" id="idf06868fed6d74ca48872f8be68142759" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDefault() static : DiagnosticInvoker</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetForUser(User user) static : DiagnosticInvoker</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsSupported static { get; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RunDiagnosticActionAsync(JsonObject context) : IAsyncOperationWithProgress&lt;DiagnosticActionResult,DiagnosticActionState&gt;</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id528e7f358d9b415bbad8df5716079568">Profile</label> <input checked type="checkbox" id="id528e7f358d9b415bbad8df5716079568" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide6d793703694420e9b52ed27cf92c873">SystemManufacturers</label> <input checked type="checkbox" id="ide6d793703694420e9b52ed27cf92c873" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idc5d900d3d19342d095e391e47d0a5d45">OemSupportInfo</label> <input checked type="checkbox" id="idc5d900d3d19342d095e391e47d0a5d45" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportAppLink { get; } : Uri</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportLink { get; } : Uri</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportProvider { get; } : String</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idb250aeef47b845ba9010c5c2e26f0534">SystemSupportInfo</label> <input checked type="checkbox" id="idb250aeef47b845ba9010c5c2e26f0534" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LocalSystemEdition static { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>OemSupportInfo static { get; } : OemSupportInfo</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+            <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idf3186f12c7264b2f9379a1c9fd240d4e">AppMemoryReport</label> <input checked type="checkbox" id="idf3186f12c7264b2f9379a1c9fd240d4e" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExpectedTotalCommitLimit { get; } : UInt64</p>
+                </li>
+            </ol></li>
+            <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id9d015066633343e990cf465921de9994">MemoryManager</label> <input checked type="checkbox" id="id9d015066633343e990cf465921de9994" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExpectedAppMemoryUsageLimit static { get; } : UInt64</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id082c1646e69c40479a4f53615cb93414">UI</label> <input checked type="checkbox" id="id082c1646e69c40479a4f53615cb93414" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb61cabe84ab54a59aac7a54ab143bb81">Composition</label> <input checked type="checkbox" id="idb61cabe84ab54a59aac7a54ab143bb81" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id042acf1efd5944f0b2edb09bf6992368">CompositionAnimation</label> <input checked type="checkbox" id="id042acf1efd5944f0b2edb09bf6992368" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>InitialValueExpressions { get; } : InitialValueExpressionCollection</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>InitialValueExpressions { get; } : InitialValueExpressions</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id0a45f6401ee34e2cbe5d8ede9cf2112a">InitialValueExpressionCollection</label> <input checked type="checkbox" id="id0a45f6401ee34e2cbe5d8ede9cf2112a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Size { get; } : UInt32</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>InitialValueExpressions</p>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcd67005925bb43468998b043519e5f58">Xaml</label> <input checked type="checkbox" id="idcd67005925bb43468998b043519e5f58" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id45a5072b4dea420fba96ed039d49cb78">Automation</label> <input checked type="checkbox" id="id45a5072b4dea420fba96ed039d49cb78" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idbd77bfd9758b4ce2bacaf79e55d33baa">Peers</label> <input checked type="checkbox" id="idbd77bfd9758b4ce2bacaf79e55d33baa" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id66fdd8c19f414b77a111c9414e114e64">ColorPickerSliderAutomationPeer</label> <input checked type="checkbox" id="id66fdd8c19f414b77a111c9414e114e64" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(ColorPickerSlider owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idc92a2903bea8449ab3c21e295e6aa280">ColorSpectrumAutomationPeer</label> <input checked type="checkbox" id="idc92a2903bea8449ab3c21e295e6aa280" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(ColorSpectrum owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idff2a2f5ab0244e16829514cb6f49b984">NavigationViewItemAutomationPeer</label> <input checked type="checkbox" id="idff2a2f5ab0244e16829514cb6f49b984" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(NavigationViewItem owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id9336e76456f64a27b3f261030c796947">PersonPictureAutomationPeer</label> <input checked type="checkbox" id="id9336e76456f64a27b3f261030c796947" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(PersonPicture owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id9009285b14334f4a8351ecac1ce53b1d">RatingControlAutomationPeer</label> <input checked type="checkbox" id="id9009285b14334f4a8351ecac1ce53b1d" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(RatingControl owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id4753d6f3312c489d8839b4c02437df77">TreeViewItemAutomationPeer</label> <input checked type="checkbox" id="id4753d6f3312c489d8839b4c02437df77" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(TreeViewItem owner)</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id31cadddaa89d44dc8166ccb5ec50cfbd">TreeViewListAutomationPeer</label> <input checked type="checkbox" id="id31cadddaa89d44dc8166ccb5ec50cfbd" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(TreeViewList owner)</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id037e56517f59482598f23b3a469811e9">Controls</label> <input checked type="checkbox" id="id037e56517f59482598f23b3a469811e9" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id4145e9a3fe6c4a39a43ec9de43b792df">Maps</label> <input checked type="checkbox" id="id4145e9a3fe6c4a39a43ec9de43b792df" /><ol>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id1f5dca4c059d4154ac42e2e7374b77da">MapStyleSheetEntryStates</label> <input checked type="checkbox" id="id1f5dca4c059d4154ac42e2e7374b77da" /><ol>
+                            <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>Default static { get; } : String</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id076bee0cf6ee46a18ee05b57b1bd6920">Primitives</label> <input checked type="checkbox" id="id076bee0cf6ee46a18ee05b57b1bd6920" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id656391f6f4fa4bb687bb5d48086b5855">ColorPickerSlider</label> <input checked type="checkbox" id="id656391f6f4fa4bb687bb5d48086b5855" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ColorChannel { get; set; } : ColorPickerHsvChannel</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ColorChannelProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id38bbc053468f40b88baa71247c248056">ColorSpectrum</label> <input checked type="checkbox" id="id38bbc053468f40b88baa71247c248056" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Color { get; set; } : Color</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>ColorChanged event : TypedEventHandler&lt;ColorSpectrum,ColorChangedEventArgs&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ColorProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Components { get; set; } : ColorSpectrumComponents</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ComponentsProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HsvColor { get; set; } : Vector4</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>HsvColorProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxHue { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxHueProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxSaturation { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxSaturationProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxValue { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxValueProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinHue { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinHueProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinSaturation { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinSaturationProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinValue { get; set; } : Int32</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MinValueProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Shape { get; set; } : ColorSpectrumShape</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ShapeProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id75ea28a7c24c4ec98f0f55198e335afe">LayoutInformation</label> <input checked type="checkbox" id="id75ea28a7c24c4ec98f0f55198e335afe" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetAvailableSize(UIElement element) static : Size</p>
+                            </li>
+                            <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>GetLastAvailableSize(UIElement element) static : Size</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="ida9823ce823954a4a97233f52e01ed5a9">ListViewItemPresenter</label> <input checked type="checkbox" id="ida9823ce823954a4a97233f52e01ed5a9" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBackground { get; set; } : Brush</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBackgroundProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBackgroundShowsAboveContent { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBackgroundShowsAboveContentProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBorderBrush { get; set; } : Brush</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBorderBrushProperty static { get; } : DependencyProperty</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBorderThickness { get; set; } : Thickness</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RevealBorderThicknessProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id044085e491fc4b5eb4d8f3c4c7160392">BitmapIconSource</label> <input checked type="checkbox" id="id044085e491fc4b5eb4d8f3c4c7160392" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ShowAsMonochrome { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ShowAsMonochromeProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UriSource { get; set; } : Uri</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UriSourceProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>ColorChannel</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id75dc6ff49fdb4ca3a2852eb2a8d6f57f">ColorPickerHsvChannel</label> <input checked type="checkbox" id="id75dc6ff49fdb4ca3a2852eb2a8d6f57f" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Hue : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Saturation : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Value : 2,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Alpha : 3,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorPickerSlider</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorPickerSliderAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorSpectrum</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ColorSpectrumAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>DisplayModeChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id6c117aa412094d1e9b966fe576123b16">FontIconSource</label> <input checked type="checkbox" id="id6c117aa412094d1e9b966fe576123b16" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontFamily { get; set; } : FontFamily</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontFamilyProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontSize { get; set; } : Double</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontSizeProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontStyle { get; set; } : FontStyle</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontStyleProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontWeight { get; set; } : FontWeight</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FontWeightProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Glyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>GlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsTextScaleFactorEnabled { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsTextScaleFactorEnabledProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MirroredWhenRightToLeft { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MirroredWhenRightToLeftProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="struct.gif"/><p>HsvColor</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IAdapterAnimationHandler</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idef5b52544f4d4fc3b0fb3f5da5063229">IconSource</label> <input checked type="checkbox" id="idef5b52544f4d4fc3b0fb3f5da5063229" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Foreground { get; set; } : Brush</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ForegroundProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IRefreshInfoProvider</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="interface.gif"/><p>IRefreshInfoProviderAdapter</p>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id0dca4e6fc0154fc291527e842e6630fa">NavigationView</label> <input checked type="checkbox" id="id0dca4e6fc0154fc291527e842e6630fa" /><ol>
+                        <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>ContainerFromItem(Object item) : DependencyObject</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ContainerFromMenuItem(Object item) : DependencyObject</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="event.gif"/><p>DisplayModeChanged event : TypedEventHandler&lt;NavigationView,DisplayModeChangedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>DisplayModeChanged event : TypedEventHandler&lt;NavigationView,NavigationViewDisplayModeChangedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ItemContainerStyleSelector { get; set; } : StyleSelector</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ItemContainerStyleSelectorProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>ItemFromContainer(DependencyObject container) : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>ItemInvoked event : TypedEventHandler&lt;NavigationView,NavigationViewItemInvokedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ItemTemplateSelector { get; set; } : DataTemplateSelector</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>ItemTemplateSelectorProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemContainerStyle { get; set; } : Style</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemContainerStyleProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemContainerStyleSelector { get; set; } : StyleSelector</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemContainerStyleSelectorProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>MenuItemFromContainer(DependencyObject container) : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemsSource { get; set; } : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemsSourceProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemTemplate { get; set; } : DataTemplate</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemTemplateProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemTemplateSelector { get; set; } : DataTemplateSelector</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MenuItemTemplateSelectorProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>SelectionChanged event : TypedEventHandler&lt;NavigationView,NavigationViewSelectionChangedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="event.gif"/><p>SelectionChanged event : TypedEventHandler&lt;NavigationView,SelectionChangedEventArgs&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id0309d0ccc5284b3d8a7290f94144496d">NavigationViewDisplayModeChangedEventArgs</label> <input checked type="checkbox" id="id0309d0ccc5284b3d8a7290f94144496d" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisplayMode { get; } : NavigationViewDisplayMode</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idcaeed395f0144b2ea28e8fc1283f4ce1">NavigationViewItem</label> <input checked type="checkbox" id="idcaeed395f0144b2ea28e8fc1283f4ce1" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CompactPaneLengthProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Icon { get; set; } : IconElement</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IconProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>NavigationViewItemAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemBase</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>NavigationViewItemData</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemHeader</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id9055637ae4c04ba4981df1b3e2af034a">NavigationViewItemInvokedEventArgs</label> <input checked type="checkbox" id="id9055637ae4c04ba4981df1b3e2af034a" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>InvokedItem { get; } : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsSettingsInvoked { get; } : Boolean</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>NavigationViewItemSeparator</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>NavigationViewItemType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id2a14c78a33e94dba82b4346c39da75f7">NavigationViewSelectionChangedEventArgs</label> <input checked type="checkbox" id="id2a14c78a33e94dba82b4346c39da75f7" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsSettingsSelected { get; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SelectedItem { get; } : Object</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id2d5f7961b36a4e358720f4628365567c">PathIconSource</label> <input checked type="checkbox" id="id2d5f7961b36a4e358720f4628365567c" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Data { get; set; } : Geometry</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DataProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PersonPictureAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id3196e6b5005c4f2f99f23faaf475f108">RatingControl</label> <input checked type="checkbox" id="id3196e6b5005c4f2f99f23faaf475f108" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ItemInfo { get; set; } : RatingItemInfo</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ItemInfoProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaceholderValue { get; set; } : Double</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PlaceholderValue { get; set; } : Nullable&lt;Double&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Value { get; set; } : Double</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>Value { get; set; } : Nullable&lt;Double&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RatingControlAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id7c3b9ea2210d466daafaf9a60e0e7321">RatingItemFontInfo</label> <input checked type="checkbox" id="id7c3b9ea2210d466daafaf9a60e0e7321" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisabledGlyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisabledGlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Glyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>GlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaceholderGlyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaceholderGlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverGlyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverGlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverPlaceholderGlyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverPlaceholderGlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UnsetGlyph { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UnsetGlyphProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id10af001551804c88b8deab01ada1dbdb">RatingItemImageInfo</label> <input checked type="checkbox" id="id10af001551804c88b8deab01ada1dbdb" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisabledImage { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>DisabledImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Image { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaceholderImage { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaceholderImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverImage { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverPlaceholderImage { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PointerOverPlaceholderImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UnsetImage { get; set; } : ImageSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>UnsetImageProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>RatingItemInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshContainer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshInteractionRatioChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshRequestedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshStatusChangedEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RefreshVisualizer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerLocation</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerOrientation</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RefreshVisualizerStatus</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RevealListViewItemPresenter</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ScrollViewerIRefreshInfoProviderAdapter</p>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idca14cf5d33ed4140b65e8e6981492887">SplitView</label> <input checked type="checkbox" id="idca14cf5d33ed4140b65e8e6981492887" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PaneOpened event : TypedEventHandler&lt;SplitView,Object&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>PaneOpening event : TypedEventHandler&lt;SplitView,Object&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id8ef31ec4dfdf4fe4b2d6cc5c7f7294a2">SwipeBehaviorOnInvoked</label> <input checked type="checkbox" id="id8ef31ec4dfdf4fe4b2d6cc5c7f7294a2" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Auto : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Close : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>RemainOpen : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idfec351863e34428bb2dd20f35f5dc0e1">SwipeControl</label> <input checked type="checkbox" id="idfec351863e34428bb2dd20f35f5dc0e1" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BottomItems { get; set; } : SwipeItems</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BottomItemsProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Close() : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LeftItems { get; set; } : SwipeItems</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LeftItemsProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RightItems { get; set; } : SwipeItems</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RightItemsProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TopItems { get; set; } : SwipeItems</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TopItemsProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idf4b739129df0447397cb1c31256497aa">SwipeItem</label> <input checked type="checkbox" id="idf4b739129df0447397cb1c31256497aa" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Background { get; set; } : Brush</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BackgroundProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BehaviorOnInvoked { get; set; } : SwipeBehaviorOnInvoked</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>BehaviorOnInvokedProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Command { get; set; } : ICommand</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CommandParameter { get; set; } : Object</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CommandParameterProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CommandProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Foreground { get; set; } : Brush</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ForegroundProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IconSource { get; set; } : IconSource</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IconSourceProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>Invoked event : TypedEventHandler&lt;SwipeItem,SwipeItemInvokedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Text { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TextProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id9153d36a5bf7415e8ed94350d1cc7f7b">SwipeItemInvokedEventArgs</label> <input checked type="checkbox" id="id9153d36a5bf7415e8ed94350d1cc7f7b" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SwipeControl { get; } : SwipeControl</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ida9db373410d04411a7cb0775393348d6">SwipeItems</label> <input checked type="checkbox" id="ida9db373410d04411a7cb0775393348d6" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Mode { get; set; } : SwipeMode</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ModeProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Size { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id402fa1356dd0469c9975b0bf7756cdc3">SwipeMode</label> <input checked type="checkbox" id="id402fa1356dd0469c9975b0bf7756cdc3" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Reveal : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Execute : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idfe14867e75c2439db0d0a4079d596d25">SymbolIconSource</label> <input checked type="checkbox" id="idfe14867e75c2439db0d0a4079d596d25" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Symbol { get; set; } : Symbol</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SymbolProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>TreeViewItemAutomationPeer</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>TreeViewListAutomationPeer</p>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id74236fea9cd24e7281a5232c7b8943bf">Input</label> <input checked type="checkbox" id="id74236fea9cd24e7281a5232c7b8943bf" /><ol>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id193497e3a71b4f70b7f156abc09dead4">PointerRoutedEventArgs</label> <input checked type="checkbox" id="id193497e3a71b4f70b7f156abc09dead4" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsGenerated { get; } : Boolean</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id147de16fab2f452b806ae27a9ae5773d">Media</label> <input checked type="checkbox" id="id147de16fab2f452b806ae27a9ae5773d" /><ol>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id16a90b7ae5364cda849b2002e10ec2c6">AcrylicBrush</label> <input checked type="checkbox" id="id16a90b7ae5364cda849b2002e10ec2c6" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AlwaysUseFallback { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AlwaysUseFallbackProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FallbackForced { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FallbackForcedProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TintTransitionDuration { get; set; } : TimeSpan</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TintTransitionDurationProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="ide0363f48c3b047a2a5fab6eb2ef31327">RevealBrush</label> <input checked type="checkbox" id="ide0363f48c3b047a2a5fab6eb2ef31327" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AlwaysUseFallback { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AlwaysUseFallbackProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FallbackForced { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>FallbackForcedProperty static { get; } : DependencyProperty</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetState(UIElement element) static : RevealBrushState</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SetState(UIElement element, RevealBrushState value) static : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StateProperty static { get; } : DependencyProperty</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>RevealBrushHelper</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>RevealBrushHelperState</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="ide18ef119f3e746f69ba5b50b2ca820f0">RevealBrushState</label> <input checked type="checkbox" id="ide18ef119f3e746f69ba5b50b2ca820f0" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Normal : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>PointerOver : 1,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Pressed : 2,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>XamlAmbientLight</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
