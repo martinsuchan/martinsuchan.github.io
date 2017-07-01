@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.16226.to.win10.16232.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id67e5469da97d4099ac425c63ea0b12ec">Windows</label> <input checked type="checkbox" id="id67e5469da97d4099ac425c63ea0b12ec" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id075a6660856c4c8a8b10817d675a6a97">Graphics</label> <input checked type="checkbox" id="id075a6660856c4c8a8b10817d675a6a97" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf9af27a7802b40e8989692999219cef8">Holographic</label> <input checked type="checkbox" id="idf9af27a7802b40e8989692999219cef8" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id289acba55da04cb5ab30f6857acb595b">HolographicCamera</label> <input checked type="checkbox" id="id289acba55da04cb5ab30f6857acb595b" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>CreateLayerConfig() : PresentationLayerConfig</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>DrmMode { get; set; } : PresentationLayerDrmMode</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>GetPresentationLayers() : PresentationLayers</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsPrimaryLayerEnabled { get; set; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxQuadLayerCount { get; } : UInt32</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>QuadLayers { get; } : IList&lt;HolographicQuadLayer&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>SetLayerConfig(PresentationLayerConfig layerConfig) : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id8dad243c48844749b42bebf6e17e1d9e">HolographicCameraRenderingParameters</label> <input checked type="checkbox" id="id8dad243c48844749b42bebf6e17e1d9e" /><ol>
+                    <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>GetPresentationLayerRenderingParameters(PresentationLayerQuad layer) : PresentationLayerRenderingParametersQuad</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsContentProtectionEnabled { get; set; } : Boolean</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idde032b2faad14afe9a7b7e5490a79e5d">HolographicFrame</label> <input checked type="checkbox" id="idde032b2faad14afe9a7b7e5490a79e5d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetQuadLayerUpdateParameters(HolographicQuadLayer layer) : HolographicQuadLayerUpdateParameters</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id54d100a920724cf982be6a8f2679faeb">HolographicQuadLayer</label> <input checked type="checkbox" id="id54d100a920724cf982be6a8f2679faeb" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(Size size)</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ctor(Size size, DirectXPixelFormat pixelFormat)</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Dispose() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PixelFormat { get; } : DirectXPixelFormat</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Size { get; } : Size</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id4377f88a48c441e1a77432cae0ee578c">HolographicQuadLayerUpdateParameters</label> <input checked type="checkbox" id="id4377f88a48c441e1a77432cae0ee578c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AcquireBufferToUpdateContent() : IDirect3DSurface</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateContentProtectionEnabled(Boolean value) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateExtents(Vector2 value) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateLocationWithDisplayRelativeMode(Vector3 position, Quaternion orientation) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateLocationWithStationaryMode(SpatialCoordinateSystem coordinateSystem, Vector3 position, Quaternion orientation) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>UpdateViewport(Rect value) : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayerConfig</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>PresentationLayerDrmMode</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayerQuad</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayerReference</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayerRenderingParametersQuad</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayers</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>PresentationLayerSettings</p>
+                </li>
+                <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>PresentationLayerType</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf56d4e33f190449fb54cdef967a802d0">UI</label> <input checked type="checkbox" id="idf56d4e33f190449fb54cdef967a802d0" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7d31abdf0bc74a4aac6657eddd0b28ff">Input</label> <input checked type="checkbox" id="id7d31abdf0bc74a4aac6657eddd0b28ff" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida3375e6a8d874011938e1686889c6677">Spatial</label> <input checked type="checkbox" id="ida3375e6a8d874011938e1686889c6677" /><ol>
+                    <li class="file"><img class="type" src="changed.png"/><img src="enum.gif"/><label for="idc31fa09e94c34b80b64f333a1a4e19ed">SpatialInteractionSourceHandedness</label> <input checked type="checkbox" id="idc31fa09e94c34b80b64f333a1a4e19ed" /><ol>
+                        <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>Both : 3,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id67e710b64fce4a7aaa5dff38fcdf4cbf">SpatialInteractionSourceLocation</label> <input checked type="checkbox" id="id67e710b64fce4a7aaa5dff38fcdf4cbf" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PositionAccuracy { get; } : SpatialInteractionSourcePositionAccuracy</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PositionQuality { get; } : SpatialInteractionSourcePositionQuality</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id8fcd32dd4c5b4fdb9fb12fa072534ed8">SpatialInteractionSourcePositionAccuracy</label> <input checked type="checkbox" id="id8fcd32dd4c5b4fdb9fb12fa072534ed8" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>High : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Approximate : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="enum.gif"/><p>SpatialInteractionSourcePositionQuality</p>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id353f3f514c35488fad557cecd18f72f7">SpatialPointerInteractionSourcePose</label> <input checked type="checkbox" id="id353f3f514c35488fad557cecd18f72f7" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PositionAccuracy { get; } : SpatialInteractionSourcePositionAccuracy</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="property.gif"/><p>PositionQuality { get; } : SpatialInteractionSourcePositionQuality</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idde044f1a91c44ac79f483ef8721d3b86">Xaml</label> <input checked type="checkbox" id="idde044f1a91c44ac79f483ef8721d3b86" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7315ef3c2f1248fbbdfdebc30635e70d">Hosting</label> <input checked type="checkbox" id="id7315ef3c2f1248fbbdfdebc30635e70d" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id8901133cebb940288fd5e9a411c8de45">DesignerAppExitedEventArgs</label> <input checked type="checkbox" id="id8901133cebb940288fd5e9a411c8de45" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExitCode { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id702f4e9db2ce467dbafc81653a95fb78">DesignerAppManager</label> <input checked type="checkbox" id="id702f4e9db2ce467dbafc81653a95fb78" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>DesignerAppExited event : TypedEventHandler&lt;DesignerAppManager,DesignerAppExitedEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="method.gif"/><p>DuplicateHandleIntoApp(UInt64 handle, Boolean inheritable) : UInt64</p>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png"/><img src="event.gif"/><p>ProcessExited event : TypedEventHandler&lt;DesignerAppManager,ProcessExitedEventArgs&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png"/><img src="class.gif"/><p>ProcessExitedEventArgs</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
