@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.17025.to.win10.17035.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0a6fc6e8d7b14093b953d5fe180acc8a">Windows</label> <input checked type="checkbox" id="id0a6fc6e8d7b14093b953d5fe180acc8a" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida6ae5bec31b64e6ea84f6ad590b88acc">ApplicationModel</label> <input checked type="checkbox" id="ida6ae5bec31b64e6ea84f6ad590b88acc" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idef2a188e528644c1be0bbd323ab9774d">Chat</label> <input checked type="checkbox" id="idef2a188e528644c1be0bbd323ab9774d" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ide85ebee8181647d1b3c4d2aa6ae8fa5a">RcsManagerChangedEventArgs</label> <input checked type="checkbox" id="ide85ebee8181647d1b3c4d2aa6ae8fa5a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ManagerChangeType { get; } : RcsManagerChangeType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TransportId { get; } : UInt32</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="idecb3c0c528a6464ea5426d9566923a76">RcsManagerChangeType</label> <input checked type="checkbox" id="idecb3c0c528a6464ea5426d9566923a76" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>TransportAdded : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>TransportRemoved : 1,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id3f691e7a4d2541e0a7a9585f68518418">RcsNotificationManager</label> <input checked type="checkbox" id="id3f691e7a4d2541e0a7a9585f68518418" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>RcsTransportsListChanged event : TypedEventHandler&lt;RcsNotificationManager,RcsManagerChangedEventArgs&gt;</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0be69a63073842e4bb9abbaf78f23988">Media</label> <input checked type="checkbox" id="id0be69a63073842e4bb9abbaf78f23988" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb1b61f43ad2c42d4921e633ac90cb198">Audio</label> <input checked type="checkbox" id="idb1b61f43ad2c42d4921e633ac90cb198" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id2313ca3ed2d649ec87fffbbff85de97c">AudioGraph</label> <input checked type="checkbox" id="id2313ca3ed2d649ec87fffbbff85de97c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateMediaSourceAudioInputNodeAsync(MediaSource mediaSource) : IAsyncOperation&lt;CreateMediaSourceAudioInputNodeResult&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateMediaSourceAudioInputNodeAsync(MediaSource mediaSource, AudioNodeEmitter emitter) : IAsyncOperation&lt;CreateMediaSourceAudioInputNodeResult&gt;</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id94f0d06cf93248eda532d97367894dc2">AudioGraphSettings</label> <input checked type="checkbox" id="id94f0d06cf93248eda532d97367894dc2" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MaxPlaybackSpeedFactor { get; set; } : Double</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idd77af4e7edff4a0fafc8f2b94622a042">CreateMediaSourceAudioInputNodeResult</label> <input checked type="checkbox" id="idd77af4e7edff4a0fafc8f2b94622a042" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Node { get; } : MediaSourceAudioInputNode</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Status { get; } : MediaSourceAudioInputNodeCreationStatus</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id2acbe99851e64ee080a2d44b31240780">MediaSourceAudioInputNode</label> <input checked type="checkbox" id="id2acbe99851e64ee080a2d44b31240780" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AddOutgoingConnection(IAudioNode destination) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>AddOutgoingConnection(IAudioNode destination, Double gain) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ConsumeInput { get; set; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>DisableEffectsByDefinition(IAudioEffectDefinition definition) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Dispose() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Duration { get; } : TimeSpan</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EffectDefinitions { get; } : IList&lt;IAudioEffectDefinition&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Emitter { get; } : AudioNodeEmitter</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>EnableEffectsByDefinition(IAudioEffectDefinition definition) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EncodingProperties { get; } : AudioEncodingProperties</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>EndTime { get; set; } : Nullable&lt;TimeSpan&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LoopCount { get; set; } : Nullable&lt;Int32&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>MediaSource { get; } : MediaSource</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>MediaSourceCompleted event : TypedEventHandler&lt;MediaSourceAudioInputNode,Object&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>OutgoingConnections { get; } : IReadOnlyList&lt;AudioGraphConnection&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>OutgoingGain { get; set; } : Double</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaybackSpeedFactor { get; set; } : Double</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Position { get; } : TimeSpan</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>RemoveOutgoingConnection(IAudioNode destination) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Reset() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Seek(TimeSpan position) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Start() : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>StartTime { get; set; } : Nullable&lt;TimeSpan&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Stop() : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id5f9ca2cc9e4a4eb1900499f784bcafda">MediaSourceAudioInputNodeCreationStatus</label> <input checked type="checkbox" id="id5f9ca2cc9e4a4eb1900499f784bcafda" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Success : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FormatNotSupported : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NetworkError : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UnknownFailure : 3,</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcb200ec6429f46238024a73ff932d1e6">Capture</label> <input checked type="checkbox" id="idcb200ec6429f46238024a73ff932d1e6" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idb8b956c066b54ed28942016c54eb005e">Frames</label> <input checked type="checkbox" id="idb8b956c066b54ed28942016c54eb005e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id4a1fef20007647ec9652013018df00ef">AudioMediaFrame</label> <input checked type="checkbox" id="id4a1fef20007647ec9652013018df00ef" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AudioEncodingProperties { get; } : AudioEncodingProperties</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>FrameReference { get; } : MediaFrameReference</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetAudioFrame() : AudioFrame</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id0d25afaa9887400bacbeb9c58761ce71">MediaFrameFormat</label> <input checked type="checkbox" id="id0d25afaa9887400bacbeb9c58761ce71" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AudioEncodingProperties { get; } : AudioEncodingProperties</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id68738dd1eee04d55b27de82aff4b6f44">MediaFrameReference</label> <input checked type="checkbox" id="id68738dd1eee04d55b27de82aff4b6f44" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AudioMediaFrame { get; } : AudioMediaFrame</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id46e70c5fd1044f03bbf7dd69922a4806">MediaFrameSourceController</label> <input checked type="checkbox" id="id46e70c5fd1044f03bbf7dd69922a4806" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AudioDeviceController { get; } : AudioDeviceController</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="enum.gif"/><label for="id03f4626fc6c9405f9662b911de8c63fe">MediaFrameSourceKind</label> <input checked type="checkbox" id="id03f4626fc6c9405f9662b911de8c63fe" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Audio : 4,</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id77e1232ab9ec4588a3f0454d54509244">DialProtocol</label> <input checked type="checkbox" id="id77e1232ab9ec4588a3f0454d54509244" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id3c12a3e11a3d432bb16fa1fbdb230402">DialReceiverApp</label> <input checked type="checkbox" id="id3c12a3e11a3d432bb16fa1fbdb230402" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetUniqueDeviceNameAsync() : IAsyncOperation&lt;String&gt;</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id35bf0ddf5a664451848a978a2c438d05">Playback</label> <input checked type="checkbox" id="id35bf0ddf5a664451848a978a2c438d05" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id653069a67e7344c6bdb1ccb80fa36334">MediaPlaybackSession</label> <input checked type="checkbox" id="id653069a67e7344c6bdb1ccb80fa36334" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetOutputDegradationPolicyState() : MediaPlaybackSessionOutputDegradationPolicyState</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PlaybackRotation { get; set; } : MediaRotation</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id12ace3bf0d5e496093edcf6ef1a7c62a">MediaPlaybackSessionOutputDegradationPolicyState</label> <input checked type="checkbox" id="id12ace3bf0d5e496093edcf6ef1a7c62a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VideoConstrictionReason { get; } : MediaPlaybackSessionVideoConstrictionReason</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id727e3be236b94e4182142c03d22b28b9">MediaPlaybackSessionVideoConstrictionReason</label> <input checked type="checkbox" id="id727e3be236b94e4182142c03d22b28b9" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>None : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>VirtualMachine : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UnsupportedDisplayAdapter : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>UnsignedDriver : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FrameServerEnabled : 4,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>OutputProtectionFailed : 5,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Unknown : 6,</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id638f1e068123424a87f469bac911fc95">Streaming</label> <input checked type="checkbox" id="id638f1e068123424a87f469bac911fc95" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id85b9596993044dc2874fdb50cf959853">Adaptive</label> <input checked type="checkbox" id="id85b9596993044dc2874fdb50cf959853" /><ol>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id624787fdf7a049b9b8822424eb590343">AdaptiveMediaSourceDiagnosticAvailableEventArgs</label> <input checked type="checkbox" id="id624787fdf7a049b9b8822424eb590343" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceContentType { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceDuration { get; } : Nullable&lt;TimeSpan&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="ida21884bb97bd4670a5e1dad90d2022e3">AdaptiveMediaSourceDownloadCompletedEventArgs</label> <input checked type="checkbox" id="ida21884bb97bd4670a5e1dad90d2022e3" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceContentType { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceDuration { get; } : Nullable&lt;TimeSpan&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id3d2008fd040140168e54bfa21fb57394">AdaptiveMediaSourceDownloadFailedEventArgs</label> <input checked type="checkbox" id="id3d2008fd040140168e54bfa21fb57394" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceContentType { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceDuration { get; } : Nullable&lt;TimeSpan&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id6ac8a4fdf5a34830beae1f98f13afbbc">AdaptiveMediaSourceDownloadRequestedEventArgs</label> <input checked type="checkbox" id="id6ac8a4fdf5a34830beae1f98f13afbbc" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceContentType { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ResourceDuration { get; } : Nullable&lt;TimeSpan&gt;</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ide7dc2a441da943fe94fc5748dfa4086b">Networking</label> <input checked type="checkbox" id="ide7dc2a441da943fe94fc5748dfa4086b" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7a3e2c3135e348359c63d1e7edd889fc">Vpn</label> <input checked type="checkbox" id="id7a3e2c3135e348359c63d1e7edd889fc" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id4e2403965da04d718bb84ff3b01b29ee">VpnNativeProfile</label> <input checked type="checkbox" id="id4e2403965da04d718bb84ff3b01b29ee" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IDi { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IdiType { get; set; } : VpnPayloadIdType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IDr { get; set; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IdrType { get; set; } : VpnPayloadIdType</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsImsConfig { get; set; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>PCscf { get; } : String</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id476aa98f35b94260b97eb41facee6a4e">VpnPayloadIdType</label> <input checked type="checkbox" id="id476aa98f35b94260b97eb41facee6a4e" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>invalid : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ipv4 : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>fqdn : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>rfc822_addr : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>reserved1 : 4,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ipv6 : 5,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>reserved2 : 6,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>reserved3 : 7,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>reserved4 : 8,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>der_asn1_dn : 9,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>der_asn1_gn : 10,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>key_id : 11,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>max : 12,</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idba68c8790a4c41d8ad2efa407112c288">UI</label> <input checked type="checkbox" id="idba68c8790a4c41d8ad2efa407112c288" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id52f4c341e4604462bd02f1a752771f3d">Xaml</label> <input checked type="checkbox" id="id52f4c341e4604462bd02f1a752771f3d" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd4ad4538d0ae4c9fb488289229bc45a9">Controls</label> <input checked type="checkbox" id="idd4ad4538d0ae4c9fb488289229bc45a9" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd807c11188ec407389c76e1d3b103626">Maps</label> <input checked type="checkbox" id="idd807c11188ec407389c76e1d3b103626" /><ol>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idbdce0922d59440b6b9edb420dd2d9b1f">MapControl</label> <input checked type="checkbox" id="idbdce0922d59440b6b9edb420dd2d9b1f" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Region { get; set; } : String</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>RegionProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id8d437f8c30614f869c57f4623332f47c">MapElement</label> <input checked type="checkbox" id="id8d437f8c30614f869c57f4623332f47c" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsEnabled { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsEnabledProperty static { get; } : DependencyProperty</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
