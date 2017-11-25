@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.17040.to.win10.17046.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc4eeba3609174c77aa955c2fdc214a5b">Windows</label> <input checked type="checkbox" id="idc4eeba3609174c77aa955c2fdc214a5b" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="ida4fb95b6b2134142bc5488c05443f8bc">ApplicationModel</label> <input checked type="checkbox" id="ida4fb95b6b2134142bc5488c05443f8bc" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id5b574a3557384737b2a4fb5289046f40">Store</label> <input checked type="checkbox" id="id5b574a3557384737b2a4fb5289046f40" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id0f1dcaf357894497a50bc8634a5e1419">Preview</label> <input checked type="checkbox" id="id0f1dcaf357894497a50bc8634a5e1419" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idbbf1acea56f3481bb5f022caf170f636">InstallControl</label> <input checked type="checkbox" id="idbbf1acea56f3481bb5f022caf170f636" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppInstallOptions</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>AppUpdateOptions</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1185fc3f760b4469b15eaaa02b80e80a">Devices</label> <input checked type="checkbox" id="id1185fc3f760b4469b15eaaa02b80e80a" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idcd997e4c55ae4cbfa67bff789c34ec4e">PointOfService</label> <input checked type="checkbox" id="idcd997e4c55ae4cbfa67bff789c34ec4e" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idcacea4d58cb74f81a299fa3e05bfb910">Provider</label> <input checked type="checkbox" id="idcacea4d58cb74f81a299fa3e05bfb910" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerDisableScannerRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerDisableScannerRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerEnableScannerRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerEnableScannerRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerGetSymbologyAttributesRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerGetSymbologyAttributesRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerHideVideoPreviewRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerHideVideoPreviewRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerProviderConnection</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerProviderTriggerDetails</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerSetActiveSymbologiesRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerSetActiveSymbologiesRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerSetSymbologyAttributesRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerSetSymbologyAttributesRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerStartSoftwareTriggerRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerStartSoftwareTriggerRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerStopSoftwareTriggerRequest</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeScannerStopSoftwareTriggerRequestEventArgs</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>BarcodeScannerTriggerState</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>BarcodeSymbologyAttributesBuilder</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idba508b04004a4916b2a659ad602e7fa9">Services</label> <input checked type="checkbox" id="idba508b04004a4916b2a659ad602e7fa9" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id7bc4871ddeee46fea316088165ea36cc">Store</label> <input checked type="checkbox" id="id7bc4871ddeee46fea316088165ea36cc" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><p>StoreCanAcquireLicenseResult</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StoreCanLicenseStatus</p>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id2c75137b88d74ad58893a791b9e9b154">Storage</label> <input checked type="checkbox" id="id2c75137b88d74ad58893a791b9e9b154" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3f4643d675fd4f088d8e311f723b4fb8">Provider</label> <input checked type="checkbox" id="id3f4643d675fd4f088d8e311f723b4fb8" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><p>IStorageProviderUriSource</p>
+                </li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>StorageProviderResolveContentUriResult</p>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+

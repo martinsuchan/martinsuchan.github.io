@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.17040.to.win10.17046.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id09df7efb3f564ab9b60c50d53c00308f">Windows</label> <input checked type="checkbox" id="id09df7efb3f564ab9b60c50d53c00308f" /><ol>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id3720e81472084f0b97ba7d6a4468fc85">ApplicationModel</label> <input checked type="checkbox" id="id3720e81472084f0b97ba7d6a4468fc85" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id32479373da0f4b76afb849c17f4787af">Store</label> <input checked type="checkbox" id="id32479373da0f4b76afb849c17f4787af" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1de012de1aec4d50ba07460143804317">Preview</label> <input checked type="checkbox" id="id1de012de1aec4d50ba07460143804317" /><ol>
+                    <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc40255971a714de48626e84d8fc9153c">InstallControl</label> <input checked type="checkbox" id="idc40255971a714de48626e84d8fc9153c" /><ol>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id5b5b522f78464379b4527b2dfcedd92c">AppInstallManager</label> <input checked type="checkbox" id="id5b5b522f78464379b4527b2dfcedd92c" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SearchForAllUpdatesAsync(String correlationVector, String clientId, AppUpdateOptions updateOptions) : IAsyncOperation&lt;IReadOnlyList&lt;AppInstallItem&gt;&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SearchForAllUpdatesForUserAsync(User user, String correlationVector, String clientId, AppUpdateOptions updateOptions) : IAsyncOperation&lt;IReadOnlyList&lt;AppInstallItem&gt;&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SearchForUpdatesAsync(String productId, String skuId, String correlationVector, String clientId, AppUpdateOptions updateOptions) : IAsyncOperation&lt;AppInstallItem&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>SearchForUpdatesForUserAsync(User user, String productId, String skuId, String correlationVector, String clientId, AppUpdateOptions updateOptions) : IAsyncOperation&lt;AppInstallItem&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>StartProductInstallAsync(String productId, String flightId, String clientId, String correlationVector, AppInstallOptions installOptions) : IAsyncOperation&lt;IReadOnlyList&lt;AppInstallItem&gt;&gt;</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>StartProductInstallForUserAsync(User user, String productId, String flightId, String clientId, String correlationVector, AppInstallOptions installOptions) : IAsyncOperation&lt;IReadOnlyList&lt;AppInstallItem&gt;&gt;</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idf37dbad818724266a29fceb3e5c0b500">AppInstallOptions</label> <input checked type="checkbox" id="idf37dbad818724266a29fceb3e5c0b500" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AllowForcedAppRestart { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CatalogId { get; set; } : String</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ForceUseOfNonRemovableStorage { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Repair { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>TargetVolume { get; set; } : PackageVolume</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idbf11b342e3d641438114448e240506a2">AppInstallStatus</label> <input checked type="checkbox" id="idbf11b342e3d641438114448e240506a2" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsStaged { get; } : Boolean</p>
+                            </li>
+                        </ol></li>
+                        <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id224ba8123fb643818b207bff69e3ed65">AppUpdateOptions</label> <input checked type="checkbox" id="id224ba8123fb643818b207bff69e3ed65" /><ol>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>AllowForcedAppRestart { get; set; } : Boolean</p>
+                            </li>
+                            <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CatalogId { get; set; } : String</p>
+                            </li>
+                        </ol></li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id8defbaa121de470483caaf0cdba31bc1">Devices</label> <input checked type="checkbox" id="id8defbaa121de470483caaf0cdba31bc1" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idd7887f1db5754718889ca12271351d0b">PointOfService</label> <input checked type="checkbox" id="idd7887f1db5754718889ca12271351d0b" /><ol>
+                <li><img class="type" src="added.png"/><img src="namespace.gif"/><label for="idc8611e30f98f484fae11bbad83d9ba5b">Provider</label> <input checked type="checkbox" id="idc8611e30f98f484fae11bbad83d9ba5b" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ida8c62e739ef74c9c86289e448818976d">BarcodeScannerDisableScannerRequest</label> <input checked type="checkbox" id="ida8c62e739ef74c9c86289e448818976d" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id16ba49983e2247d2b609e07fd0b7bfa4">BarcodeScannerDisableScannerRequestEventArgs</label> <input checked type="checkbox" id="id16ba49983e2247d2b609e07fd0b7bfa4" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerDisableScannerRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id1d57b73442604db79456182752ea863e">BarcodeScannerEnableScannerRequest</label> <input checked type="checkbox" id="id1d57b73442604db79456182752ea863e" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id4d7d61ebff6f4067b7f44ccf12e3b42d">BarcodeScannerEnableScannerRequestEventArgs</label> <input checked type="checkbox" id="id4d7d61ebff6f4067b7f44ccf12e3b42d" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerEnableScannerRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id8e9c2b5ed90f4533a65faffaeef05319">BarcodeScannerGetSymbologyAttributesRequest</label> <input checked type="checkbox" id="id8e9c2b5ed90f4533a65faffaeef05319" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync(BarcodeSymbologyAttributes attributes) : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Symbology { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idbc4db742254e48869a0aa2a9b9cc3d9f">BarcodeScannerGetSymbologyAttributesRequestEventArgs</label> <input checked type="checkbox" id="idbc4db742254e48869a0aa2a9b9cc3d9f" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerGetSymbologyAttributesRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id84d7433eaf724dde981e47de30c73fca">BarcodeScannerHideVideoPreviewRequest</label> <input checked type="checkbox" id="id84d7433eaf724dde981e47de30c73fca" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id0cc6fa81cb7540cf90285ecbebe4bad6">BarcodeScannerHideVideoPreviewRequestEventArgs</label> <input checked type="checkbox" id="id0cc6fa81cb7540cf90285ecbebe4bad6" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerHideVideoPreviewRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id5e0a6b4f91b940ce834bb2098ba8bdcd">BarcodeScannerProviderConnection</label> <input checked type="checkbox" id="id5e0a6b4f91b940ce834bb2098ba8bdcd" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CompanyName { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>DisableScannerRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerDisableScannerRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Dispose() : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>EnableScannerRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerEnableScannerRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>GetBarcodeSymbologyAttributesRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerGetSymbologyAttributesRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>HideVideoPreviewRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerHideVideoPreviewRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Id { get; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Name { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportErrorAsync(UnifiedPosErrorData errorData) : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportErrorAsync(UnifiedPosErrorData errorData, Boolean isRetriable, BarcodeScannerReport scanReport) : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportScannedDataAsync(BarcodeScannerReport report) : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportTriggerStateAsync(BarcodeScannerTriggerState state) : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>SetActiveSymbologiesRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerSetActiveSymbologiesRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>SetBarcodeSymbologyAttributesRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerSetSymbologyAttributesRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>Start() : Void</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>StartSoftwareTriggerRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerStartSoftwareTriggerRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="event.gif"/><p>StopSoftwareTriggerRequested event : TypedEventHandler&lt;BarcodeScannerProviderConnection,BarcodeScannerStopSoftwareTriggerRequestEventArgs&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>SupportedSymbologies { get; } : IList&lt;UInt32&gt;</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Version { get; set; } : String</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>VideoDeviceId { get; } : String</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idb8d61d3a855d4c37880cf79e97be549d">BarcodeScannerProviderTriggerDetails</label> <input checked type="checkbox" id="idb8d61d3a855d4c37880cf79e97be549d" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Connection { get; } : BarcodeScannerProviderConnection</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idd9a6716344d1437bbbb0f53ef626a662">BarcodeScannerSetActiveSymbologiesRequest</label> <input checked type="checkbox" id="idd9a6716344d1437bbbb0f53ef626a662" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Symbologies { get; } : IReadOnlyList&lt;UInt32&gt;</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ided83249a496c4bfb812131b997a24687">BarcodeScannerSetActiveSymbologiesRequestEventArgs</label> <input checked type="checkbox" id="ided83249a496c4bfb812131b997a24687" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerSetActiveSymbologiesRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id05103eb24862467394dc685e10e36ef8">BarcodeScannerSetSymbologyAttributesRequest</label> <input checked type="checkbox" id="id05103eb24862467394dc685e10e36ef8" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Attributes { get; } : BarcodeSymbologyAttributes</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Symbology { get; } : UInt32</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="idf6f54d74e740418c9f41421d143260c8">BarcodeScannerSetSymbologyAttributesRequestEventArgs</label> <input checked type="checkbox" id="idf6f54d74e740418c9f41421d143260c8" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerSetSymbologyAttributesRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id916b588c3ebe4a58b88600c10cc50429">BarcodeScannerStartSoftwareTriggerRequest</label> <input checked type="checkbox" id="id916b588c3ebe4a58b88600c10cc50429" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id7342e426f8dc45aab0bb392c7df10971">BarcodeScannerStartSoftwareTriggerRequestEventArgs</label> <input checked type="checkbox" id="id7342e426f8dc45aab0bb392c7df10971" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerStartSoftwareTriggerRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id995dad62bfd14ad4a93ddd0fa01efde5">BarcodeScannerStopSoftwareTriggerRequest</label> <input checked type="checkbox" id="id995dad62bfd14ad4a93ddd0fa01efde5" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportCompletedAsync() : IAsyncAction</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ReportFailedAsync() : IAsyncAction</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="id3c6ea37466384e0cb845d3a4718f6f85">BarcodeScannerStopSoftwareTriggerRequestEventArgs</label> <input checked type="checkbox" id="id3c6ea37466384e0cb845d3a4718f6f85" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GetDeferral() : Deferral</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Request { get; } : BarcodeScannerStopSoftwareTriggerRequest</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="ide9ec9c0b932b41078bf22689dfb48b34">BarcodeScannerTriggerState</label> <input checked type="checkbox" id="ide9ec9c0b932b41078bf22689dfb48b34" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Released : 0,</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Pressed : 1,</p>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="ida071a0b0146b49e59a7e9038a0b5ef11">BarcodeSymbologyAttributesBuilder</label> <input checked type="checkbox" id="ida071a0b0146b49e59a7e9038a0b5ef11" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateAttributes() : BarcodeSymbologyAttributes</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsDecodeLengthSupported { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsCheckDigitTransmissionSupported { get; set; } : Boolean</p>
+                        </li>
+                        <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>IsCheckDigitValidationSupported { get; set; } : Boolean</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idf6f1803500ac46cbb28629aef62da4d2">Services</label> <input checked type="checkbox" id="idf6f1803500ac46cbb28629aef62da4d2" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc5b0fdc73f234b1f974fd829d1ec6bc7">Maps</label> <input checked type="checkbox" id="idc5b0fdc73f234b1f974fd829d1ec6bc7" /><ol>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="idad2b1025732649d1968dc936c3bc527a">PlaceInfo</label> <input checked type="checkbox" id="idad2b1025732649d1968dc936c3bc527a" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateFromAddress(String displayAddress) static : PlaceInfo</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CreateFromAddress(String displayAddress, String displayName) static : PlaceInfo</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idc5f2820902c14d66983c2fb2fd667a49">Store</label> <input checked type="checkbox" id="idc5f2820902c14d66983c2fb2fd667a49" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="class.gif"/><label for="iddcd837f477b447a1be1b6397aa0ea301">StoreCanAcquireLicenseResult</label> <input checked type="checkbox" id="iddcd837f477b447a1be1b6397aa0ea301" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>ExtendedError { get; } : Exception</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>LicensableSku { get; } : String</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>Status { get; } : StoreCanLicenseStatus</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id19758d03af144774ac489a3af3725595">StoreCanLicenseStatus</label> <input checked type="checkbox" id="id19758d03af144774ac489a3af3725595" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NotLicensableToUser : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Licensable : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>LicenseActionNotApplicableToProduct : 2,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NetworkError : 3,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>ServerError : 4,</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id3eb6adfc60fd4afab67ff033a834132c">StoreContext</label> <input checked type="checkbox" id="id3eb6adfc60fd4afab67ff033a834132c" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>CanAcquireStoreLicenseForOptionalPackageAsync(Package optionalPackage) : IAsyncOperation&lt;StoreCanAcquireLicenseResult&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="property.gif"/><p>CanSilentlyDownloadStorePackageUpdates { get; } : Boolean</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TrySilentDownloadAndInstallStorePackageUpdatesAsync(IEnumerable&lt;StorePackageUpdate&gt; storePackageUpdates) : IAsyncOperationWithProgress&lt;StorePackageUpdateResult,StorePackageUpdateStatus&gt;</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TrySilentDownloadStorePackageUpdatesAsync(IEnumerable&lt;StorePackageUpdate&gt; storePackageUpdates) : IAsyncOperationWithProgress&lt;StorePackageUpdateResult,StorePackageUpdateStatus&gt;</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id88df8df57cd2424a84757abf621d66bd">Storage</label> <input checked type="checkbox" id="id88df8df57cd2424a84757abf621d66bd" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id1c9ce2f7537b48ddb357e2b67f5cfc5e">Provider</label> <input checked type="checkbox" id="id1c9ce2f7537b48ddb357e2b67f5cfc5e" /><ol>
+                <li class="file"><img class="type" src="added.png"/><img src="interface.gif"/><label for="idcc58525f78544cc28242ac93ff03f3a0">IStorageProviderUriSource</label> <input checked type="checkbox" id="idcc58525f78544cc28242ac93ff03f3a0" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>GenerateContentUriAndIdForItem(String path, String& contentUri, String& appActivityId) : Void</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>ResolveContentUri(String contentUri, String& path, StorageProviderResolveContentUriResult& result) : Void</p>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><label for="id2bdd704003d644aead7ffc22bb1018c5">StorageProviderResolveContentUriResult</label> <input checked type="checkbox" id="id2bdd704003d644aead7ffc22bb1018c5" /><ol>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>Success : 0,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>NoSyncRoot : 1,</p>
+                    </li>
+                    <li class="file"><img class="type" src="added.png"/><img src="enum.gif"/><p>FileNotFound : 2,</p>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="idbb6834582b4447a4bc766765e0d4e2c5">UI</label> <input checked type="checkbox" id="idbb6834582b4447a4bc766765e0d4e2c5" /><ol>
+            <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id34841b55765c4fed9cfe3099347c6d0e">Input</label> <input checked type="checkbox" id="id34841b55765c4fed9cfe3099347c6d0e" /><ol>
+                <li><img class="type" src="changed.png"/><img src="namespace.gif"/><label for="id48d15ee407504e43badd2cc6bd75fdee">Spatial</label> <input checked type="checkbox" id="id48d15ee407504e43badd2cc6bd75fdee" /><ol>
+                    <li class="file"><img class="type" src="changed.png"/><img src="class.gif"/><label for="id5501cd00e8404126bd629cbad988872f">SpatialInteractionController</label> <input checked type="checkbox" id="id5501cd00e8404126bd629cbad988872f" /><ol>
+                        <li class="file"><img class="type" src="added.png"/><img src="method.gif"/><p>TryGetBatteryReport() : BatteryReport</p>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
