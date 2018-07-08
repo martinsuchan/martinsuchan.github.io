@@ -151,11 +151,19 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromFilePath(String filePath) static : LearningModel</p><input/>
                     </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromFilePath(String filePath, ILearningModelOperatorProvider operatorProvider) static : LearningModel</p><input/>
+                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStorageFileAsync(IStorageFile modelFile) static : IAsyncOperation&lt;LearningModel&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStorageFileAsync(IStorageFile modelFile, ILearningModelOperatorProvider operatorProvider) static : IAsyncOperation&lt;LearningModel&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStream(IRandomAccessStreamReference modelStream) static : LearningModel</p><input/>
                     </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStream(IRandomAccessStreamReference modelStream, ILearningModelOperatorProvider operatorProvider) static : LearningModel</p><input/>
+                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStreamAsync(IRandomAccessStreamReference modelStream) static : IAsyncOperation&lt;LearningModel&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LoadFromStreamAsync(IRandomAccessStreamReference modelStream, ILearningModelOperatorProvider operatorProvider) static : IAsyncOperation&lt;LearningModel&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Metadata { get; } : IReadOnlyDictionary&lt;String,String&gt;</p><input/>
                     </li>
@@ -224,8 +232,6 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(LearningModel model)</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(LearningModel model, LearningModelDevice deviceToRunOn)</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(LearningModel model, LearningModelDevice deviceToRunOn, ILearningModelOperatorProvider learningModelOperatorProvider)</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Device { get; } : LearningModelDevice</p><input/>
                     </li>
@@ -849,114 +855,6 @@ li input:checked + ol
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>CommunicationBlockingContract</p><input/>
                 </li>
             </ol></li>
-            <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="9811f9bc795614f9657bc702520f39cf">ComponentUI</label> <input checked type="checkbox" id="9811f9bc795614f9657bc702520f39cf" /><ol>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="e0b22b97e45c7d106dec1038f17c5815">ComponentAddedEventArgs</label> <input checked type="checkbox" id="e0b22b97e45c7d106dec1038f17c5815" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentSite { get; } : ComponentSite</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="418fb3e402c93850066258b225e6a8e2">ComponentLaunchError</label> <input checked type="checkbox" id="418fb3e402c93850066258b225e6a8e2" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>VersionTooLow : 1,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PackageNotInstalled : 2,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PackageCorrupted : 3,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AccessDenied : 4,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>InvalidParameter : 5,</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0e936136ae70e8fb2d9ce7afd3d03298">ComponentLaunchOptions</label> <input checked type="checkbox" id="0e936136ae70e8fb2d9ce7afd3d03298" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ActivationArgs { get; } : ValueSet</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowBackgroundClipboardAccess { get; set; } : Boolean</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentObjectModelACID { get; set; } : String</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="91dbc130bcea110404fb17bd70c63f84">ComponentLaunchResults</label> <input checked type="checkbox" id="91dbc130bcea110404fb17bd70c63f84" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentSite { get; } : ComponentSite</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Error { get; } : ComponentLaunchError</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="ef2b4a3ce0ba7602ae719f670f8f970f">ComponentManager</label> <input checked type="checkbox" id="ef2b4a3ce0ba7602ae719f670f8f970f" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>ComponentAdded event : TypedEventHandler&lt;ComponentManager,ComponentAddedEventArgs&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>ComponentRemoved event : TypedEventHandler&lt;ComponentManager,ComponentRemovedEventArgs&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetForCurrentView() static : ComponentManager</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchComponentAsync(String packageFamilyName, String componentId, ComponentLaunchOptions options) : IAsyncOperation&lt;ComponentLaunchResults&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ReparentComponentAsync(ComponentSite component, CoreApplicationView target) : IAsyncOperation&lt;ComponentReparentResults&gt;</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="7e5a5d25b17eb352a1a76eca99e3f9ea">ComponentRemovedEventArgs</label> <input checked type="checkbox" id="7e5a5d25b17eb352a1a76eca99e3f9ea" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentSite { get; } : ComponentSite</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Reparented { get; } : Boolean</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0a6b6c63736f37ed6885e26561c10b57">ComponentReparentResults</label> <input checked type="checkbox" id="0a6b6c63736f37ed6885e26561c10b57" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentSite { get; } : ComponentSite</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="5f44574f52c0c25f20a9bb2ae3849ba3">ComponentSite</label> <input checked type="checkbox" id="5f44574f52c0c25f20a9bb2ae3849ba3" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CloseAsync() : IAsyncAction</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentState { get; } : ComponentState</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>ComponentStateChanged event : TypedEventHandler&lt;ComponentSite,ComponentStateEventArgs&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetVisual(Compositor hostCompositor) : Visual</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Id { get; } : UInt64</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>InitializeAsync() : IAsyncOperation&lt;Boolean&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Input { get; } : InputSitePrototype</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ObjectModel { get; } : Object</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>OpenAppServiceConnectionAsync(String serviceName) : IAsyncOperation&lt;AppServiceConnection&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageFamilyName { get; } : String</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageRelativeComponentId { get; } : String</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Size { get; set; } : Size</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Version { get; } : PackageVersion</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Visibility { get; set; } : Boolean</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="44fba3d61e1149989b98d1b62e13e093">ComponentState</label> <input checked type="checkbox" id="44fba3d61e1149989b98d1b62e13e093" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Launched : 0,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Connected : 1,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PresentationReady : 2,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Closed : 3,</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="3a53a23ba28edc5b129aa7752147fb60">ComponentStateEventArgs</label> <input checked type="checkbox" id="3a53a23ba28edc5b129aa7752147fb60" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ComponentState { get; } : ComponentState</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="95e252cbd7841592f58adb2760fe355a">InputSitePrototype</label> <input checked type="checkbox" id="95e252cbd7841592f58adb2760fe355a" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DummyProperty { get; set; } : UInt32</p><input/>
-                    </li>
-                </ol></li>
-            </ol></li>
             <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="27591661afce711450b2bada6b4e0f59">DataTransfer</label> <input checked type="checkbox" id="27591661afce711450b2bada6b4e0f59" /><ol>
                 <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="649fc04315e197e5a36b0af8b7038a16">Clipboard</label> <input checked type="checkbox" id="649fc04315e197e5a36b0af8b7038a16" /><ol>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ClearHistory() static : Boolean</p><input/>
@@ -1184,11 +1082,13 @@ li input:checked + ol
                 </li>
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Required : 3,</p><input/>
                 </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Error : 4,</p><input/>
+                </li>
             </ol></li>
             <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="97afe2cd926f1754c3dd120fd50134d6">PackageUpdateAvailabilityResult</label> <input checked type="checkbox" id="97afe2cd926f1754c3dd120fd50134d6" /><ol>
-                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Availability { get; } : PackageUpdateAvailability</p><input/>
                 </li>
-                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageUpdateAvailability { get; } : PackageUpdateAvailability</p><input/>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
                 </li>
             </ol></li>
         </ol></li>
@@ -2160,6 +2060,14 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>HE : 10,</p><input/>
                     </li>
                 </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="58c6ab84fd179e947da48cbdfbd5196e">Foundation</label> <input checked type="checkbox" id="58c6ab84fd179e947da48cbdfbd5196e" /><ol>
+            <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="cbb26896f2b5df1f55648cc300c892e1">GuidHelper</label> <input checked type="checkbox" id="cbb26896f2b5df1f55648cc300c892e1" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateNewGuid() static : Guid</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Empty static { get; } : Guid</p><input/>
+                </li>
             </ol></li>
         </ol></li>
         <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="a02268fa1f45e107e4682f472a783db6">Gaming</label> <input checked type="checkbox" id="a02268fa1f45e107e4682f472a783db6" /><ol>
@@ -3177,10 +3085,6 @@ li input:checked + ol
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>User { get; } : User</p><input/>
                 </li>
             </ol></li>
-            <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="845583096c90c6c73eb73dec8a47468e">FolderLauncherOptions</label> <input checked type="checkbox" id="845583096c90c6c73eb73dec8a47468e" /><ol>
-                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>GroupingPreference { get; set; } : ViewGrouping</p><input/>
-                </li>
-            </ol></li>
             <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="97e44d429f334a9edb72fb6b719007ef">Launcher</label> <input checked type="checkbox" id="97e44d429f334a9edb72fb6b719007ef" /><ol>
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchFolderPathAsync(String path) static : IAsyncOperation&lt;Boolean&gt;</p><input/>
                 </li>
@@ -3189,10 +3093,6 @@ li input:checked + ol
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchFolderPathForUserAsync(User user, String path) static : IAsyncOperation&lt;Boolean&gt;</p><input/>
                 </li>
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchFolderPathForUserAsync(User user, String path, FolderLauncherOptions options) static : IAsyncOperation&lt;Boolean&gt;</p><input/>
-                </li>
-            </ol></li>
-            <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="05e0373e683ae3a3f736d38812b75393">LauncherOptions</label> <input checked type="checkbox" id="05e0373e683ae3a3f736d38812b75393" /><ol>
-                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>GroupingPreference { get; set; } : ViewGrouping</p><input/>
                 </li>
             </ol></li>
         </ol></li>
@@ -3269,7 +3169,7 @@ li input:checked + ol
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="00f4f4932481380b5c4d49edb50594c7">CompositionAnimation</label> <input checked type="checkbox" id="00f4f4932481380b5c4d49edb50594c7" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetAnimatableReferenceParameter(String parameterName, IAnimationObject source) : Void</p><input/>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetExpressionReferenceParameter(String parameterName, IAnimationObject source) : Void</p><input/>
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="54f8fc8b47f1ec4315cf9290f9be15ea">CompositionBatchTypes</label> <input checked type="checkbox" id="54f8fc8b47f1ec4315cf9290f9be15ea" /><ol>
@@ -3311,7 +3211,7 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRedirectVisual() : RedirectVisual</p><input/>
                     </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRedirectVisualWithSourceVisual(Visual source) : RedirectVisual</p><input/>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRedirectVisual(Visual source) : RedirectVisual</p><input/>
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="396348ef1d5c1fa130a05c1d392e663e">IAnimationObject</label> <input checked type="checkbox" id="396348ef1d5c1fa130a05c1d392e663e" /><ol>
@@ -3432,12 +3332,6 @@ li input:checked + ol
                         </li>
                     </ol></li>
                 </ol></li>
-                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="fb69ccc3c93581605b9c2483f5a48fb4">ApplicationView</label> <input checked type="checkbox" id="fb69ccc3c93581605b9c2483f5a48fb4" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CanOpenInNewTab { get; } : Boolean</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsTabGroupingSupported { get; } : Boolean</p><input/>
-                    </li>
-                </ol></li>
                 <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="ad8b1f4939292ee8a47b3617f6c2ad8a">ApplicationViewTitleBar</label> <input checked type="checkbox" id="ad8b1f4939292ee8a47b3617f6c2ad8a" /><ol>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetActiveIconStreamAsync(RandomAccessStreamReference activeIcon) : Void</p><input/>
                     </li>
@@ -3474,20 +3368,6 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShowAsync() : IAsyncAction</p><input/>
                     </li>
                 </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="effbb0b77123df5602b7bd686c90675c">ViewGrouping</label> <input checked type="checkbox" id="effbb0b77123df5602b7bd686c90675c" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Default : 0,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>WithSource : 1,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Separate : 2,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>WithSourceInBackground : 3,</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="0758a1339c17196f08c7f3cabb25a4c0">ViewModePreferences</label> <input checked type="checkbox" id="0758a1339c17196f08c7f3cabb25a4c0" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>GroupingPreference { get; set; } : ViewGrouping</p><input/>
-                    </li>
-                </ol></li>
             </ol></li>
             <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="419014e7189f24a303e426e575fc676a">WebUI</label> <input checked type="checkbox" id="419014e7189f24a303e426e575fc676a" /><ol>
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="delegate.gif" alt="delegate"/><p>BackgroundActivatedEventHandler</p><input/>
@@ -3498,6 +3378,10 @@ li input:checked + ol
                 </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="c88e164f78a2441a81956cb115c2239d">NewWebUIViewCreatedEventArgs</label> <input checked type="checkbox" id="c88e164f78a2441a81956cb115c2239d" /><ol>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ActivatedEventArgs { get; } : IActivatedEventArgs</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetDeferral() : Deferral</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HasPendingNavigate { get; } : Boolean</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>WebUIView { get; } : WebUIView</p><input/>
                     </li>
@@ -3512,6 +3396,8 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>Activated event : TypedEventHandler&lt;WebUIView,IActivatedEventArgs&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>AddPreLoadedScript(String script) : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ApplicationViewId { get; } : Int32</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>BuildLocalStreamUri(String contentIdentifier, String relativePath) : Uri</p><input/>
                     </li>
@@ -3530,6 +3416,10 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>ContainsFullScreenElementChanged event : TypedEventHandler&lt;IWebViewControl,Object&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>ContentLoading event : TypedEventHandler&lt;IWebViewControl,WebViewControlContentLoadingEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAsync() static : IAsyncOperation&lt;WebUIView&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAsync(Uri uri) static : IAsyncOperation&lt;WebUIView&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DefaultBackgroundColor { get; set; } : Color</p><input/>
                     </li>
@@ -3552,6 +3442,8 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GoBack() : Void</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GoForward() : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IgnoreApplicationContentUriRulesNavigationRestrictions { get; set; } : Boolean</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>InvokeScriptAsync(String scriptName, IEnumerable&lt;String&gt; arguments) : IAsyncOperation&lt;String&gt;</p><input/>
                     </li>
@@ -3579,8 +3471,6 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Settings { get; } : WebViewControlSettings</p><input/>
                     </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ShouldApplyApplicationContentUriRulesNavigationRestrictions { get; set; } : Boolean</p><input/>
-                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Source { get; set; } : Uri</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Stop() : Void</p><input/>
@@ -3590,8 +3480,6 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>UnsupportedUriSchemeIdentified event : TypedEventHandler&lt;IWebViewControl,WebViewControlUnsupportedUriSchemeIdentifiedEventArgs&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>UnviewableContentIdentified event : TypedEventHandler&lt;IWebViewControl,WebViewControlUnviewableContentIdentifiedEventArgs&gt;</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ViewId { get; } : Int32</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>WebResourceRequested event : TypedEventHandler&lt;IWebViewControl,WebViewControlWebResourceRequestedEventArgs&gt;</p><input/>
                     </li>
@@ -4188,11 +4076,9 @@ li input:checked + ol
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Top : 2,</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>LeftIconOnly : 3,</p><input/>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>LeftCompact : 3,</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>LeftMinimal : 4,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>TopIcons : 5,</p><input/>
                         </li>
                     </ol></li>
                     <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="5831a53b70d43214a25b1c82d659ae7b">NavigationViewSelectionFollowsFocus</label> <input checked type="checkbox" id="5831a53b70d43214a25b1c82d659ae7b" /><ol>
@@ -9083,8 +8969,6 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="80a37e195950ac8ef3e12c2fa441e591">ThemeShadow</label> <input checked type="checkbox" id="80a37e195950ac8ef3e12c2fa441e591" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Receivers { get; } : UIElementWeakCollection</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ReceiversProperty static { get; } : DependencyProperty</p><input/>
                         </li>
                     </ol></li>
                 </ol></li>
