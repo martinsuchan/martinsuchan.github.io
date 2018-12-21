@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.18298.to.win10.18305.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9da06528183f737c58a40f94678be4ae">ApplicationModel</label> <input checked type="checkbox" id="9da06528183f737c58a40f94678be4ae" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7f22105099f6d8a591f6e05da415e62c">Background</label> <input checked type="checkbox" id="7f22105099f6d8a591f6e05da415e62c" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>ConversationalAgentTrigger</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="d66f0beab9e0d9aabced68417c5215ce">ConversationalAgent</label> <input checked type="checkbox" id="d66f0beab9e0d9aabced68417c5215ce" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>ConversationalAgentSession</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>ConversationalAgentSignal</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ConversationalAgentState</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>ConversationalAgentSystemStateChangedEventArgs</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ConversationalAgentSystemStateChangeType</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c9b7321cdef1c761da24f9bce6715548">Preview</label> <input checked type="checkbox" id="c9b7321cdef1c761da24f9bce6715548" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="263f0bfcd8440f3270f56c0deb01d86c">Holographic</label> <input checked type="checkbox" id="263f0bfcd8440f3270f56c0deb01d86c" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HolographicKeyboardPlacementOverridePreview</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c2241db7321f89bfdac52f044ecdcd11">Devices</label> <input checked type="checkbox" id="c2241db7321f89bfdac52f044ecdcd11" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9025c3b3d23379b0446903760e318f57">Input</label> <input checked type="checkbox" id="9025c3b3d23379b0446903760e318f57" /><ol>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>SpatialGazeDevice</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="bc42070377b4e47b11ab0db5d3760f13">Perception</label> <input checked type="checkbox" id="bc42070377b4e47b11ab0db5d3760f13" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="22658a0ce5bc6f56a711be7f79906644">People</label> <input checked type="checkbox" id="22658a0ce5bc6f56a711be7f79906644" /><ol>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>HandJointIndex</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>HandJointKind</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>HandMesh</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HandMeshObserver</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>HandMeshVertex</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HandMeshVertexState</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="struct.gif" alt="struct"/><p>HandVertexPositionAndNormal</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>JointPose</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c90f663931ef9eddc952c758a1923b9d">Spatial</label> <input checked type="checkbox" id="c90f663931ef9eddc952c758a1923b9d" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>SpatialRay</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="6d75e4aed471f90fb1c9988aade0b0d1">UI</label> <input checked type="checkbox" id="6d75e4aed471f90fb1c9988aade0b0d1" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="03ae61256e2d03ce8adf8ae0ffc206dc">Composition</label> <input checked type="checkbox" id="03ae61256e2d03ce8adf8ae0ffc206dc" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadow</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowCaster</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowCasterCollection</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>CompositionProjectedShadowDrawOrder</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowLegacyCaster</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowLegacyCasterCollection</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowLegacyReceiver</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowLegacyReceiverUnorderedCollection</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowLegacyScene</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>CompositionProjectedShadowPolicy</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>CompositionProjectedShadowReceiver</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>ICompositorPartner_ProjectedShadow</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>ICompositorPartner_ProjectedShadowLegacy</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="30c15dbf0170be0bb6daea9c98bef129">Input</label> <input checked type="checkbox" id="30c15dbf0170be0bb6daea9c98bef129" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>GazeInputAccessStatus</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="5e479c6c15a179edf683a01423882ce5">WindowManagement</label> <input checked type="checkbox" id="5e479c6c15a179edf683a01423882ce5" /><ol>
+                <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="19423d05f9f2c0d3b38b249b31e812c9">Preview</label> <input checked type="checkbox" id="19423d05f9f2c0d3b38b249b31e812c9" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>WindowManagementPreview</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>ApplicationWindowPresenterKind</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>BoundsPreference</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>CompactOverlayPresenter</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>FullScreenPresenter</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>MaximizedPresenter</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>ProjectionPresenter</p><input/>
+                </li>
+                <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>WindowPositionerKind</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
