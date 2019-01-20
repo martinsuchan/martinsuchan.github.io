@@ -1953,6 +1953,44 @@ li input:checked + ol
             </ol></li>
         </ol></li>
         <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7d40d41fdcfc7a98d20d072e2f9f9f1f">Security</label> <input checked type="checkbox" id="7d40d41fdcfc7a98d20d072e2f9f9f1f" /><ol>
+            <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="cdb3e7cb4fcc89721eda9b9cc6564f0f">Authorization</label> <input checked type="checkbox" id="cdb3e7cb4fcc89721eda9b9cc6564f0f" /><ol>
+                <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="2a239661553c55636c20e6765882e397">AppCapabilityAccess</label> <input checked type="checkbox" id="2a239661553c55636c20e6765882e397" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="8ce85b40b78b98ea765bf2040cad84e6">AppCapability</label> <input checked type="checkbox" id="8ce85b40b78b98ea765bf2040cad84e6" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>AccessChanged event : TypedEventHandler&lt;AppCapability,AppCapabilityAccessChangedEventArgs&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CapabilityName { get; } : String</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Create(String capabilityName) static : AppCapability</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateWithProcessIdForUser(User user, String capabilityName, UInt32 pid) static : AppCapability</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CheckAccess() : AppCapabilityAccessStatus</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestAccessAsync() : IAsyncOperation&lt;AppCapabilityAccessStatus&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestAccessForCapabilitiesAsync(IEnumerable&lt;String&gt; capabilityNames) static : IAsyncOperation&lt;IReadOnlyDictionary&lt;String,AppCapabilityAccessStatus&gt;&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestAccessForCapabilitiesForUserAsync(User user, IEnumerable&lt;String&gt; capabilityNames) static : IAsyncOperation&lt;IReadOnlyDictionary&lt;String,AppCapabilityAccessStatus&gt;&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>User { get; } : User</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>AppCapabilityAccessChangedEventArgs</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="8418e36835bbb17cf273a5fc1b0411e2">AppCapabilityAccessStatus</label> <input checked type="checkbox" id="8418e36835bbb17cf273a5fc1b0411e2" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>DeniedBySystem : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NotDeclaredByApp : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>DeniedByUser : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UserPromptRequired : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Allowed : 4,</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
             <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="c644d89cdeef493b1ac0d2ef347181d1">DataProtection</label> <input checked type="checkbox" id="c644d89cdeef493b1ac0d2ef347181d1" /><ol>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="16d8d04e6ba0691cae5bc44755be2631">UserDataAvailability</label> <input checked type="checkbox" id="16d8d04e6ba0691cae5bc44755be2631" /><ol>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Always : 0,</p><input/>
@@ -2112,6 +2150,8 @@ li input:checked + ol
                         </li>
                     </ol></li>
                     <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="4a42790216d7ed072449d7426f417e8e">InteractionTracker</label> <input checked type="checkbox" id="4a42790216d7ed072449d7426f417e8e" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetBindingMode(InteractionTracker boundTracker1, InteractionTracker boundTracker2) static : InteractionBindingAxisModes</p><input/>
+                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetBindingMode(InteractionTracker boundTracker1, InteractionTracker boundTracker2, InteractionBindingAxisModes axisMode) static : Void</p><input/>
                         </li>
                     </ol></li>
