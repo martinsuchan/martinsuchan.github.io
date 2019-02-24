@@ -369,6 +369,14 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetCurrentSessionSync() static : ConversationalAgentSession</p><input/>
                     </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetSignalModelId() : UInt32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetSignalModelIdAsync() : IAsyncOperation&lt;UInt32&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetSupportedSignalModelIds() : IReadOnlyList&lt;UInt32&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetSupportedSignalModelIdsAsync() : IAsyncOperation&lt;IReadOnlyList&lt;UInt32&gt;&gt;</p><input/>
+                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsIndicatorLightAvailable { get; } : Boolean</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsInterrupted { get; } : Boolean</p><input/>
@@ -394,6 +402,10 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestInterruptibleAsync(Boolean interruptible) : IAsyncOperation&lt;ConversationalAgentSessionUpdateResponse&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>SessionInterrupted event : TypedEventHandler&lt;ConversationalAgentSession,ConversationalAgentSessionInterruptedEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetSignalModelId(UInt32 signalModelId) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetSignalModelIdAsync(UInt32 signalModelId) : IAsyncOperation&lt;Boolean&gt;</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Signal { get; } : ConversationalAgentSignal</p><input/>
                     </li>
@@ -1711,25 +1723,15 @@ li input:checked + ol
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MaxBlurRadius { get; set; } : Single</p><input/>
                     </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MaxOpacity { get; set; } : Single</p><input/>
-                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MinBlurRadius { get; set; } : Single</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MinOpacity { get; set; } : Single</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>OpacityFalloff { get; set; } : Single</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Receivers { get; } : CompositionProjectedShadowReceiverUnorderedCollection</p><input/>
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="a4b60d2948c3efb8174c0ec1d741f8fb">CompositionProjectedShadowCaster</label> <input checked type="checkbox" id="a4b60d2948c3efb8174c0ec1d741f8fb" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AncestorClip { get; set; } : Visual</p><input/>
-                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Brush { get; set; } : CompositionBrush</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CastingVisual { get; set; } : Visual</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Mask { get; set; } : CompositionBrush</p><input/>
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="ce53f305f8b1c6facb6082fd41668b7b">CompositionProjectedShadowCasterCollection</label> <input checked type="checkbox" id="ce53f305f8b1c6facb6082fd41668b7b" /><ol>
@@ -1750,17 +1752,7 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RemoveAll() : Void</p><input/>
                     </li>
                 </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="b908c7db22141969a2ec2f74adb4373d">CompositionProjectedShadowDrawOrder</label> <input checked type="checkbox" id="b908c7db22141969a2ec2f74adb4373d" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PostChildren : 0,</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PreChildren : 1,</p><input/>
-                    </li>
-                </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0fd1f590d761d6d865ba1679be60fccd">CompositionProjectedShadowReceiver</label> <input checked type="checkbox" id="0fd1f590d761d6d865ba1679be60fccd" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DrawOrder { get; set; } : CompositionProjectedShadowDrawOrder</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Mask { get; set; } : CompositionBrush</p><input/>
-                    </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ReceivingVisual { get; set; } : Visual</p><input/>
                     </li>
                 </ol></li>
@@ -1806,16 +1798,6 @@ li input:checked + ol
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRadialGradientBrush() : CompositionRadialGradientBrush</p><input/>
                     </li>
                     <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateVisualSurface() : CompositionVisualSurface</p><input/>
-                    </li>
-                </ol></li>
-                <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="c2b9ad629eec7a5784a61a46fb65f2f4">ICompositorPartner_ProjectedShadow</label> <input checked type="checkbox" id="c2b9ad629eec7a5784a61a46fb65f2f4" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateSharedClientProjectedShadowCaster() : CompositionProjectedShadowCaster</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateSharedHostProjectedShadowCaster() : CompositionProjectedShadowCaster</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>OpenClientProjectedShadowCasterFromHandle(UInt64 handle) : CompositionProjectedShadowCaster</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>OpenHostProjectedShadowCasterFromHandle(UInt64 handle) : CompositionProjectedShadowCaster</p><input/>
                     </li>
                 </ol></li>
                 <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>IVisualElement</p><input/>
