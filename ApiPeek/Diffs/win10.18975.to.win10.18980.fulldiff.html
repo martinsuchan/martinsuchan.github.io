@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.18975.to.win10.18980.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9da06528183f737c58a40f94678be4ae">ApplicationModel</label> <input checked type="checkbox" id="9da06528183f737c58a40f94678be4ae" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7f22105099f6d8a591f6e05da415e62c">Background</label> <input checked type="checkbox" id="7f22105099f6d8a591f6e05da415e62c" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="0a290a857a886f53002f190cfd1f45e4">BackgroundTaskBuilder</label> <input checked type="checkbox" id="0a290a857a886f53002f190cfd1f45e4" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetTaskEntryPointClsid(Guid TaskEntryPoint) : Void</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7d40d41fdcfc7a98d20d072e2f9f9f1f">Security</label> <input checked type="checkbox" id="7d40d41fdcfc7a98d20d072e2f9f9f1f" /><ol>
+            <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="116fe7350bdaa6ff038b4ee8c7d381e0">Isolation</label> <input checked type="checkbox" id="116fe7350bdaa6ff038b4ee8c7d381e0" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="delegate.gif" alt="delegate"/><p>MessageReceivedCallback</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="b2947284166328e3c10a789aaa894502">IsolatedWindowsEnvironment</label> <input checked type="checkbox" id="b2947284166328e3c10a789aaa894502" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAsync(IsolatedWindowsEnvironmentOptions options) static : IAsyncOperationWithProgress&lt;IsolatedWindowsEnvironmentCreateResult,IsolatedWindowsEnvironmentCreateProgress&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAsync(IsolatedWindowsEnvironmentOptions options, IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) static : IAsyncOperationWithProgress&lt;IsolatedWindowsEnvironmentCreateResult,IsolatedWindowsEnvironmentCreateProgress&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindByOwnerId(String environmentOwnerId) static : IReadOnlyList&lt;IsolatedWindowsEnvironment&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetById(String environmentId) static : IsolatedWindowsEnvironment</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Id { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchFileWithUIAsync(String appExePath, String argumentsTemplate, String filePath) : IAsyncOperation&lt;IsolatedWindowsEnvironmentLaunchFileResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>LaunchFileWithUIAsync(String appExePath, String argumentsTemplate, String filePath, IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) : IAsyncOperation&lt;IsolatedWindowsEnvironmentLaunchFileResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RegisterMessageReceiver(Guid receiverId, MessageReceivedCallback messageReceivedCallback) : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareFolderAsync(String hostFolder, IsolatedWindowsEnvironmentShareFolderRequestOptions requestOptions) : IAsyncOperation&lt;IsolatedWindowsEnvironmentShareFolderResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareFolderAsync(String hostFolder, IsolatedWindowsEnvironmentShareFolderRequestOptions requestOptions, IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) : IAsyncOperation&lt;IsolatedWindowsEnvironmentShareFolderResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartProcessSilentlyAsync(String hostExePath, String arguments, IsolatedWindowsEnvironmentActivator activator) : IAsyncOperation&lt;IsolatedWindowsEnvironmentStartProcessResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartProcessSilentlyAsync(String hostExePath, String arguments, IsolatedWindowsEnvironmentActivator activator, IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) : IAsyncOperation&lt;IsolatedWindowsEnvironmentStartProcessResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>TerminateAsync() : IAsyncAction</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>TerminateAsync(IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) : IAsyncAction</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>UnregisterMessageReceiver(Guid receiverId) : Void</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="7ff6c41ae4857de0bdac561c04e43fa4">IsolatedWindowsEnvironmentActivator</label> <input checked type="checkbox" id="7ff6c41ae4857de0bdac561c04e43fa4" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>System : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>User : 1,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="d1aec50fc842b8be16b2af0befcfaee2">IsolatedWindowsEnvironmentAllowedClipboardFormats</label> <input checked type="checkbox" id="d1aec50fc842b8be16b2af0befcfaee2" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Text : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Image : 2,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="7df029f74167880377a102e178ee52c1">IsolatedWindowsEnvironmentAvailablePrinters</label> <input checked type="checkbox" id="7df029f74167880377a102e178ee52c1" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Local : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Network : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SystemPrintToPdf : 4,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SystemPrintToXps : 8,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="5b5eea8db6dcb7def6ca94d470f801f4">IsolatedWindowsEnvironmentClipboardCopyPasteDirections</label> <input checked type="checkbox" id="5b5eea8db6dcb7def6ca94d470f801f4" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>HostToIsolatedWindowsEnvironment : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>IsolatedWindowsEnvironmentToHost : 2,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>IsolatedWindowsEnvironmentContract</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="struct.gif" alt="struct"/><label for="1f47f961db3443a8ae7b1d0ce23656ee">IsolatedWindowsEnvironmentCreateProgress</label> <input checked type="checkbox" id="1f47f961db3443a8ae7b1d0ce23656ee" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>PercentComplete : UInt32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>State : IsolatedWindowsEnvironmentProgressState</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="dbb455edb616e242a101d4f04c499076">IsolatedWindowsEnvironmentCreateResult</label> <input checked type="checkbox" id="dbb455edb616e242a101d4f04c499076" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Environment { get; } : IsolatedWindowsEnvironment</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentCreateStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="59fdcf058cfbe13e0355b15f934d42c0">IsolatedWindowsEnvironmentCreateStatus</label> <input checked type="checkbox" id="59fdcf058cfbe13e0355b15f934d42c0" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FailureByPolicy : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 2,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="f78c2d7f0ad7d49759551394e629b35f">IsolatedWindowsEnvironmentFile</label> <input checked type="checkbox" id="f78c2d7f0ad7d49759551394e629b35f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Close() : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HostPath { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Id { get; } : Guid</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="df3a2682680b6af8ec4f9dcfea411a27">IsolatedWindowsEnvironmentHost</label> <input checked type="checkbox" id="df3a2682680b6af8ec4f9dcfea411a27" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HostErrors static { get; } : IReadOnlyList&lt;IsolatedWindowsEnvironmentHostError&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsReady static { get; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="45aab8b02a1b5079f1e436fee812bc41">IsolatedWindowsEnvironmentHostError</label> <input checked type="checkbox" id="45aab8b02a1b5079f1e436fee812bc41" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AdminPolicyIsDisabledOrNotPresent : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FeatureNotInstalled : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>HardwareRequirementsNotMet : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>RebootRequired : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownError : 4,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="f907ded90b287d46fc99d5e2c0143da6">IsolatedWindowsEnvironmentLaunchFileResult</label> <input checked type="checkbox" id="f907ded90b287d46fc99d5e2c0143da6" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>File { get; } : IsolatedWindowsEnvironmentFile</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentLaunchFileStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="e90da9a0f66ef53bea6fc2a16949731f">IsolatedWindowsEnvironmentLaunchFileStatus</label> <input checked type="checkbox" id="e90da9a0f66ef53bea6fc2a16949731f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnvironmentUnavailable : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FileNotFound : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>TimedOut : 4,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0da8eadbf9a23a37a914641927eaf629">IsolatedWindowsEnvironmentOptions</label> <input checked type="checkbox" id="0da8eadbf9a23a37a914641927eaf629" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowCameraAndMicrophoneAccess { get; set; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowedClipboardFormats { get; set; } : IsolatedWindowsEnvironmentAllowedClipboardFormats</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowGraphicsHardwareAcceleration { get; set; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AvailablePrinters { get; set; } : IsolatedWindowsEnvironmentAvailablePrinters</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ClipboardCopyPasteDirections { get; set; } : IsolatedWindowsEnvironmentClipboardCopyPasteDirections</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>EnvironmentOwnerId { get; set; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PersistUserProfile { get; set; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SharedFolderNameInEnvironment { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SharedHostFolderPath { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareHostFolderForUntrustedItems(String SharedHostFolderPath, String ShareFolderNameInEnvironment) : Void</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="38f5994943a85e8451b81fb399b69340">IsolatedWindowsEnvironmentOwnerRegistration</label> <input checked type="checkbox" id="38f5994943a85e8451b81fb399b69340" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Register(String ownerName, IsolatedWindowsEnvironmentOwnerRegistrationData ownerRegistrationData) static : IsolatedWindowsEnvironmentOwnerRegistrationResult</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Unregister(String ownerName) static : Void</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="7ba42d9e68e808e730292132e92fbe4d">IsolatedWindowsEnvironmentOwnerRegistrationData</label> <input checked type="checkbox" id="7ba42d9e68e808e730292132e92fbe4d" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ActivationFileExtensions { get; } : IList&lt;String&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProcessesRunnableAsSystem { get; } : IList&lt;String&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProcessesRunnableAsUser { get; } : IList&lt;String&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ShareableFolders { get; } : IList&lt;String&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="e13ae4c97db773aca1a5a591193e089e">IsolatedWindowsEnvironmentOwnerRegistrationResult</label> <input checked type="checkbox" id="e13ae4c97db773aca1a5a591193e089e" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentOwnerRegistrationStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="2a5e5e0c1bd2e53084ad08e1be271725">IsolatedWindowsEnvironmentOwnerRegistrationStatus</label> <input checked type="checkbox" id="2a5e5e0c1bd2e53084ad08e1be271725" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>InvalidArgument : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AccessDenied : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>InsufficientMemory : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 4,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="d424da5a2b9cdf040bb53cc162117f07">IsolatedWindowsEnvironmentProcess</label> <input checked type="checkbox" id="d424da5a2b9cdf040bb53cc162117f07" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExitCode { get; } : UInt32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>State { get; } : IsolatedWindowsEnvironmentProcessState</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WaitForExit() : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WaitForExitAsync() : IAsyncAction</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WaitForExitWithTimeout(UInt32 timeoutMilliseconds) : Void</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="24c1597b3333a992d12abb79a6a3f2be">IsolatedWindowsEnvironmentProcessState</label> <input checked type="checkbox" id="24c1597b3333a992d12abb79a6a3f2be" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Running : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Aborted : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Completed : 3,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="a1d74e9c6588d8cbbb06df37c22a44fe">IsolatedWindowsEnvironmentProgressState</label> <input checked type="checkbox" id="a1d74e9c6588d8cbbb06df37c22a44fe" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Queued : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Processing : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Completed : 2,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="8bf80041cff6dc3c9bf4a1666d1ebc61">IsolatedWindowsEnvironmentShareFolderRequestOptions</label> <input checked type="checkbox" id="8bf80041cff6dc3c9bf4a1666d1ebc61" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowWrite { get; set; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0fcd4f7ae7a6b1567b5f5c87c692bf9b">IsolatedWindowsEnvironmentShareFolderResult</label> <input checked type="checkbox" id="0fcd4f7ae7a6b1567b5f5c87c692bf9b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentShareFolderStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="4f159760d9ff25f7d4dc1a1538f27a84">IsolatedWindowsEnvironmentShareFolderStatus</label> <input checked type="checkbox" id="4f159760d9ff25f7d4dc1a1538f27a84" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnvironmentUnavailable : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FolderNotFound : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AccessDenied : 4,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="4ea0960e69e96f70478c86b95159057b">IsolatedWindowsEnvironmentStartProcessResult</label> <input checked type="checkbox" id="4ea0960e69e96f70478c86b95159057b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Process { get; } : IsolatedWindowsEnvironmentProcess</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentStartProcessStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="43a3e37849bf777c29189788a47fa7b9">IsolatedWindowsEnvironmentStartProcessStatus</label> <input checked type="checkbox" id="43a3e37849bf777c29189788a47fa7b9" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnvironmentUnavailable : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FileNotFound : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AppNotRegistered : 4,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="2cb9c28bfb87847b341851001a39772f">IsolatedWindowsEnvironmentTelemetryParameters</label> <input checked type="checkbox" id="2cb9c28bfb87847b341851001a39772f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CorrelationId { get; set; } : Guid</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0481f43aaf45b466edf46d2c8e9e3f17">IsolatedWindowsHostMessenger</label> <input checked type="checkbox" id="0481f43aaf45b466edf46d2c8e9e3f17" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetFileId(String filePath) static : Guid</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>PostMessageToReceiver(Guid receiverId, IReadOnlyList&lt;Object&gt; message) static : Void</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="f7547a84d04036940d5782755d7278a9">System</label> <input checked type="checkbox" id="f7547a84d04036940d5782755d7278a9" /><ol>
+            <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8ad0c5d13154bce2ae6136e8fe60ed94">UserChangedEventArgs</label> <input checked type="checkbox" id="8ad0c5d13154bce2ae6136e8fe60ed94" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ChangedPropertyKinds { get; } : IReadOnlyList&lt;UserWatcherUpdateKind&gt;</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
