@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.20211.to.win10.20221.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="d26ee5317396a01d800731c04d009012">Networking</label> <input checked type="checkbox" id="d26ee5317396a01d800731c04d009012" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="4e7be60166fa831a1e4b06dd5dca2b15">Connectivity</label> <input checked type="checkbox" id="4e7be60166fa831a1e4b06dd5dca2b15" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="eb5d937ef807e929be7307f41b371c33">NetworkAuthenticationType</label> <input checked type="checkbox" id="eb5d937ef807e929be7307f41b371c33" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Wpa3Enterprise : 13,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="667caeab04fa2c4deeba200bbfd1a6a0">NetworkEncryptionType</label> <input checked type="checkbox" id="667caeab04fa2c4deeba200bbfd1a6a0" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Gcmp : 10,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Gcmp256 : 11,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7d40d41fdcfc7a98d20d072e2f9f9f1f">Security</label> <input checked type="checkbox" id="7d40d41fdcfc7a98d20d072e2f9f9f1f" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="116fe7350bdaa6ff038b4ee8c7d381e0">Isolation</label> <input checked type="checkbox" id="116fe7350bdaa6ff038b4ee8c7d381e0" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="b2947284166328e3c10a789aaa894502">IsolatedWindowsEnvironment</label> <input checked type="checkbox" id="b2947284166328e3c10a789aaa894502" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareFileAsync(String filePath, IsolatedWindowsEnvironmentShareFileRequestOptions options) : IAsyncOperation&lt;IsolatedWindowsEnvironmentShareFileResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareFileAsync(String filePath, IsolatedWindowsEnvironmentShareFileRequestOptions options, IsolatedWindowsEnvironmentTelemetryParameters telemetryParameters) : IAsyncOperation&lt;IsolatedWindowsEnvironmentShareFileResult&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="f78c2d7f0ad7d49759551394e629b35f">IsolatedWindowsEnvironmentFile</label> <input checked type="checkbox" id="f78c2d7f0ad7d49759551394e629b35f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ContainerPath { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsReadOnly { get; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="e90da9a0f66ef53bea6fc2a16949731f">IsolatedWindowsEnvironmentLaunchFileStatus</label> <input checked type="checkbox" id="e90da9a0f66ef53bea6fc2a16949731f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SharedWithWrongAttribute : 5,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="b16166ae864d8b6fffd29c272da9c996">IsolatedWindowsEnvironmentShareFileRequestOptions</label> <input checked type="checkbox" id="b16166ae864d8b6fffd29c272da9c996" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AllowWrite { get; set; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="db6164783b0504a8c9094ddce6e1e9d7">IsolatedWindowsEnvironmentShareFileResult</label> <input checked type="checkbox" id="db6164783b0504a8c9094ddce6e1e9d7" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>File { get; } : IsolatedWindowsEnvironmentFile</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : IsolatedWindowsEnvironmentShareFileStatus</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="2a2ea4cdc1afab28891fe09ed0f5d6cf">IsolatedWindowsEnvironmentShareFileStatus</label> <input checked type="checkbox" id="2a2ea4cdc1afab28891fe09ed0f5d6cf" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UnknownFailure : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnvironmentUnavailable : 2,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SharedWithWrongAttribute : 3,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FileNotFound : 4,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AccessDenied : 5,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="bdb6eee21ed98f0730af213995930948">IsolatedWindowsEnvironmentUserInfo</label> <input checked type="checkbox" id="bdb6eee21ed98f0730af213995930948" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsLoginComplete { get; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WaitForLogin() : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WaitForLoginAsync() : IAsyncAction</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="6d75e4aed471f90fb1c9988aade0b0d1">UI</label> <input checked type="checkbox" id="6d75e4aed471f90fb1c9988aade0b0d1" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="03ae61256e2d03ce8adf8ae0ffc206dc">Composition</label> <input checked type="checkbox" id="03ae61256e2d03ce8adf8ae0ffc206dc" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="32bab368e0f2e3ef31602c180e0a5b59">CompositionGraphicsDevice</label> <input checked type="checkbox" id="32bab368e0f2e3ef31602c180e0a5b59" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CaptureAsync(Visual captureVisual, SizeInt32 size, DirectXPixelFormat pixelFormat, DirectXAlphaMode alphaMode, Single sdrBoost) : IAsyncOperation&lt;ICompositionSurface&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="e2c635db2968754e1d5025895dd8d724">Compositor</label> <input checked type="checkbox" id="e2c635db2968754e1d5025895dd8d724" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRectangleClip() : RectangleClip</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRectangleClip(Single left, Single top, Single right, Single bottom) : RectangleClip</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateRectangleClip(Single left, Single top, Single right, Single bottom, Vector2 topLeftRadius, Vector2 topRightRadius, Vector2 bottomLeftRadius, Vector2 bottomRightRadius) : RectangleClip</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="25aab2c889fc9533b11565c5b60791b3">RectangleClip</label> <input checked type="checkbox" id="25aab2c889fc9533b11565c5b60791b3" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Bottom { get; set; } : Single</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>BottomLeftRadius { get; set; } : Vector2</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>BottomRightRadius { get; set; } : Vector2</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Left { get; set; } : Single</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Right { get; set; } : Single</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Top { get; set; } : Single</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>TopLeftRadius { get; set; } : Vector2</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>TopRightRadius { get; set; } : Vector2</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="f6c42f91a26223dbd678fae7a3835553">Visual</label> <input checked type="checkbox" id="f6c42f91a26223dbd678fae7a3835553" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsPixelSnappingEnabled { get; set; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
