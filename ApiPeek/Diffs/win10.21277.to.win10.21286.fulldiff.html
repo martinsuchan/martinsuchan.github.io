@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win10.21277.to.win10.21286.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c2241db7321f89bfdac52f044ecdcd11">Devices</label> <input checked type="checkbox" id="c2241db7321f89bfdac52f044ecdcd11" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ec866c5233195369b09348eb28f66d6f">Geolocation</label> <input checked type="checkbox" id="ec866c5233195369b09348eb28f66d6f" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="2dffea103317897e4acabce4c386a7e2">Geocoordinate</label> <input checked type="checkbox" id="2dffea103317897e4acabce4c386a7e2" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsRemoteSource { get; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="1792687bf3b17e2f1ecc45ca5bb89804">Graphics</label> <input checked type="checkbox" id="1792687bf3b17e2f1ecc45ca5bb89804" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="1d6d32c44eece8e4db36778e6f33c11f">Capture</label> <input checked type="checkbox" id="1d6d32c44eece8e4db36778e6f33c11f" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="1ef68c5706f0b78c659b740be10dccf9">GraphicsCaptureAccessKind</label> <input checked type="checkbox" id="1ef68c5706f0b78c659b740be10dccf9" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Programmatic : 1,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ded970f2593af64073038512e6878b52">Management</label> <input checked type="checkbox" id="ded970f2593af64073038512e6878b52" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="392dbef38896fcbff387557374a90d48">Deployment</label> <input checked type="checkbox" id="392dbef38896fcbff387557374a90d48" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="97c1aaa4aef14e38234ae31dfe47fa48">PackageManager</label> <input checked type="checkbox" id="97c1aaa4aef14e38234ae31dfe47fa48" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ProvisionRelatedSetForAllUsersAsync(String mainPackageFamilyName, IEnumerable&lt;String&gt; optionalPackageFamilyNames, ProvisionOptions options) : IAsyncOperationWithProgress&lt;DeploymentResult,DeploymentProgress&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ProvisionRelatedSetForAllUsersAsync(String mainPackageFamilyName, IEnumerable&lt;String&gt; optionalPackageFamilyNames) : IAsyncOperationWithProgress&lt;DeploymentResult,DeploymentProgress&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="322acfa1d4d9a95144867d3f5cd6bb39">ProvisionOptions</label> <input checked type="checkbox" id="322acfa1d4d9a95144867d3f5cd6bb39" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProjectionOrderPackageFamilyNames { get; } : IList&lt;String&gt;</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="6d75e4aed471f90fb1c9988aade0b0d1">UI</label> <input checked type="checkbox" id="6d75e4aed471f90fb1c9988aade0b0d1" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="0f402124d2e6d88053b3e18fbf124496">UIAutomation</label> <input checked type="checkbox" id="0f402124d2e6d88053b3e18fbf124496" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c978d9d71f574e6842f8894bed1d7f68">Core</label> <input checked type="checkbox" id="c978d9d71f574e6842f8894bed1d7f68" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="struct.gif" alt="struct"/><label for="e8f55d1f197358b2448ea420b141c2de">AutomationAnnotationTypeRegistration</label> <input checked type="checkbox" id="e8f55d1f197358b2448ea420b141c2de" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>LocalId : Int32</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="d09f61c8d1975245305b0a8a0c6b0da6">AutomationRemoteSystemClientSession</label> <input checked type="checkbox" id="d09f61c8d1975245305b0a8a0c6b0da6" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(Guid sessionId, String friendlyName, IAutomationRemoteSystemClientServices services)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SessionId { get; } : Guid</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartAsync() : IAsyncAction</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StopAsync() : IAsyncAction</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="1d74b2b74c9d3781e5ed650ae0b31070">AutomationRemoteSystemServerSession</label> <input checked type="checkbox" id="1d74b2b74c9d3781e5ed650ae0b31070" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Initialize(Guid sessionId) static : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="84d6217fea34e89d603afca5533b2d58">CoreAutomationRegistrar</label> <input checked type="checkbox" id="84d6217fea34e89d603afca5533b2d58" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Current static { get; } : CoreAutomationRegistrar</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RegisterAnnotationType(Guid guid, String name) : AutomationAnnotationTypeRegistration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Unregister(AutomationAnnotationTypeRegistration registration) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="d9bc0f1ff797b0f7c94d99c545b291d3">CoreAutomationRemoteOperationContext</label> <input checked type="checkbox" id="d9bc0f1ff797b0f7c94d99c545b291d3" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetOperand(AutomationRemoteOperationOperandId id) : Object</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetOperand(AutomationRemoteOperationOperandId id, Object operand, Guid operandInterfaceId) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetOperand(AutomationRemoteOperationOperandId id, Object operand) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="3d166bc87b7b10d553d5e0131e0c9181">IAutomationRemoteSystemClientServices</label> <input checked type="checkbox" id="3d166bc87b7b10d553d5e0131e0c9181" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RemoveSharedNamedPipe(String namedPipeName) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShareNamedPipe(String namedPipeName, UInt32 remoteSystemTargetProcessId) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="dc4ee5994305b7149e6463e97ae49731">ICoreAutomationConnectionBoundObjectProvider</label> <input checked type="checkbox" id="dc4ee5994305b7149e6463e97ae49731" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsComThreadingRequired { get; } : Boolean</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="692a5f7004d113f9d42e42cafbff36bf">ICoreAutomationRemoteOperationExtensionProvider</label> <input checked type="checkbox" id="692a5f7004d113f9d42e42cafbff36bf" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CallExtension(Guid extensionId, CoreAutomationRemoteOperationContext context, AutomationRemoteOperationOperandId[] operandIds) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsExtensionSupported(Guid extensionId) : Boolean</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
