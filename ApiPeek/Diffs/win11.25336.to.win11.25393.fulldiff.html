@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win11.25336.to.win11.25393.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9da06528183f737c58a40f94678be4ae">ApplicationModel</label> <input checked type="checkbox" id="9da06528183f737c58a40f94678be4ae" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7d9c029412745daefb8336b0a9d27cd4">AppExtensions</label> <input checked type="checkbox" id="7d9c029412745daefb8336b0a9d27cd4" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8dec64164da53d5e0087d0dbb3ba747b">AppExtension</label> <input checked type="checkbox" id="8dec64164da53d5e0087d0dbb3ba747b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionProperties() : IPropertySet</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolder() : StorageFolder</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicPath() : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="d472242b3ccde583e1298e67d42d93db">AppExtensionCatalog</label> <input checked type="checkbox" id="d472242b3ccde583e1298e67d42d93db" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAll() : IReadOnlyList&lt;AppExtension&gt;</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="5b0a617b1a4fa75f18fff37e212928f4">PackageExtensions</label> <input checked type="checkbox" id="5b0a617b1a4fa75f18fff37e212928f4" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="08e55178129fae6d80fd33a817c2b2cf">PackageExtension</label> <input checked type="checkbox" id="08e55178129fae6d80fd33a817c2b2cf" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Description { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DisplayName { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionProperties() : IPropertySet</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionPropertiesAsync() : IAsyncOperation&lt;IPropertySet&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolder() : StorageFolder</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolderAsync() : IAsyncOperation&lt;StorageFolder&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicPath() : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Id { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="6e32a5932e0e1ac08626982ecd171103">PackageExtensionCatalog</label> <input checked type="checkbox" id="6e32a5932e0e1ac08626982ecd171103" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAll() : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAllAsync() : IAsyncOperation&lt;IReadOnlyList&lt;PackageExtension&gt;&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Open(String packageExtensionName) static : PackageExtensionCatalog</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageInstalled event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageInstalledEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageStatusChanged event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageStatusChangedEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUninstalling event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUninstallingEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUpdated event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUpdatedEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUpdating event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUpdatingEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestRemovePackageAsync(String packageFullName) : IAsyncOperation&lt;Boolean&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="84d83768550bc90071ef412e9c47c7fc">PackageExtensionPackageInstalledEventArgs</label> <input checked type="checkbox" id="84d83768550bc90071ef412e9c47c7fc" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Extensions { get; } : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0d0ea2630b9eb2b60c12cc59fd675579">PackageExtensionPackageStatusChangedEventArgs</label> <input checked type="checkbox" id="0d0ea2630b9eb2b60c12cc59fd675579" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="58897f80d60b6b800d01cb9961ae97ff">PackageExtensionPackageUninstallingEventArgs</label> <input checked type="checkbox" id="58897f80d60b6b800d01cb9961ae97ff" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="a5559a6013cb028a38170f3b0bdee46d">PackageExtensionPackageUpdatedEventArgs</label> <input checked type="checkbox" id="a5559a6013cb028a38170f3b0bdee46d" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Extensions { get; } : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="e5e5cbd0855c113a5e507d7ff2baa985">PackageExtensionPackageUpdatingEventArgs</label> <input checked type="checkbox" id="e5e5cbd0855c113a5e507d7ff2baa985" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="448ef36dc3845abd1c96d2f62c67681f">Media</label> <input checked type="checkbox" id="448ef36dc3845abd1c96d2f62c67681f" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="96a5ccda3ffebe044c54ea75f1a1df6a">Audio</label> <input checked type="checkbox" id="96a5ccda3ffebe044c54ea75f1a1df6a" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="c1aa4ba3778b84e7b0267efd5e8c7055">AudioEffectsPackConfiguration</label> <input checked type="checkbox" id="c1aa4ba3778b84e7b0267efd5e8c7055" /><ol>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="event.gif" alt="event"/><p>ConfigurationChanged event : TypedEventHandler&lt;AudioEffectsPackConfiguration,Object&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>StatusChanged event : TypedEventHandler&lt;AudioEffectsPackConfiguration,Object&gt;</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="e0a99d4eadf0745966a3dbaa93fca37b">MediaProperties</label> <input checked type="checkbox" id="e0a99d4eadf0745966a3dbaa93fca37b" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="f2ed1cca182e23e8aed512a95860466f">Av1ProfileIds</label> <input checked type="checkbox" id="f2ed1cca182e23e8aed512a95860466f" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HighChromaSubsampling444BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HighChromaSubsampling444BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling400BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling400BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling420BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling420BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling400BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling420BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling422BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling422BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling422BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ProfessionalChromaSubsampling444BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0c92f157fbe92c2870cd827ede4cfd58">HevcProfileIds</label> <input checked type="checkbox" id="0c92f157fbe92c2870cd827ede4cfd58" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling420BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling420BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling420BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling422BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling422BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling444BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling444BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainChromaSubsampling444BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling420BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling420BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling420BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling422BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling422BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling444BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling444BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling444BitDepth16 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainIntraChromaSubsampling444BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainStillChromaSubsampling420BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainStillChromaSubsampling444BitDepth16 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MainStillChromaSubsampling444BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MonochromeBitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MonochromeBitDepth16 static { get; } : Int32</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="ad18d6650e185e61132f7ba178e1287e">MediaEncodingProfile</label> <input checked type="checkbox" id="ad18d6650e185e61132f7ba178e1287e" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAv1(VideoEncodingQuality quality) static : MediaEncodingProfile</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateVp9(VideoEncodingQuality quality) static : MediaEncodingProfile</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="cea61123aaab1ae89820d7e67643f4dd">MediaEncodingSubtypes</label> <input checked type="checkbox" id="cea61123aaab1ae89820d7e67643f4dd" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Av1 static { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="a78263fc26b955c47194bfe04cab5628">VideoEncodingProperties</label> <input checked type="checkbox" id="a78263fc26b955c47194bfe04cab5628" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateAv1() static : VideoEncodingProperties</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateVp9() static : VideoEncodingProperties</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="9eff9d446e0d5d4883f24208b2874c05">Vp9ProfileIds</label> <input checked type="checkbox" id="9eff9d446e0d5d4883f24208b2874c05" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Profile0ChromaSubsampling420BitDepth8 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Profile2ChromaSubsampling420BitDepth10 static { get; } : Int32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Profile2ChromaSubsampling420BitDepth12 static { get; } : Int32</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9537131caca174703376e07b94a1fdee">Services</label> <input checked type="checkbox" id="9537131caca174703376e07b94a1fdee" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="491788ae09f8569d981f22f9dd0e2953">Store</label> <input checked type="checkbox" id="491788ae09f8569d981f22f9dd0e2953" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="5c4e353fcb82f24d8250219a2b57f6ef">StoreContext</label> <input checked type="checkbox" id="5c4e353fcb82f24d8250219a2b57f6ef" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetAssociatedStoreProductsByInAppOfferTokenAsync(IEnumerable&lt;String&gt; inAppOfferTokens) : IAsyncOperation&lt;StoreProductQueryResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetUserPurchaseHistoryAsync(IEnumerable&lt;String&gt; productKinds) : IAsyncOperation&lt;StoreProductQueryResult&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestPurchaseByInAppOfferTokenAsync(String inAppOfferToken) : IAsyncOperation&lt;StorePurchaseResult&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="960d41b4aea964ddeb59d1003555fde9">StorePrice</label> <input checked type="checkbox" id="960d41b4aea964ddeb59d1003555fde9" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UnformattedBasePrice { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UnformattedPrice { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UnformattedRecurrencePrice { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="f7547a84d04036940d5782755d7278a9">System</label> <input checked type="checkbox" id="f7547a84d04036940d5782755d7278a9" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="676cb9946d891a9c62b9de9e21645997">RemoteDesktop</label> <input checked type="checkbox" id="676cb9946d891a9c62b9de9e21645997" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c802a09b8088c08c50207644981cc97b">Input</label> <input checked type="checkbox" id="c802a09b8088c08c50207644981cc97b" /><ol>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>RedirectedKeyEventFlags</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="9400afebd2fb9fbe337dcef24138bdbd">RemoteKeyEventFlags</label> <input checked type="checkbox" id="9400afebd2fb9fbe337dcef24138bdbd" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>KeyUp : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Repeat : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Extended : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Extended1 : 8,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="2a38baeb1f695cc5bb56dc340d460ca5">RemoteTextConnection</label> <input checked type="checkbox" id="2a38baeb1f695cc5bb56dc340d460ca5" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(Guid connectionId, RemoteTextConnectionDataHandler pduForwarder, RemoteTextConnectionOptions options)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>DoSpeculativeKeyProcessing(UInt16 scanCode, RemoteKeyEventFlags flags) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="45589bf27faadc7860518475e695f0e3">RemoteTextConnectionOptions</label> <input checked type="checkbox" id="45589bf27faadc7860518475e695f0e3" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SpeculativeKeyProcessing : 1,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>RemoteTextKeyRedirector</p><input/>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="50ab95c710ab3befe342b1e0c2d1eeb6">Provider</label> <input checked type="checkbox" id="50ab95c710ab3befe342b1e0c2d1eeb6" /><ol>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>CloudPCDisplayInfo</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>CloudPCHostService</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="6b2f2ade2aed39e8a0cb0e2a7595d85e">RemoteDesktopConnectionInfo</label> <input checked type="checkbox" id="6b2f2ade2aed39e8a0cb0e2a7595d85e" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>DisplayInfo { get; set; } : CloudPCDisplayInfo</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="event.gif" alt="event"/><p>SwitchToCloudPC event : EventHandler&lt;Object&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>SwitchToLocalPC() : Void</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ab7a5ee060d256d55af332fa5bb62b86">RemoteSystems</label> <input checked type="checkbox" id="ab7a5ee060d256d55af332fa5bb62b86" /><ol>
+                <li><img class="type" src="removed.png" alt="removed"/><img src="namespace.gif" alt="namespace"/><label for="b3acc1f5a84d105c72210165bb91945c">Availability</label> <input checked type="checkbox" id="b3acc1f5a84d105c72210165bb91945c" /><ol>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>RemoteSystemAvailability</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="6d75e4aed471f90fb1c9988aade0b0d1">UI</label> <input checked type="checkbox" id="6d75e4aed471f90fb1c9988aade0b0d1" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c3e6d05986ef2150eedf86a74857cd52">Notifications</label> <input checked type="checkbox" id="c3e6d05986ef2150eedf86a74857cd52" /><ol>
+                <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="ba4f01730c6bb661887746e97c16b53e">Preview</label> <input checked type="checkbox" id="ba4f01730c6bb661887746e97c16b53e" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="6a8eb8f866ad0f265fea8f23ee546ba5">ToastOcclusionManagerPreview</label> <input checked type="checkbox" id="6a8eb8f866ad0f265fea8f23ee546ba5" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetToastWindowMargin(WindowId appWindowId, Double margin) static : Void</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
