@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win11.25393.to.win11.25915.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c2241db7321f89bfdac52f044ecdcd11">Devices</label> <input checked type="checkbox" id="c2241db7321f89bfdac52f044ecdcd11" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9cb601652d826337a65e90dc34bd3d72">Sensors</label> <input checked type="checkbox" id="9cb601652d826337a65e90dc34bd3d72" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HumanPresenceSensorReadingUpdate</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>IHumanPresenceSensorExtension</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="2a4e8d4f00374e11ba3a2201a177ebe3">Storage</label> <input checked type="checkbox" id="2a4e8d4f00374e11ba3a2201a177ebe3" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="41353acb7a1ffda11a4b66de9aab7bf4">Provider</label> <input checked type="checkbox" id="41353acb7a1ffda11a4b66de9aab7bf4" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="delegate.gif" alt="delegate"/><p>StorageProviderKnownFolderSyncRequestedHandler</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>IStorageProviderKnownFolderSyncInfoSource</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>IStorageProviderKnownFolderSyncInfoSourceFactory</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>StorageProviderKnownFolderEntry</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>StorageProviderKnownFolderSyncInfo</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>StorageProviderKnownFolderSyncRequestArgs</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>StorageProviderKnownFolderSyncStatus</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="f7547a84d04036940d5782755d7278a9">System</label> <input checked type="checkbox" id="f7547a84d04036940d5782755d7278a9" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="676cb9946d891a9c62b9de9e21645997">RemoteDesktop</label> <input checked type="checkbox" id="676cb9946d891a9c62b9de9e21645997" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c802a09b8088c08c50207644981cc97b">Input</label> <input checked type="checkbox" id="c802a09b8088c08c50207644981cc97b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>RemoteKeyEventAttributes</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="enum.gif" alt="enum"/><p>RemoteKeyEventFlags</p><input/>
+                    </li>
+                </ol></li>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="50ab95c710ab3befe342b1e0c2d1eeb6">Provider</label> <input checked type="checkbox" id="50ab95c710ab3befe342b1e0c2d1eeb6" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>RemoteDesktopConnectionRemoteInfo</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>RemoteDesktopInfo</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>RemoteDesktopRegistrar</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
