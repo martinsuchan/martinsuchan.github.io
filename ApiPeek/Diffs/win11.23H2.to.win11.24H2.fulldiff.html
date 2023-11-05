@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win11.23H2.to.win11.24H2.fulldiff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9da06528183f737c58a40f94678be4ae">ApplicationModel</label> <input checked type="checkbox" id="9da06528183f737c58a40f94678be4ae" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7d9c029412745daefb8336b0a9d27cd4">AppExtensions</label> <input checked type="checkbox" id="7d9c029412745daefb8336b0a9d27cd4" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8dec64164da53d5e0087d0dbb3ba747b">AppExtension</label> <input checked type="checkbox" id="8dec64164da53d5e0087d0dbb3ba747b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionProperties() : IPropertySet</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolder() : StorageFolder</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicPath() : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="d472242b3ccde583e1298e67d42d93db">AppExtensionCatalog</label> <input checked type="checkbox" id="d472242b3ccde583e1298e67d42d93db" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAll() : IReadOnlyList&lt;AppExtension&gt;</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="5b0a617b1a4fa75f18fff37e212928f4">PackageExtensions</label> <input checked type="checkbox" id="5b0a617b1a4fa75f18fff37e212928f4" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="08e55178129fae6d80fd33a817c2b2cf">PackageExtension</label> <input checked type="checkbox" id="08e55178129fae6d80fd33a817c2b2cf" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Description { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DisplayName { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionProperties() : IPropertySet</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtensionPropertiesAsync() : IAsyncOperation&lt;IPropertySet&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolder() : StorageFolder</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicFolderAsync() : IAsyncOperation&lt;StorageFolder&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPublicPath() : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Id { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="6e32a5932e0e1ac08626982ecd171103">PackageExtensionCatalog</label> <input checked type="checkbox" id="6e32a5932e0e1ac08626982ecd171103" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAll() : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FindAllAsync() : IAsyncOperation&lt;IReadOnlyList&lt;PackageExtension&gt;&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Open(String packageExtensionName) static : PackageExtensionCatalog</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageInstalled event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageInstalledEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageStatusChanged event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageStatusChangedEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUninstalling event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUninstallingEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUpdated event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUpdatedEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>PackageUpdating event : TypedEventHandler&lt;PackageExtensionCatalog,PackageExtensionPackageUpdatingEventArgs&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RequestRemovePackageAsync(String packageFullName) : IAsyncOperation&lt;Boolean&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="84d83768550bc90071ef412e9c47c7fc">PackageExtensionPackageInstalledEventArgs</label> <input checked type="checkbox" id="84d83768550bc90071ef412e9c47c7fc" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Extensions { get; } : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="0d0ea2630b9eb2b60c12cc59fd675579">PackageExtensionPackageStatusChangedEventArgs</label> <input checked type="checkbox" id="0d0ea2630b9eb2b60c12cc59fd675579" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="58897f80d60b6b800d01cb9961ae97ff">PackageExtensionPackageUninstallingEventArgs</label> <input checked type="checkbox" id="58897f80d60b6b800d01cb9961ae97ff" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="a5559a6013cb028a38170f3b0bdee46d">PackageExtensionPackageUpdatedEventArgs</label> <input checked type="checkbox" id="a5559a6013cb028a38170f3b0bdee46d" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Extensions { get; } : IReadOnlyList&lt;PackageExtension&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="e5e5cbd0855c113a5e507d7ff2baa985">PackageExtensionPackageUpdatingEventArgs</label> <input checked type="checkbox" id="e5e5cbd0855c113a5e507d7ff2baa985" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Package { get; } : Package</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PackageExtensionName { get; } : String</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c2241db7321f89bfdac52f044ecdcd11">Devices</label> <input checked type="checkbox" id="c2241db7321f89bfdac52f044ecdcd11" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="16d3a5255cfc083fc9d2074fafc047c4">Enumeration</label> <input checked type="checkbox" id="16d3a5255cfc083fc9d2074fafc047c4" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="33830cdcfcf5bc741a6767ebfdb76a30">DeviceAccessStatus</label> <input checked type="checkbox" id="33830cdcfcf5bc741a6767ebfdb76a30" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UserPromptRequired : 4,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="93719d531736b1f64b893b59f5e3fe57">Printers</label> <input checked type="checkbox" id="93719d531736b1f64b893b59f5e3fe57" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="cb20fce1ec4e04288f6e39cb5294e183">IppPrintDevice</label> <input checked type="checkbox" id="cb20fce1ec4e04288f6e39cb5294e183" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CanModifyUserDefaultPrintTicket { get; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeviceKind { get; } : IppPrintDeviceKind</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetMaxSupportedPdlVersion(String pdlContentType) : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsIppFaxOutPrinter { get; } : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RefreshPrintDeviceCapabilities() : Void</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UserDefaultPrintTicket { get; set; } : WorkflowPrintTicket</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="a08e4400cf297caf9528d2a8d7d6d161">IppPrintDeviceKind</label> <input checked type="checkbox" id="a08e4400cf297caf9528d2a8d7d6d161" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Printer : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>FaxOut : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>VirtualPrinter : 2,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="a02268fa1f45e107e4682f472a783db6">Gaming</label> <input checked type="checkbox" id="a02268fa1f45e107e4682f472a783db6" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="109178deba6737bbe886bc59678297fe">Input</label> <input checked type="checkbox" id="109178deba6737bbe886bc59678297fe" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="a10b09e8ed668340d4037de5b4c5bb51">Preview</label> <input checked type="checkbox" id="a10b09e8ed668340d4037de5b4c5bb51" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="8d09dd2511f64ca03e20c3c45ba779d2">DeviceCommand</label> <input checked type="checkbox" id="8d09dd2511f64ca03e20c3c45ba779d2" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Reset : 0,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="0860a6e1479ca67c89575fb409550633">GameControllerBatteryChargingState</label> <input checked type="checkbox" id="0860a6e1479ca67c89575fb409550633" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Unknown : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Inactive : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Active : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Error : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="15f69cf7c15e4fb0423ec0603388add8">GameControllerBatteryKind</label> <input checked type="checkbox" id="15f69cf7c15e4fb0423ec0603388add8" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Unknown : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Standard : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Rechargeable : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="bc50d77056a12d7a7dc4d8ee96d8d92d">GameControllerBatteryLevel</label> <input checked type="checkbox" id="bc50d77056a12d7a7dc4d8ee96d8d92d" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Unknown : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Critical : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Low : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Medium : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Full : 4,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="5f16253620bdafdf7c9c9375d0ea4443">GameControllerFirmwareCorruptReason</label> <input checked type="checkbox" id="5f16253620bdafdf7c9c9375d0ea4443" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Unknown : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NotCorrupt : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>TwoUpCorrupt : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AppCorrupt : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>RadioCorrupt : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EepromCorrupt : 5,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SafeToUpdate : 6,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="struct.gif" alt="struct"/><label for="d579aac73bebc0fdaa9bd9a3fcd810be">HeadsetGeqGains</label> <input checked type="checkbox" id="d579aac73bebc0fdaa9bd9a3fcd810be" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>band1Gain : Int32</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>band2Gain : Int32</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>band3Gain : Int32</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>band4Gain : Int32</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="field.gif" alt="field"/><p>band5Gain : Int32</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="fea17a516f47e0453fbacb509424316f">HeadsetLevel</label> <input checked type="checkbox" id="fea17a516f47e0453fbacb509424316f" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Off : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Low : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Medium : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>High : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="c45c46bd79f2d3cfbb7d1d3684230179">HeadsetOperation</label> <input checked type="checkbox" id="c45c46bd79f2d3cfbb7d1d3684230179" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Geq : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>BassBoostGain : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SmartMute : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SideTone : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MuteLedBrightness : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SwapMixAndVolumeDials : 5,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="38288b61ea4078e4750d044f40301ede">LegacyGipGameControllerProvider</label> <input checked type="checkbox" id="38288b61ea4078e4750d044f40301ede" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AppCompatVersion { get; } : UInt32</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>BatteryChargingState { get; } : GameControllerBatteryChargingState</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>BatteryKind { get; } : GameControllerBatteryKind</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>BatteryLevel { get; } : GameControllerBatteryLevel</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ClearPairing(User user, String controllerProviderId) static : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ExecuteCommand(DeviceCommand command) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FromGameController(IGameController controller) static : LegacyGipGameControllerProvider</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>FromGameControllerProvider(IGameControllerProvider provider) static : LegacyGipGameControllerProvider</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetDeviceFirmwareCorruptionState() : GameControllerFirmwareCorruptReason</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetExtendedDeviceInfo() : Byte[]</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetHeadsetOperation(HeadsetOperation operation) : Byte[]</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetStandardControllerButtonRemapping(User user, Boolean previous) : IReadOnlyDictionary&lt;RemappingButtonCategory,Object&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsCopilot(User user, String controllerProviderId) static : String</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsFirmwareCorrupted { get; } : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsInterfaceSupported(Guid interfaceId) : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPilot(User user, String controllerProviderId) static : String</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsSyntheticDevice { get; } : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>PairPilotToCopilot(User user, String pilotControllerProviderId, String copilotControllerProviderId) static : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PreferredTypes { get; } : IReadOnlyList&lt;String&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetHeadsetOperation(HeadsetOperation operation, Byte[] buffer) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetHomeLedIntensity(Byte intensity) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>SetStandardControllerButtonRemapping(User user, Boolean previous, IReadOnlyDictionary&lt;RemappingButtonCategory,Object&gt; remapping) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="44a40eb536910cde3fbc47c475227ef8">RemappingButtonCategory</label> <input checked type="checkbox" id="44a40eb536910cde3fbc47c475227ef8" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ButtonSettings : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AnalogSettings : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>VibrationSettings : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareShortPress : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareShortPressMetaData : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareShortPressMetaDataDisplay : 5,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareLongPress : 6,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareLongPressMetaData : 7,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareLongPressMetaDataDisplay : 8,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareDoublePress : 9,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareDoublePressMetaData : 10,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShareDoublePressMetaDataDisplay : 11,</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="1792687bf3b17e2f1ecc45ca5bb89804">Graphics</label> <input checked type="checkbox" id="1792687bf3b17e2f1ecc45ca5bb89804" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="051dad8a2bb53003262654c6e7a50e99">DirectX</label> <input checked type="checkbox" id="051dad8a2bb53003262654c6e7a50e99" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="b8a361a2e27ecb80f025b0bf2139ee46">DirectXPixelFormat</label> <input checked type="checkbox" id="b8a361a2e27ecb80f025b0bf2139ee46" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>A4B4G4R4 : 191,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c1c5b91df46a9e5b32a16642a2006ae5">Printing</label> <input checked type="checkbox" id="c1c5b91df46a9e5b32a16642a2006ae5" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="11b18b243a32ab97ae5093742d67d6c8">PrintSupport</label> <input checked type="checkbox" id="11b18b243a32ab97ae5093742d67d6c8" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="5f277d082688be9ccafebe2aa960863f">IppCommunicationErrorKind</label> <input checked type="checkbox" id="5f277d082688be9ccafebe2aa960863f" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Other : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Timeout : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ConnectionError : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AccessDenied : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="57925debf9c989c6f715216efad351f0">IppPrinterCommunicationKind</label> <input checked type="checkbox" id="57925debf9c989c6f715216efad351f0" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Network : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Usb : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>PrinterConnection : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>UniversalPrint : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>VirtualPrinter : 4,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="39c97daecdaaa1302a4aeaad87623917">PrintSupportCommunicationErrorDetectedEventArgs</label> <input checked type="checkbox" id="39c97daecdaaa1302a4aeaad87623917" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CommunicationConfiguration { get; } : PrintSupportIppCommunicationConfiguration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ErrorKind { get; } : IppCommunicationErrorKind</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetDeferral() : Deferral</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8af7c9f9da0199cf69a1132f4af750a0">PrintSupportExtensionSession</label> <input checked type="checkbox" id="8af7c9f9da0199cf69a1132f4af750a0" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>CommunicationErrorDetected event : TypedEventHandler&lt;PrintSupportExtensionSession,PrintSupportCommunicationErrorDetectedEventArgs&gt;</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="f835ae00a3b8f44b6a69d9224b665727">PrintSupportIppCommunicationConfiguration</label> <input checked type="checkbox" id="f835ae00a3b8f44b6a69d9224b665727" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CanModifyTimeouts { get; } : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CommunicationKind { get; } : IppPrinterCommunicationKind</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IppAttributeTimeouts { get; } : PrintSupportIppCommunicationTimeouts</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IppJobTimeouts { get; } : PrintSupportIppCommunicationTimeouts</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="8d1efa1faeccc2302b592a825d480bd6">PrintSupportIppCommunicationTimeouts</label> <input checked type="checkbox" id="8d1efa1faeccc2302b592a825d480bd6" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ConnectTimeout { get; set; } : TimeSpan</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ReceiveTimeout { get; set; } : TimeSpan</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SendTimeout { get; set; } : TimeSpan</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="229019431c1a0e90ca42b367cc44ad02">PrintSupportMxdcImageQualityConfiguration</label> <input checked type="checkbox" id="229019431c1a0e90ca42b367cc44ad02" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DraftOutputQuality { get; set; } : XpsImageQuality</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>HighOutputQuality { get; set; } : XpsImageQuality</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>NormalOutputQuality { get; set; } : XpsImageQuality</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PhotographicOutputQuality { get; set; } : XpsImageQuality</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>TextOutputQuality { get; set; } : XpsImageQuality</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8aaf78b44e5dee89f663c5e06ca27c3c">PrintSupportPrintDeviceCapabilitiesChangedEventArgs</label> <input checked type="checkbox" id="8aaf78b44e5dee89f663c5e06ca27c3c" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>CommunicationConfiguration { get; } : PrintSupportIppCommunicationConfiguration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MxdcImageQualityConfiguration { get; } : PrintSupportMxdcImageQualityConfiguration</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="a07d228847e2dd893f1fdf55be3f5ed9">XpsImageQuality</label> <input checked type="checkbox" id="a07d228847e2dd893f1fdf55be3f5ed9" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>JpegHighCompression : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>JpegMediumCompression : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>JpegLowCompression : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Png : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="5467dc186536cac141e5b1493adbe754">Workflow</label> <input checked type="checkbox" id="5467dc186536cac141e5b1493adbe754" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="9a580ace28c06229097c642e0c8dee2d">PrintWorkflowJobBackgroundSession</label> <input checked type="checkbox" id="9a580ace28c06229097c642e0c8dee2d" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>JobIssueDetected event : TypedEventHandler&lt;PrintWorkflowJobBackgroundSession,PrintWorkflowJobIssueDetectedEventArgs&gt;</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="1148edb248f97d082aa9defa6b858ff4">PrintWorkflowJobIssueDetectedEventArgs</label> <input checked type="checkbox" id="1148edb248f97d082aa9defa6b858ff4" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Configuration { get; } : PrintWorkflowConfiguration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Exception</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetDeferral() : Deferral</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>JobIssueKind { get; } : PrintWorkflowJobIssueKind</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PrinterJob { get; } : PrintWorkflowPrinterJob</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SkipSystemErrorToast { get; set; } : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UILauncher { get; } : PrintWorkflowUILauncher</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="87c61d3c2bed3052cee6a18b3987a499">PrintWorkflowJobIssueKind</label> <input checked type="checkbox" id="87c61d3c2bed3052cee6a18b3987a499" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Other : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AttentionRequired : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>DoorOpen : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MarkerSupplyLow : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MarkerSupplyEmpty : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MediaJam : 5,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MediaEmpty : 6,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>MediaLow : 7,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>OutputAreaAlmostFull : 8,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>OutputAreaFull : 9,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>JobPrintingError : 10,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="2bc59cac290c141fc7a1dc6dd0ef8dbb">PrintWorkflowJobStartingEventArgs</label> <input checked type="checkbox" id="2bc59cac290c141fc7a1dc6dd0ef8dbb" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>DisableIppCompressionForJob() : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsIppCompressionEnabled { get; } : Boolean</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SkipSystemFaxUI { get; set; } : Boolean</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="506588974d8a2a7599189adbe8898987">PrintWorkflowJobUISession</label> <input checked type="checkbox" id="506588974d8a2a7599189adbe8898987" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>VirtualPrinterUIDataAvailable event : TypedEventHandler&lt;PrintWorkflowJobUISession,PrintWorkflowVirtualPrinterUIEventArgs&gt;</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="0d3dce7db559121f8e18bd533ace59e3">PrintWorkflowPdlConversionType</label> <input checked type="checkbox" id="0d3dce7db559121f8e18bd533ace59e3" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>XpsToTiff : 3,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="d1608a8a3968ff667e6a71f9c1078f4b">PrintWorkflowPrinterJob</label> <input checked type="checkbox" id="d1608a8a3968ff667e6a71f9c1078f4b" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ConvertPrintTicketToJobAttributes(WorkflowPrintTicket printTicket) static : IDictionary&lt;String,IppAttributeValue&gt;</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="a637bb6024d0ff103ee3a8ca9fe82264">PrintWorkflowVirtualPrinterDataAvailableEventArgs</label> <input checked type="checkbox" id="a637bb6024d0ff103ee3a8ca9fe82264" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CompleteJob(PrintWorkflowSubmittedStatus status) : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Configuration { get; } : PrintWorkflowConfiguration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetJobPrintTicket() : WorkflowPrintTicket</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPdlConverter(PrintWorkflowPdlConversionType conversionType) : PrintWorkflowPdlConverter</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetTargetFileAsync() : IAsyncOperation&lt;StorageFile&gt;</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SourceContent { get; } : PrintWorkflowPdlSourceContent</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UILauncher { get; } : PrintWorkflowUILauncher</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="b1a63aa5f4801b4e1348f08626b42fbd">PrintWorkflowVirtualPrinterSession</label> <input checked type="checkbox" id="b1a63aa5f4801b4e1348f08626b42fbd" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Printer { get; } : IppPrintDevice</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Start() : Void</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : PrintWorkflowSessionStatus</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>VirtualPrinterDataAvailable event : TypedEventHandler&lt;PrintWorkflowVirtualPrinterSession,PrintWorkflowVirtualPrinterDataAvailableEventArgs&gt;</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="48a5186a81a316fa8a0047ed04e29dbf">PrintWorkflowVirtualPrinterTriggerDetails</label> <input checked type="checkbox" id="48a5186a81a316fa8a0047ed04e29dbf" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>VirtualPrinterSession { get; } : PrintWorkflowVirtualPrinterSession</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="df35850c96e7268b4c1ee4f49abfbf6c">PrintWorkflowVirtualPrinterUIEventArgs</label> <input checked type="checkbox" id="df35850c96e7268b4c1ee4f49abfbf6c" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Configuration { get; } : PrintWorkflowConfiguration</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetDeferral() : Deferral</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetJobPrintTicket() : WorkflowPrintTicket</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Printer { get; } : IppPrintDevice</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SourceContent { get; } : PrintWorkflowPdlSourceContent</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="1fd3a670e4a983c8e4adc57ac8f0754e">PrintColorMode</label> <input checked type="checkbox" id="1fd3a670e4a983c8e4adc57ac8f0754e" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AutoSelect : 6,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ded970f2593af64073038512e6878b52">Management</label> <input checked type="checkbox" id="ded970f2593af64073038512e6878b52" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="392dbef38896fcbff387557374a90d48">Deployment</label> <input checked type="checkbox" id="392dbef38896fcbff387557374a90d48" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="662a2e0927639566a3f038e1a18fb88a">PackageAllUserProvisioningOptions</label> <input checked type="checkbox" id="662a2e0927639566a3f038e1a18fb88a" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeferAutomaticRegistration { get; set; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="448ef36dc3845abd1c96d2f62c67681f">Media</label> <input checked type="checkbox" id="448ef36dc3845abd1c96d2f62c67681f" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="96a5ccda3ffebe044c54ea75f1a1df6a">Audio</label> <input checked type="checkbox" id="96a5ccda3ffebe044c54ea75f1a1df6a" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="c1aa4ba3778b84e7b0267efd5e8c7055">AudioEffectsPackConfiguration</label> <input checked type="checkbox" id="c1aa4ba3778b84e7b0267efd5e8c7055" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeviceId { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>EffectsPackId { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetForDeviceId(String effectsPackId, String deviceId) static : AudioEffectsPackConfiguration</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsDeviceIdSupported(String effectsPackId, String deviceId) static : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : AudioEffectsPackStatus</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>StatusChanged event : TypedEventHandler&lt;AudioEffectsPackConfiguration,Object&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="e10e21fbe01baeddddaeb11eaa235e89">AudioEffectsPackStatus</label> <input checked type="checkbox" id="e10e21fbe01baeddddaeb11eaa235e89" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NotEnabled : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Enabled : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NotSupported : 2,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="d26ee5317396a01d800731c04d009012">Networking</label> <input checked type="checkbox" id="d26ee5317396a01d800731c04d009012" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="4e7be60166fa831a1e4b06dd5dca2b15">Connectivity</label> <input checked type="checkbox" id="4e7be60166fa831a1e4b06dd5dca2b15" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="3594f968605574992598eec5d1cc96bd">WwanDataClass</label> <input checked type="checkbox" id="3594f968605574992598eec5d1cc96bd" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NewRadioNonStandalone : 64,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NewRadioStandalone : 128,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="243b55fd798d0fd676246fa65e58ce28">NetworkOperators</label> <input checked type="checkbox" id="243b55fd798d0fd676246fa65e58ce28" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="6f153e1485f9c18b2eff8b780a63e956">MobileBroadbandDeviceServiceCommandEventArgs</label> <input checked type="checkbox" id="6f153e1485f9c18b2eff8b780a63e956" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeviceId { get; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeviceServiceId { get; } : Guid</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>EventId { get; } : UInt32</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ReceivedData { get; } : IBuffer</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="1015139a368fb7c393f5f7886e25b4fe">MobileBroadbandDeviceServiceCommandSession</label> <input checked type="checkbox" id="1015139a368fb7c393f5f7886e25b4fe" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="event.gif" alt="event"/><p>CommandReceived event : TypedEventHandler&lt;MobileBroadbandDeviceServiceCommandSession,MobileBroadbandDeviceServiceCommandEventArgs&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="36982e763af6c490f9b289d86bab31e1">NetworkOperatorTetheringAccessPointConfiguration</label> <input checked type="checkbox" id="36982e763af6c490f9b289d86bab31e1" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AuthenticationKind { get; set; } : TetheringWiFiAuthenticationKind</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsAuthenticationKindSupported(TetheringWiFiAuthenticationKind authenticationKind) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsAuthenticationKindSupportedAsync(TetheringWiFiAuthenticationKind authenticationKind) : IAsyncOperation&lt;Boolean&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="9d2e6c9d70d7e0e7c17f7d04904a637d">NetworkOperatorTetheringManager</label> <input checked type="checkbox" id="9d2e6c9d70d7e0e7c17f7d04904a637d" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartTetheringAsync(NetworkOperatorTetheringSessionAccessPointConfiguration configuration) : IAsyncOperation&lt;NetworkOperatorTetheringOperationResult&gt;</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="8861838ec5755bc09ef005c3b3d416bd">NetworkOperatorTetheringSessionAccessPointConfiguration</label> <input checked type="checkbox" id="8861838ec5755bc09ef005c3b3d416bd" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>AuthenticationKind { get; set; } : TetheringWiFiAuthenticationKind</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Band { get; set; } : TetheringWiFiBand</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsAuthenticationKindSupported(TetheringWiFiAuthenticationKind authenticationKind) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsAuthenticationKindSupportedAsync(TetheringWiFiAuthenticationKind authenticationKind) : IAsyncOperation&lt;Boolean&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsBandSupported(TetheringWiFiBand band) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsBandSupportedAsync(TetheringWiFiBand band) : IAsyncOperation&lt;Boolean&gt;</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Passphrase { get; set; } : String</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PerformancePriority { get; set; } : TetheringWiFiPerformancePriority</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Ssid { get; set; } : String</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="c76d6b62c506607482c26f59e3552008">TetheringOperationStatus</label> <input checked type="checkbox" id="c76d6b62c506607482c26f59e3552008" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AlreadyOn : 9,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>RadioRestriction : 10,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>BandInterference : 11,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="4109bdabd71f9235bb1503a49f7cde91">TetheringWiFiAuthenticationKind</label> <input checked type="checkbox" id="4109bdabd71f9235bb1503a49f7cde91" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Wpa2 : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Wpa3TransitionMode : 1,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Wpa3 : 2,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="cb011e4984464f2a0f0812f165d6afef">TetheringWiFiBand</label> <input checked type="checkbox" id="cb011e4984464f2a0f0812f165d6afef" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>SixGigahertz : 3,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="759010d935afe78ffb4b855fae3ec9ea">TetheringWiFiPerformancePriority</label> <input checked type="checkbox" id="759010d935afe78ffb4b855fae3ec9ea" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Default : 0,</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>TetheringOverStation : 1,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="85f9272ee944cdb22274737f6eea23f4">Sockets</label> <input checked type="checkbox" id="85f9272ee944cdb22274737f6eea23f4" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="a0809d30e67f0c2c0eb33e27d8af8284">SocketProtectionLevel</label> <input checked type="checkbox" id="a0809d30e67f0c2c0eb33e27d8af8284" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Tls13 : 10,</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="8bc5fbf693334c486e50a8dbe4059d42">Vpn</label> <input checked type="checkbox" id="8bc5fbf693334c486e50a8dbe4059d42" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="733b2e30c89a27cd1d94fc15a867af5b">IVpnPlugInReconnectTransport</label> <input checked type="checkbox" id="733b2e30c89a27cd1d94fc15a867af5b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ReconnectTransport(VpnChannel channel, Object context) : Void</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="f7547a84d04036940d5782755d7278a9">System</label> <input checked type="checkbox" id="f7547a84d04036940d5782755d7278a9" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="676cb9946d891a9c62b9de9e21645997">RemoteDesktop</label> <input checked type="checkbox" id="676cb9946d891a9c62b9de9e21645997" /><ol>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c802a09b8088c08c50207644981cc97b">Input</label> <input checked type="checkbox" id="c802a09b8088c08c50207644981cc97b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="4d49fd5067fb5658a6303c61fc12a260">RemoteKeyEventAttributes</label> <input checked type="checkbox" id="4d49fd5067fb5658a6303c61fc12a260" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>KeyUp : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Repeat : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Extended : 4,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Extended1 : 8,</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="2a38baeb1f695cc5bb56dc340d460ca5">RemoteTextConnection</label> <input checked type="checkbox" id="2a38baeb1f695cc5bb56dc340d460ca5" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(Guid connectionId, RemoteTextConnectionDataHandler pduForwarder, RemoteTextConnectionOptions options)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ReportPredictedKeyEvent(UInt16 scanCode, RemoteKeyEventAttributes attributes) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="45589bf27faadc7860518475e695f0e3">RemoteTextConnectionOptions</label> <input checked type="checkbox" id="45589bf27faadc7860518475e695f0e3" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>None : 0,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnablePredictedKeyReporting : 1,</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="50ab95c710ab3befe342b1e0c2d1eeb6">Provider</label> <input checked type="checkbox" id="50ab95c710ab3befe342b1e0c2d1eeb6" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="6b2f2ade2aed39e8a0cb0e2a7595d85e">RemoteDesktopConnectionInfo</label> <input checked type="checkbox" id="6b2f2ade2aed39e8a0cb0e2a7595d85e" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>PerformLocalActionFromRemote(RemoteDesktopLocalAction action) : Void</p><input/>
+                        </li>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="417dee6b4e5a8956d62ba5b05fbcde79">RemoteDesktopLocalAction</label> <input checked type="checkbox" id="417dee6b4e5a8956d62ba5b05fbcde79" /><ol>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShowSystemSoundSettings : 1,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShowSystemProjectionSettings : 2,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShowSystemAccountSettings : 3,</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ShowLocalSettings : 4,</p><input/>
+                        </li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
