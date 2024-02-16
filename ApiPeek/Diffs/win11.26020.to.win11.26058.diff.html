@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>win11.26020.to.win11.26058.diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li img.type
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 10px;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	display: inline;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.0em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	display: inline;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -22px 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 3px;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0px; /* 1px */ }
+</style>
+</head>
+<body>
+
+    <ol class="tree">
+        
+    <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="aea23489ce3aa9b6406ebb28e0cda430">Windows</label> <input checked type="checkbox" id="aea23489ce3aa9b6406ebb28e0cda430" /><ol>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9da06528183f737c58a40f94678be4ae">ApplicationModel</label> <input checked type="checkbox" id="9da06528183f737c58a40f94678be4ae" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="7f22105099f6d8a591f6e05da415e62c">Background</label> <input checked type="checkbox" id="7f22105099f6d8a591f6e05da415e62c" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>EnergyUseLevel</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="c2241db7321f89bfdac52f044ecdcd11">Devices</label> <input checked type="checkbox" id="c2241db7321f89bfdac52f044ecdcd11" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="16d3a5255cfc083fc9d2074fafc047c4">Enumeration</label> <input checked type="checkbox" id="16d3a5255cfc083fc9d2074fafc047c4" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>DevicePairingAddPairingSetMemberStatus</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>DevicePairingSetMembersRequestedEventArgs</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="interface.gif" alt="interface"/><p>IDeviceEnumerationSettings</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="a6be6a047f02721dc9287d6842c6b32f">Power</label> <input checked type="checkbox" id="a6be6a047f02721dc9287d6842c6b32f" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>PowerGridApiContract</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>PowerGridData</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>PowerGridForecast</p><input/>
+                </li>
+            </ol></li>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="9cb601652d826337a65e90dc34bd3d72">Sensors</label> <input checked type="checkbox" id="9cb601652d826337a65e90dc34bd3d72" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>DetectedPerson</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HeadOrientation</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>HeadPosition</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="1792687bf3b17e2f1ecc45ca5bb89804">Graphics</label> <input checked type="checkbox" id="1792687bf3b17e2f1ecc45ca5bb89804" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="1d6d32c44eece8e4db36778e6f33c11f">Capture</label> <input checked type="checkbox" id="1d6d32c44eece8e4db36778e6f33c11f" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>GraphicsCaptureDirtyRegionMode</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ded970f2593af64073038512e6878b52">Management</label> <input checked type="checkbox" id="ded970f2593af64073038512e6878b52" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="392dbef38896fcbff387557374a90d48">Deployment</label> <input checked type="checkbox" id="392dbef38896fcbff387557374a90d48" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>RemovePackageOptions</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+        <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="448ef36dc3845abd1c96d2f62c67681f">Media</label> <input checked type="checkbox" id="448ef36dc3845abd1c96d2f62c67681f" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="8306bb49b94c0d90af71eaef5c11abcc">Effects</label> <input checked type="checkbox" id="8306bb49b94c0d90af71eaef5c11abcc" /><ol>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="class.gif" alt="class"/><p>AcousticEchoCancellationConfiguration</p><input/>
+                </li>
+                <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>AudioEffectState</p><input/>
+                </li>
+            </ol></li>
+        </ol></li>
+    </ol></li>
+	</ol>
+	
+</body>
+</html>
+
