@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<meta name="author" content="Martin Suchan">
-	<title>win11.24H2.to.win11.25H2.fulldiff</title>
+	<title>win11.27686.to.win11.27718.fulldiff</title>
 	<style>
 /* CSS Tree menu styles */
 ol.tree
@@ -173,238 +173,150 @@ li input:checked + ol
             </ol></li>
         </ol></li>
         <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="ded970f2593af64073038512e6878b52">Management</label> <input checked type="checkbox" id="ded970f2593af64073038512e6878b52" /><ol>
+            <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="392dbef38896fcbff387557374a90d48">Deployment</label> <input checked type="checkbox" id="392dbef38896fcbff387557374a90d48" /><ol>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="97c1aaa4aef14e38234ae31dfe47fa48">PackageManager</label> <input checked type="checkbox" id="97c1aaa4aef14e38234ae31dfe47fa48" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPackageRemovalPending(String packageFullName) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPackageRemovalPendingByUri(Uri packageUri) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPackageRemovalPendingByUriForUser(Uri packageUri, String userSecurityId) : Boolean</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPackageRemovalPendingForUser(String packageFullName, String userSecurityId) : Boolean</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="ae22700bf83a00960ac29a9129f3374b">RemovalOptions</label> <input checked type="checkbox" id="ae22700bf83a00960ac29a9129f3374b" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>DeferRemovalWhenPackagesAreInUse : 8192,</p><input/>
+                    </li>
+                </ol></li>
+                <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8a11b4da92210f6632776819dc5b33eb">RemovePackageOptions</label> <input checked type="checkbox" id="8a11b4da92210f6632776819dc5b33eb" /><ol>
+                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DeferRemovalWhenPackagesAreInUse { get; set; } : Boolean</p><input/>
+                    </li>
+                </ol></li>
+            </ol></li>
             <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="edca388233ab85b67f0027de3cf354ff">Update</label> <input checked type="checkbox" id="edca388233ab85b67f0027de3cf354ff" /><ol>
-                <li><img class="type" src="added.png" alt="added"/><img src="namespace.gif" alt="namespace"/><label for="adb1bad7380662b6e1e8bb96aa0bf512">Cluster</label> <input checked type="checkbox" id="adb1bad7380662b6e1e8bb96aa0bf512" /><ol>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="2f61d99f5660ae51c0644d8fbfb0c732">AcquireEnvironmentInfoResult</label> <input checked type="checkbox" id="2f61d99f5660ae51c0644d8fbfb0c732" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, String environmentInfo)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>EnvironmentInfo { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateTaskResult</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="79c9aaf9eb628105066a8f4153dea342">ClusterNativeUpdateCompletionStatus</label> <input checked type="checkbox" id="79c9aaf9eb628105066a8f4153dea342" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Completed : 0,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Failed : 1,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Canceled : 2,</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="bd9fbb5074089354ebe85faeccf4df2d">ClusterNativeUpdateCredentialStatus</label> <input checked type="checkbox" id="bd9fbb5074089354ebe85faeccf4df2d" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>NoSuchCredential : 1,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ErrorRetrievingCredential : 2,</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="447195afe8d989ca03cba3db2518b457">ClusterNativeUpdateEnvironmentValidationStatus</label> <input checked type="checkbox" id="447195afe8d989ca03cba3db2518b457" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Approved : 0,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>ApprovedWithWarnings : 1,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Rejected : 2,</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="9a5d920df667de825c75f234e6c3e4f9">ClusterNativeUpdateLogLevel</label> <input checked type="checkbox" id="9a5d920df667de825c75f234e6c3e4f9" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Debug : 0,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Verbose : 1,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Info : 2,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Warning : 3,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Error : 4,</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="enum.gif" alt="enum"/><label for="271af710848db3088c449a310a151227">ClusterNativeUpdateOperationStatus</label> <input checked type="checkbox" id="271af710848db3088c449a310a151227" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Success : 0,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Failed : 1,</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Pending : 2,</p><input/>
-                        </li>
+                <li><img class="type" src="changed.png" alt="changed"/><img src="namespace.gif" alt="namespace"/><label for="adb1bad7380662b6e1e8bb96aa0bf512">Cluster</label> <input checked type="checkbox" id="adb1bad7380662b6e1e8bb96aa0bf512" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="enum.gif" alt="enum"/><label for="271af710848db3088c449a310a151227">ClusterNativeUpdateOperationStatus</label> <input checked type="checkbox" id="271af710848db3088c449a310a151227" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="enum.gif" alt="enum"/><p>Canceled : 3,</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added"/><img src="struct.gif" alt="struct"/><p>ClusterNativeUpdatingContract</p><input/>
-                    </li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="4070a95b9b7eafdc6c3f364d13968f1d">ClusterUpdateServices</label> <input checked type="checkbox" id="4070a95b9b7eafdc6c3f364d13968f1d" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>GetPluginCredential(String credentialId) : UpdateCredential</p><input/>
-                        </li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="4070a95b9b7eafdc6c3f364d13968f1d">ClusterUpdateServices</label> <input checked type="checkbox" id="4070a95b9b7eafdc6c3f364d13968f1d" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsOperationMarkedAsCanceled() : Boolean</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ReportProgress(Int32 currentStep, Int32 maxSteps, String message) : Void</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>WriteLogEntry(ClusterNativeUpdateLogLevel level, String logline) : Void</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>WriteLogEntry(ClusterNativeUpdateLogLevel level, String message) : Void</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="763ca4e99e6efac0b28555e68b85389b">IClusterNativeEnvironmentOperations</label> <input checked type="checkbox" id="763ca4e99e6efac0b28555e68b85389b" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>AcquireNodeEnvironmentInfo() : AcquireEnvironmentInfoResult</p><input/>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="interface.gif" alt="interface"/><label for="79ef14d7e9f1283f5d440eaf5ddc0290">IClusterNativeEnvironmentOperationsPlugin</label> <input checked type="checkbox" id="79ef14d7e9f1283f5d440eaf5ddc0290" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>CreateEnvironmentOperations(String clusterName, String runId, IDictionary&lt;String,String&gt; optionList, ClusterUpdateServices updateServices) : IClusterNativeEnvironmentOperations</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPostUpdateRunOperationComplete() : UpdatePendingOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPreUpdateRunOperationComplete() : UpdatePendingOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPostUpdateRunOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPreUpdateRunOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ValidateClusterEnvironment(IReadOnlyDictionary&lt;String,String&gt; nodeEnvironmentInfo) : ValidateClusterEnvironmentResult</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="79ef14d7e9f1283f5d440eaf5ddc0290">IClusterNativeEnvironmentOperationsPlugin</label> <input checked type="checkbox" id="79ef14d7e9f1283f5d440eaf5ddc0290" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateEnvironmentOperations(String clusterName, String runId, IDictionary&lt;String,String&gt; options, ClusterUpdateServices updateServices) : IClusterNativeEnvironmentOperations</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DefaultOptions { get; } : IReadOnlyDictionary&lt;String,String&gt;</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Description { get; } : String</p><input/>
-                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>FriendlyName { get; } : String</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Name { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Version { get; } : UpdatePluginVersionInfo</p><input/>
-                        </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="81cf682a5a68308a760eaf27b371f7dd">IClusterNativeNodeOperations</label> <input checked type="checkbox" id="81cf682a5a68308a760eaf27b371f7dd" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPostRebootOperationComplete() : UpdatePendingOperationResult</p><input/>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="interface.gif" alt="interface"/><label for="b413e0b7284105edad216fb7a363e6c1">IClusterNativeNodeOperationsPlugin</label> <input checked type="checkbox" id="b413e0b7284105edad216fb7a363e6c1" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>CreateNodeOperations(String clusterName, String runId, IDictionary&lt;String,String&gt; optionList, ClusterUpdateServices updateServices) : IClusterNativeNodeOperations</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPostResumeOperationComplete() : UpdatePendingOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPreDrainOperationComplete() : UpdatePendingOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>IsPreRebootOperationComplete() : UpdatePendingOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPostRebootOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPostResumeOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPreDrainOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>StartPreRebootOperation() : UpdateOperationResult</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="b413e0b7284105edad216fb7a363e6c1">IClusterNativeNodeOperationsPlugin</label> <input checked type="checkbox" id="b413e0b7284105edad216fb7a363e6c1" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateNodeOperations(String clusterName, String runId, IDictionary&lt;String,String&gt; options, ClusterUpdateServices updateServices) : IClusterNativeNodeOperations</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DefaultOptions { get; } : IReadOnlyDictionary&lt;String,String&gt;</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Description { get; } : String</p><input/>
-                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>FriendlyName { get; } : String</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Name { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Version { get; } : UpdatePluginVersionInfo</p><input/>
-                        </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="580967d7a063df153199ff5083f47e97">InstallUpdateTaskResult</label> <input checked type="checkbox" id="580967d7a063df153199ff5083f47e97" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="580967d7a063df153199ff5083f47e97">InstallUpdateTaskResult</label> <input checked type="checkbox" id="580967d7a063df153199ff5083f47e97" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IEnumerable&lt;UpdateInstallRecord&gt; updateList)</p><input/>
+                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IList&lt;UpdateInstallRecord&gt; installRecords)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>InstallRecords { get; } : IReadOnlyList&lt;UpdateInstallRecord&gt;</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateTaskResult</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>UpdateList { get; } : IEnumerable&lt;UpdateInstallRecord&gt;</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="d1fe8d9ee73de52d2ac10a7b28a92203">IUpdateInstaller</label> <input checked type="checkbox" id="d1fe8d9ee73de52d2ac10a7b28a92203" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="interface.gif" alt="interface"/><label for="d1fe8d9ee73de52d2ac10a7b28a92203">IUpdateInstaller</label> <input checked type="checkbox" id="d1fe8d9ee73de52d2ac10a7b28a92203" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>AcquireUpdateListValidationInfo(String& recipeValidationInfo) : UpdateTaskResult</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>AcquireUpdateListValidationInfo(String& validationInfo) : UpdateTaskResult</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>Install(IEnumerable&lt;UpdateScanRecord&gt; updatesToInstall) : InstallUpdateTaskResult</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Install(IReadOnlyList&lt;UpdateScanRecord&gt; updatesToInstall) : InstallUpdateTaskResult</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RebootNode() : UpdateTaskResult</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>PerformRebootNode() : UpdateTaskResult</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Scan() : ScanUpdateTaskResult</p><input/>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>RebootNode() : UpdateTaskResult</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ShouldeUsePluginSpecificReboot(Boolean& usePluginReboot) : UpdateTaskResult</p><input/>
                         </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>Stage(IEnumerable&lt;UpdateScanRecord&gt; updatesToStage) : StageUpdateTaskResult</p><input/>
+                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>Stage(IReadOnlyList&lt;UpdateScanRecord&gt; updatesToStage) : StageUpdateTaskResult</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>UsePluginSpecificReboot(Boolean& usePluginReboot) : UpdateTaskResult</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ValidateAllNodesUpdateRecipe(IReadOnlyList&lt;UpdateRecipeNodeValidationInfoRecord&gt; allNodesRecipeValidationInfo) : ValidateAllNodesUpdateRecipeResult</p><input/>
                         </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ValidateUpdateList(IEnumerable&lt;UpdateListValidationInfoRecord&gt; validationInfo) : ValidateUpdateListResult</p><input/>
+                        </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="interface.gif" alt="interface"/><label for="96064efb9a46ea024e3550459a119091">IUpdateInstallerPlugin</label> <input checked type="checkbox" id="96064efb9a46ea024e3550459a119091" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="interface.gif" alt="interface"/><label for="96064efb9a46ea024e3550459a119091">IUpdateInstallerPlugin</label> <input checked type="checkbox" id="96064efb9a46ea024e3550459a119091" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>CreateUpdateInstaller(String clusterName, String runId, IDictionary&lt;String,String&gt; optionList, ClusterUpdateServices updateServices) : IUpdateInstaller</p><input/>
+                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>CreateUpdateInstaller(String clusterName, String runId, IDictionary&lt;String,String&gt; options, ClusterUpdateServices updateServices) : IUpdateInstaller</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>DefaultOptions { get; } : IReadOnlyDictionary&lt;String,String&gt;</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Description { get; } : String</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>FriendlyName { get; } : String</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Name { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Version { get; } : UpdatePluginVersionInfo</p><input/>
-                        </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="96f0adbac7ea1a04b2e664018c319c62">ScanUpdateTaskResult</label> <input checked type="checkbox" id="96f0adbac7ea1a04b2e664018c319c62" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IList&lt;UpdateScanRecord&gt; scanRecords)</p><input/>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="96f0adbac7ea1a04b2e664018c319c62">ScanUpdateTaskResult</label> <input checked type="checkbox" id="96f0adbac7ea1a04b2e664018c319c62" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IEnumerable&lt;UpdateScanRecord&gt; updateList)</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateTaskResult</p><input/>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IList&lt;UpdateScanRecord&gt; scanRecords)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ScanRecords { get; } : IReadOnlyList&lt;UpdateScanRecord&gt;</p><input/>
                         </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="57663473e92890dea8c407694292e320">StageUpdateTaskResult</label> <input checked type="checkbox" id="57663473e92890dea8c407694292e320" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IList&lt;UpdateStageRecord&gt; stageRecords)</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>UpdateList { get; } : IEnumerable&lt;UpdateScanRecord&gt;</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateTaskResult</p><input/>
+                    </ol></li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="57663473e92890dea8c407694292e320">StageUpdateTaskResult</label> <input checked type="checkbox" id="57663473e92890dea8c407694292e320" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IEnumerable&lt;UpdateStageRecord&gt; updateList)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, IList&lt;UpdateStageRecord&gt; stageRecords)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>StageRecords { get; } : IReadOnlyList&lt;UpdateStageRecord&gt;</p><input/>
                         </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>UpdateList { get; } : IEnumerable&lt;UpdateStageRecord&gt;</p><input/>
+                        </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="48cb748320376b72f05418b0f23a8207">UpdateCredential</label> <input checked type="checkbox" id="48cb748320376b72f05418b0f23a8207" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateCredentialStatus status, String userName, String password)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Password { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : ClusterNativeUpdateCredentialStatus</p><input/>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="48cb748320376b72f05418b0f23a8207">UpdateCredential</label> <input checked type="checkbox" id="48cb748320376b72f05418b0f23a8207" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>Username { get; } : String</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UserName { get; } : String</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="8d08b6aa90af1eb760cf750b96efc160">UpdateInstallRecord</label> <input checked type="checkbox" id="8d08b6aa90af1eb760cf750b96efc160" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="8d08b6aa90af1eb760cf750b96efc160">UpdateInstallRecord</label> <input checked type="checkbox" id="8d08b6aa90af1eb760cf750b96efc160" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(String updateId, Boolean isRebootRequired, ClusterNativeUpdateCompletionStatus status, String failureMessage)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(String updateId, Boolean isRebootRequired, ClusterNativeUpdateCompletionStatus status, String statusMessage)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>FailureMessage { get; } : String</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsRebootRequired { get; } : Boolean</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : ClusterNativeUpdateCompletionStatus</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UpdateId { get; } : String</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>StatusMessage { get; } : String</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="10d25a06d880869fbc5d7a688279f39c">UpdateOperationResult</label> <input checked type="checkbox" id="10d25a06d880869fbc5d7a688279f39c" /><ol>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>UpdateListValidationInfoRecord</p><input/>
+                    </li>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="10d25a06d880869fbc5d7a688279f39c">UpdateOperationResult</label> <input checked type="checkbox" id="10d25a06d880869fbc5d7a688279f39c" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateOperationStatus status, String reason, Int32 errorCode)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateOperationStatus status, String reason)</p><input/>
                         </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateOperationStatus statusCode, String reason, Int32 extendedError)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateOperationStatus statusCode, String reason)</p><input/>
+                        </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ErrorCode { get; } : Int32</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Reason { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>StatusCode { get; } : ClusterNativeUpdateOperationStatus</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="bcb232038b6dbba1992621c68e2a785b">UpdatePendingOperationResult</label> <input checked type="checkbox" id="bcb232038b6dbba1992621c68e2a785b" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateOperationResult result, TimeSpan suggestedRecheckInterval)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateOperationResult</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>SuggestedRecheckInterval { get; } : TimeSpan</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="f2381cf33b5737aa5dde0efafff87e1a">UpdatePluginVersionInfo</label> <input checked type="checkbox" id="f2381cf33b5737aa5dde0efafff87e1a" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UInt32 majorVersion, UInt32 minorVersion, UInt32 patchLevel)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MajorVersion { get; } : UInt32</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>MinorVersion { get; } : UInt32</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PatchLevel { get; } : UInt32</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Int32</p><input/>
                         </li>
                     </ol></li>
                     <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="7f4c21ac3f3c591b476cff1fbdfede35">UpdateRecipeNodeValidationInfoRecord</label> <input checked type="checkbox" id="7f4c21ac3f3c591b476cff1fbdfede35" /><ol>
@@ -417,48 +329,24 @@ li input:checked + ol
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ScanResults { get; } : IReadOnlyList&lt;UpdateScanRecord&gt;</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="9846180525007481732bb895855b3b48">UpdateScanRecord</label> <input checked type="checkbox" id="9846180525007481732bb895855b3b48" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(String updateId, String updateTitle, String updateDescription, Boolean isRebootRequired, String pluginSpecificData)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>IsRebootRequired { get; } : Boolean</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>PluginSpecificData { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UpdateDescription { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UpdateId { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UpdateTitle { get; } : String</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="6d019c9f79aaf2339368a5fe4bd1eb4d">UpdateStageRecord</label> <input checked type="checkbox" id="6d019c9f79aaf2339368a5fe4bd1eb4d" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="6d019c9f79aaf2339368a5fe4bd1eb4d">UpdateStageRecord</label> <input checked type="checkbox" id="6d019c9f79aaf2339368a5fe4bd1eb4d" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(String updateId, ClusterNativeUpdateCompletionStatus status, String failureMessage)</p><input/>
+                        </li>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(String updateId, ClusterNativeUpdateCompletionStatus status, String statusMessage)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>FailureMessage { get; } : String</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Status { get; } : ClusterNativeUpdateCompletionStatus</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>UpdateId { get; } : String</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>StatusMessage { get; } : String</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="029ab2b354815fb0a1f9e7deceab217c">UpdateTaskResult</label> <input checked type="checkbox" id="029ab2b354815fb0a1f9e7deceab217c" /><ol>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="029ab2b354815fb0a1f9e7deceab217c">UpdateTaskResult</label> <input checked type="checkbox" id="029ab2b354815fb0a1f9e7deceab217c" /><ol>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(Boolean succeeded, String reason, Int32 errorCode)</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(Boolean succeeded, String reason)</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(Boolean succeeded, String reason, Int32 extendedError)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ErrorCode { get; } : Int32</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Reason { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Succeeded { get; } : Boolean</p><input/>
-                        </li>
-                    </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="b9ed81b3fd743c8eb1f2e0ca69c871ac">UpdateValidationLogMessage</label> <input checked type="checkbox" id="b9ed81b3fd743c8eb1f2e0ca69c871ac" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(ClusterNativeUpdateLogLevel severity, String message)</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Message { get; } : String</p><input/>
-                        </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Severity { get; } : ClusterNativeUpdateLogLevel</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>ExtendedError { get; } : Int32</p><input/>
                         </li>
                     </ol></li>
                     <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="281b673d04e800cc45583f0208749a07">ValidateAllNodesUpdateRecipeResult</label> <input checked type="checkbox" id="281b673d04e800cc45583f0208749a07" /><ol>
@@ -471,16 +359,18 @@ li input:checked + ol
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ValidationMessages { get; } : IReadOnlyList&lt;UpdateValidationLogMessage&gt;</p><input/>
                         </li>
                     </ol></li>
-                    <li class="file"><img class="type" src="added.png" alt="added" /><img src="class.gif" alt="class"/><label for="70c9200c7cf443f536495946b45aa513">ValidateClusterEnvironmentResult</label> <input checked type="checkbox" id="70c9200c7cf443f536495946b45aa513" /><ol>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ApprovalStatus { get; } : ClusterNativeUpdateEnvironmentValidationStatus</p><input/>
+                    <li class="file"><img class="type" src="changed.png" alt="changed" /><img src="class.gif" alt="class"/><label for="70c9200c7cf443f536495946b45aa513">ValidateClusterEnvironmentResult</label> <input checked type="checkbox" id="70c9200c7cf443f536495946b45aa513" /><ol>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, ClusterNativeUpdateEnvironmentValidationStatus approvalStatus, IEnumerable&lt;UpdateValidationLogMessage&gt; validationMessages)</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="method.gif" alt="method"/><p>ctor(UpdateTaskResult result, ClusterNativeUpdateEnvironmentValidationStatus approvalStatus, IList&lt;UpdateValidationLogMessage&gt; validationMessages)</p><input/>
                         </li>
-                        <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>Result { get; } : UpdateTaskResult</p><input/>
+                        <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="property.gif" alt="property"/><p>ValidationMessages { get; } : IEnumerable&lt;UpdateValidationLogMessage&gt;</p><input/>
                         </li>
                         <li class="file"><img class="type" src="added.png" alt="added"/><img src="property.gif" alt="property"/><p>ValidationMessages { get; } : IReadOnlyList&lt;UpdateValidationLogMessage&gt;</p><input/>
                         </li>
                     </ol></li>
+                    <li class="file"><img class="type" src="removed.png" alt="removed"/><img src="class.gif" alt="class"/><p>ValidateUpdateListResult</p><input/>
+                    </li>
                 </ol></li>
             </ol></li>
         </ol></li>
